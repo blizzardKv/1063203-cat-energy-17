@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Подбор программы для кота и кошек</title>
+  <meta charset="UTF-8">
+  <title>Подбор программы для кота и кошек</title>
 </head>
 <body>
 <header>
-  <a href="index.html">Cat energy<img src="#" alt="Логотип Кэт Энерджи"></a>
-  <button type="button"></button>
+  <div>
+    <a href="index.html"><img src="#" alt="Логотип Кэт Энерджи"></a>
+    <a href="index.html"><img src="#" alt="Текстовый логотип Кэт Энерджи"></a>
+    <button type="button" aria-label="Закрыть"></button>
+  </div>
   <nav>
     <ul>
       <li><a href="index.html">Главная</a></li>
@@ -27,11 +31,11 @@
           <label for="name">Имя:*</label>
         </li>
         <li>
-          <input type="number" name="current-weight" value="weight" id="weight">
+          <input type="number" name="current-weight" id="weight">
           <label for="weight">Вес (кг):*</label>
         </li>
         <li>
-          <input type="number" name="current-age" value="age" id="age">
+          <input type="number" name="current-age" id="age">
           <label for="age">Возраст (лет):</label>
         </li>
       </ul>
@@ -53,7 +57,7 @@
       </ul>
     </fieldset>
     <fieldset>
-      <h4>Контактные данные (владельца кота)</h4>
+      <h2>Контактные данные (владельца кота)</h2>
       <ul>
         <li>
           <input type="email" name="email" id="email">
@@ -66,12 +70,12 @@
       </ul>
     </fieldset>
     <fieldset>
-      <h4>Комментарий</h4>
+      <h2>Комментарий</h2>
       <textarea placeholder="Расскажите обо всех повадках кота" name="about-cat" id="textarea"></textarea>
       <label for="textarea"></label>
     </fieldset>
     <fieldset>
-      <h4>Дополнительно</h4>
+      <h2>Дополнительно</h2>
       <ul>
         <li>
           <input type="checkbox" name="additionally" value="sweetener" id="sweetener" checked>
@@ -95,7 +99,7 @@
     <p>* — Обязательные поля</p>
   </form>
   <section>
-    <h3>Карта и адрес для сотрудничества</h3>
+    <h2>Карта и адрес для сотрудничества</h2>
     <div>
       <p>Приглашаем к сотрудничеству дилеров!</p>
       <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
