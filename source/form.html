@@ -23,20 +23,20 @@
 <main>
   <h1>Подбор программы</h1>
   <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
-  <form action="https://echo.htmlacademy.ru" method="get">
+  <form action="https://echo.htmlacademy.ru" method="post">
     <fieldset>
       <ul>
         <li>
-          <input type="text" name="name" value="name" id="name">
           <label for="name">Имя:*</label>
+          <input type="text" name="cat-name" id="name" placeholder="Барсик" required>
         </li>
         <li>
-          <input type="number" name="current-weight" id="weight">
           <label for="weight">Вес (кг):*</label>
+          <input type="number" name="cat-current-weight" id="weight" placeholder="7" required>
         </li>
         <li>
-          <input type="number" name="current-age" id="age">
           <label for="age">Возраст (лет):</label>
+          <input type="number" name="cat-current-age" id="age" placeholder="7">
         </li>
       </ul>
     </fieldset>
@@ -60,12 +60,12 @@
       <h2>Контактные данные (владельца кота)</h2>
       <ul>
         <li>
-          <input type="email" name="email" id="email">
           <label for="email">E-mail:*</label>
+          <input type="email" name="email" id="email" required>
         </li>
         <li>
-          <input type="tel" name="telephone" id="tel">
           <label for="tel">Телефон:*</label>
+          <input type="tel" name="telephone" id="tel" required>
         </li>
       </ul>
     </fieldset>
@@ -99,16 +99,16 @@
     <p>* — Обязательные поля</p>
   </form>
   <section>
-    <h2>Карта и адрес для сотрудничества</h2>
+    <h2>Карта месторасположения офиса "Кэт Энерджи" и адрес для сотрудничества</h2>
     <div>
       <p>Приглашаем к сотрудничеству дилеров!</p>
       <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img src="#" alt="Карта по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
     </div>
+    <img src="#" alt="Карта по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
   </section>
 </main>
 <footer>
-  <a href="#">Cat energy</a>
+  <a href="#"><img src="#" alt="Текстовый логотип Кэт Энерджи"></a>
   <div>
     <ul>
       <li><a href="#">Вконтакте</a></li>
