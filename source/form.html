@@ -8,8 +8,8 @@
 <body>
 <header class="page-header">
   <div class="page-header__div">
-    <a class="page-header__logo logo" href="index.html"><img class="logo__image" src="#" alt="Логотип компании Кэт Энерджи."></a>
-    <a class="page-header__logo logo" href="index.html"><img class="logo__image-name" src="#" alt="Текстовый логотип Кэт Энерджи."></a>
+    <a class="cat-logo" href="index.html"><img class="cat-logo__image" src="#" alt="Логотип компании Кэт Энерджи."></a>
+    <a class="logo" href="index.html"><img class="logo__image" src="#" alt="Текстовый логотип Кэт Энерджи."></a>
     <button class="page-header__button-close button-close" type="button" aria-label="Закрыть"></button>
   </div>
   <nav class="site-navigation">
@@ -40,7 +40,7 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="form__fieldset cat-mass-fieldset">
+    <fieldset class="form__fieldset">
       <ul class="form__list cat-mass-list">
         <li class="cat-mass-list__item">
           <input class="form__cat-mass-input" id="weight-loss" name="about-weight" type="radio" value="weight-loss" checked>
@@ -56,8 +56,8 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="form__fieldset owner-info-fieldset">
-      <h2 class="owner-info-fieldset__headline thematic-headline">Контактные данные (владельца кота)</h2>
+    <fieldset class="form__fieldset">
+      <h2 class="form__headline thematic-headline">Контактные данные (владельца кота)</h2>
       <ul class="form__list owner-info-list">
         <li class="owner-info-list__item">
           <label class="form__owner-info-label" for="email">E-mail:*</label>
@@ -69,13 +69,13 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="form__fieldset text-about-cat-fieldset">
-      <h2 class="text-about-cat-fieldset__headline thematic-headline">Комментарий</h2>
+    <fieldset class="form__fieldset">
+      <h2 class="form__headline thematic-headline">Комментарий</h2>
       <textarea class="form__text-about-cat-textarea textarea" id="about-cat" name="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
       <label class="form__text-about-cat-label" for="about-cat"></label>
     </fieldset>
-    <fieldset class="form__fieldset additional-products-fieldset">
-      <h2 class="additional-products-fieldset__headline thematic-headline">Дополнительно</h2>
+    <fieldset class="form__fieldset">
+      <h2 class="form__headline thematic-headline">Дополнительно</h2>
       <ul class="form__list additional-products-list">
         <li class="additional-products-list__item">
           <input class="form__additional-products-list-input" id="sweetener" name="additionally" type="checkbox" value="sweetener" checked>
@@ -101,8 +101,8 @@
   <section class="company-info">
     <h2 class="visually-hidden">Карта месторасположения офиса "Кэт Энерджи" и адрес для сотрудничества</h2>
     <div class="company-info__div">
-      <p class="company-info__proposal">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="company-info__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="company-info__lead-text">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="company-info__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
     <img class="company-info__map map" src="#" alt="Карта по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
   </section>
@@ -112,7 +112,8 @@
   <div class="page-footer__div">
     <ul class="page-footer__social-list social-list">
       <li class="social-list__item"><a class="social-list__link social-list__link--vk" href="#">Вконтакте</a></li>
-      <li class="social-list__item"><a class="social-list__link social-list__link--instagram" href="#">Инстаграм</a></li>
+      <li class="social-list__item"><a class="social-list__link social-list__link--instagram" href="#">Инстаграм</a>
+      </li>
       <li class="social-list__item"><a class="social-list__link social-list__link--facebook" href="#">Фейсбук</a></li>
     </ul>
   </div>
