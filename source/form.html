@@ -6,6 +6,7 @@
   <title>Подбор программы для кота и кошек</title>
 </head>
 <body>
+<!--Эта часть повторяется еще в catalog и index, копировать туда изменения -->
 <header class="page-header">
   <div class="page-header__div">
     <a class="cat-logo" href="index.html"><img class="cat-logo__image" src="#" alt="Логотип компании Кэт Энерджи."></a>
@@ -21,83 +22,84 @@
   </nav>
 </header>
 <main class="page-main">
-  <h1 class="page-main__headline headline">Подбор программы</h1>
-  <p class="page-main__request">Заполните анкету и мы подберем программу питания для вашего кота</p>
+  <h1 class="page-main__headline main-headline">Подбор программы</h1>
+  <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
   <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-    <fieldset class="form__fieldset cat-info-fieldset">
-      <ul class="form__list cat-info-list">
-        <li class="cat-info-list__item">
-          <label class="form__cat-info-label" for="cat-name">Имя:*</label>
-          <input class="form__cat-info-input" id="cat-name" name="cat-name" placeholder="Барсик" type="text" required>
+    <fieldset class="form__fieldset">
+      <ul class="form__list">
+        <li class="form__item">
+          <label class="form__label" for="cat-name">Имя:*</label>
+          <input class="form__input" id="cat-name" name="cat-name" placeholder="Барсик" type="text" required>
         </li>
-        <li class="cat-info-list__item">
-          <label class="form__cat-info-label" for="cat-weight">Вес (кг):*</label>
-          <input class="form__cat-info-input" id="cat-weight" name="cat-weight" placeholder="7" type="number" required>
+        <li class="form__item">
+          <label class="form__label" for="cat-weight">Вес (кг):*</label>
+          <input class="form__input" id="cat-weight" name="cat-weight" placeholder="7" type="number" required>
         </li>
-        <li class="cat-info-list__item">
-          <label class="form__cat-info-label" for="cat-age">Возраст (лет):</label>
-          <input class="form__cat-info-input" id="cat-age" name="cat-age" placeholder="7" type="number">
+        <li class="form__item">
+          <label class="form__label" for="cat-age">Возраст (лет):</label>
+          <input class="form__input" id="cat-age" name="cat-age" placeholder="7" type="number">
         </li>
       </ul>
     </fieldset>
     <fieldset class="form__fieldset">
-      <ul class="form__list cat-mass-list">
-        <li class="cat-mass-list__item">
-          <input class="form__cat-mass-input" id="weight-loss" name="about-weight" type="radio" value="weight-loss" checked>
-          <label class="form__cat-mass-label" for="weight-loss">Похудение</label>
+      <ul class="form__list">
+        <li class="form__item">
+          <input class="form__radio" id="weight-loss" name="about-weight" type="radio" value="weight-loss" checked>
+          <label class="form__label" for="weight-loss">Похудение</label>
         </li>
-        <li class="cat-mass-list__item">
-          <input class="form__cat-mass-input" id="weight-gain" name="about-weight" type="radio" value="weight-gain">
-          <label class="form__cat-mass-label" for="weight-gain">Набор массы</label>
+        <li class="form__item">
+          <input class="form__radio" id="weight-gain" name="about-weight" type="radio" value="weight-gain">
+          <label class="form__label" for="weight-gain">Набор массы</label>
         </li>
-        <li class="cat-mass-list__item">
-          <input class="form__cat-mass-input" id="idk-help-me" name="about-weight" type="radio" value="i-dont-know">
-          <label class="form__cat-mass-label" for="idk-help-me">Не знаю (Нужен ваш совет)</label>
+        <li class="form__item">
+          <input class="form__radio" id="idk-help-me" name="about-weight" type="radio" value="i-dont-know">
+          <label class="form__label" for="idk-help-me">Не знаю (Нужен ваш совет)</label>
         </li>
       </ul>
     </fieldset>
     <fieldset class="form__fieldset">
       <h2 class="form__headline thematic-headline">Контактные данные (владельца кота)</h2>
-      <ul class="form__list owner-info-list">
-        <li class="owner-info-list__item">
-          <label class="form__owner-info-label" for="email">E-mail:*</label>
-          <input class="form__owner-info-input form__owner-info-input--letter" id="email" name="email" type="email" required>
+      <ul class="form__list">
+        <li class="form__item">
+          <label class="form__label" for="email">E-mail:*</label>
+          <input class="form__input form__input--letter" id="email" name="email" type="email" required>
         </li>
-        <li class="owner-info-list__item">
-          <label class="form__owner-info-label" for="telephone">Телефон:*</label>
-          <input class="form__owner-info-input form__owner-info-input--telephone" id="telephone" name="telephone" type="tel" required>
+        <li class="form__item">
+          <label class="form__label" for="telephone">Телефон:*</label>
+          <input class="form__input form__input--telephone" id="telephone" name="telephone" type="tel" required>
         </li>
       </ul>
     </fieldset>
     <fieldset class="form__fieldset">
       <h2 class="form__headline thematic-headline">Комментарий</h2>
-      <textarea class="form__text-about-cat-textarea textarea" id="about-cat" name="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
-      <label class="form__text-about-cat-label" for="about-cat"></label>
+      <textarea class="form__textarea" id="about-cat" name="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <label class="form__label" for="about-cat"></label>
     </fieldset>
     <fieldset class="form__fieldset">
       <h2 class="form__headline thematic-headline">Дополнительно</h2>
-      <ul class="form__list additional-products-list">
-        <li class="additional-products-list__item">
-          <input class="form__additional-products-list-input" id="sweetener" name="additionally" type="checkbox" value="sweetener" checked>
-          <label class="form__additional-products-list-label" for="sweetener">Сахарозаменитель</label>
+      <ul class="form__list">
+        <li class="form__item">
+          <input class="form__checkbox" id="sweetener" name="additionally" type="checkbox" value="sweetener" checked>
+          <label class="form__label" for="sweetener">Сахарозаменитель</label>
         </li>
-        <li class="additional-products-list__item">
-          <input class="form__additional-products-list-input" id="water" name="additionally" type="checkbox" value="water">
-          <label class="form__additional-products-list-label" for="water">Питьевая вода</label>
+        <li class="form__item">
+          <input class="form__checkbox" id="water" name="additionally" type="checkbox" value="water">
+          <label class="form__label" for="water">Питьевая вода</label>
         </li>
-        <li class="additional-products-list__item">
-          <input class="form__additional-products-list-input" id="milk" name="additionally" type="checkbox" value="milk">
-          <label class="form__additional-products-list-label" for="milk">Молоко</label>
+        <li class="form__item">
+          <input class="form__checkbox" id="milk" name="additionally" type="checkbox" value="milk">
+          <label class="form__label" for="milk">Молоко</label>
         </li>
-        <li class="additional-products-list__item">
-          <input class="form__additional-products-list-input" id="vitamins" name="additionally" type="checkbox" value="vitamins">
-          <label class="form__additional-products-list-label" for="vitamins">Витамины</label>
+        <li class="form__item">
+          <input class="form__checkbox" id="vitamins" name="additionally" type="checkbox" value="vitamins">
+          <label class="form__label" for="vitamins">Витамины</label>
         </li>
       </ul>
     </fieldset>
     <button class="form__button-submit" type="submit">Отправить заявку</button>
     <p class="form__hint">* — Обязательные поля</p>
   </form>
+  <!--Эта часть повторяется еще в catalog и index, копировать туда изменения -->
   <section class="company-info">
     <h2 class="visually-hidden">Карта месторасположения офиса "Кэт Энерджи" и адрес для сотрудничества</h2>
     <div class="company-info__div">
@@ -107,6 +109,7 @@
     <img class="company-info__map map" src="#" alt="Карта по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
   </section>
 </main>
+<!--Эта часть повторяется еще в catalog и index, копировать туда изменения -->
 <footer class="page-footer">
   <a class="page-footer__logo logo" href="#"><img class="logo__image logo__image--footer" src="#" alt="Текстовый логотип Кэт Энерджи."></a>
   <div class="page-footer__div">
