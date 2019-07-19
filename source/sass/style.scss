@@ -1,3 +1,23 @@
+//index.html
+@import "blocks/index/product-promotion";
+@import "blocks/index/changes";
+@import "blocks/index/principles";
+@import "blocks/index/principles-list";
+@import "blocks/index/promo";
+@import "blocks/index/slider";
+@import "blocks/index/company-info";
+//catalog.html
+
+@import "blocks/logo.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-nav-list";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "normalize.scss";
+@import "global.scss";
+
 body {
-  visibility: visible;
+  background-color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
 }
