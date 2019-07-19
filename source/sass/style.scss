@@ -1,16 +1,29 @@
 //index.html
-@import "blocks/index/product-promotion";
-@import "blocks/index/changes";
-@import "blocks/index/principles";
-@import "blocks/index/principles-list";
-@import "blocks/index/promo";
-@import "blocks/index/slider";
-@import "blocks/index/company-info";
+@import "blocks/index/product-promotion.scss";
+@import "blocks/index/changes.scss";
+@import "blocks/index/principles.scss";
+@import "blocks/index/principles-list.scss";
+@import "blocks/index/promo.scss";
+@import "blocks/index/slider.scss";
 //catalog.html
-
+@import "blocks/catalog/product.scss";
+@import "blocks/page-main.scss";
+@import "blocks/catalog/product.scss";
+@import "blocks/catalog/product-list.scss";
+@import "blocks/catalog/product-div.scss";
+@import "blocks/catalog/product-description.scss";
+@import "blocks/catalog/product-name.scss";
+@import "blocks/catalog/show-button.scss";
+@import "blocks/catalog/additional-product-list.scss";
+@import "blocks/catalog/sale-block.scss";
+//form.html
+@import "blocks/form/form.scss";
+//общее
 @import "blocks/logo.scss";
+@import "blocks/social-list.scss";
 @import "blocks/page-header.scss";
-@import "blocks/site-nav-list";
+@import "blocks/site-nav-list.scss";
+@import "blocks/company-info.scss";
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "normalize.scss";

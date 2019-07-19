@@ -1,0 +1,43 @@
+.form__fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+}
+
+.form__input {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.form__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.form__button-submit {
+  padding: 0;
+
+  background: none;
+  border: none;
+}
+
+.form__hint {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}

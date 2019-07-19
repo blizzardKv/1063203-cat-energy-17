@@ -2,9 +2,9 @@
   font-family: "Oswald";
 
   src: url("../fonts/oswaldregular.woff") format("woff"),
-    url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff"),
-    url("../fonts/oswaldmedium.woff2") format("woff2");
+  url("../fonts/oswaldregular.woff2") format("woff2"),
+  url("../fonts/oswaldmedium.woff") format("woff"),
+  url("../fonts/oswaldmedium.woff2") format("woff2");
 }
 
 html {
@@ -47,14 +47,11 @@ img {
   clip-path: inset(100%);
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+a {
+  text-decoration: none;
 }
 
-button {
+.button-close {
   padding: 0;
 
   background: none;
@@ -77,8 +74,18 @@ button {
   color: #111111;
 }
 
+.main-headline--white {
+  color: #ffffff;
+}
+
 .section-headline {
   font-size: 36px;
   line-height: 60px;
+  color: #111111;
+}
+
+.thematic-headline {
+  font-size: 24px;
+  line-height: 24px;
   color: #111111;
 }
