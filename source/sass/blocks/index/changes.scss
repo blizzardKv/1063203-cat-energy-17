@@ -1,5 +1,5 @@
 .changes {
-  background-color: #f2f2f2;
+  background-color: $white-two;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -8,12 +8,12 @@
   font-size: 14px;
   font-family: "Arial", sans-serif;
   line-height: 18px;
-  color: #444444;
+  color: $grey;
 }
 
 .changes__link {
   font-size: 16px;
   line-height: 16px;
-  color: #111111;
+  color: $black;
   text-transform: uppercase;
 }

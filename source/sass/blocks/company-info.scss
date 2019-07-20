@@ -1,15 +1,15 @@
 .company-info__div {
-  background-color: #f2f2f2;
+  background-color: $white-two;
 }
 
 .company-info__div--white-back {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .company-info__lead-text {
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -17,5 +17,5 @@
   font-size: 14px;
   font-family: "Arial", sans-serif;
   line-height: 20px;
-  color: #444444;
+  color: $grey;
 }

@@ -1,3 +1,13 @@
+//общее
+@import "global.scss";
+@import "variables.scss";
+@import "blocks/logo.scss";
+@import "blocks/social-list.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-nav-list.scss";
+@import "blocks/company-info.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
 //index.html
 @import "blocks/index/product-promotion.scss";
 @import "blocks/index/changes.scss";
@@ -6,7 +16,6 @@
 @import "blocks/index/promo.scss";
 @import "blocks/index/slider.scss";
 //catalog.html
-@import "blocks/catalog/product.scss";
 @import "blocks/page-main.scss";
 @import "blocks/catalog/product.scss";
 @import "blocks/catalog/product-list.scss";
@@ -18,16 +27,6 @@
 @import "blocks/catalog/sale-block.scss";
 //form.html
 @import "blocks/form/form.scss";
-//общее
-@import "blocks/logo.scss";
-@import "blocks/social-list.scss";
-@import "blocks/page-header.scss";
-@import "blocks/site-nav-list.scss";
-@import "blocks/company-info.scss";
-@import "blocks/map.scss";
-@import "blocks/page-footer.scss";
-@import "normalize.scss";
-@import "global.scss";
 
 body {
   background-color: #ffffff;
