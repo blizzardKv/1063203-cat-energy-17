@@ -1,19 +1,23 @@
 .changes {
-  background-color: $white-two;
+  background-color: $bg_color_white-lighten;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .changes__text {
   font-size: 14px;
-  font-family: "Arial", sans-serif;
+  font-family: $font_secondary;
   line-height: 18px;
-  color: $grey;
+  color: $color_grey;
 }
 
 .changes__link {
   font-size: 16px;
   line-height: 16px;
-  color: $black;
+  color: $color_black;
+  text-transform: uppercase;
+}
+
+.changes__headline {
   text-transform: uppercase;
 }

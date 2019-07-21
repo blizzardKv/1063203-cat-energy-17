@@ -2,17 +2,13 @@
   background-image: url("/img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: $green;
+  background-color: $color_green;
   background-size: 320px 305px;
-  height: 305px;
-}
-
-.main-headline--white {
-  color: $white;
 }
 
 .product-promotion__slogan {
   font-size: 14px;
   line-height: 14px;
-  color: $white;
+  color: $color_white;
+  text-transform: uppercase;
 }

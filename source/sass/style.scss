@@ -1,35 +1,33 @@
 //общее
-@import "global.scss";
-@import "variables.scss";
-@import "blocks/logo.scss";
-@import "blocks/social-list.scss";
-@import "blocks/page-header.scss";
-@import "blocks/site-nav-list.scss";
-@import "blocks/company-info.scss";
-@import "blocks/map.scss";
-@import "blocks/page-footer.scss";
+@import "vendor/normalize";
+@import "common/common";
+@import "common/fonts";
+@import "components/components";
+@import "layout/page-header";
+@import "layout/page-footer";
+@import "layout/page-main";
 //index.html
-@import "blocks/index/product-promotion.scss";
-@import "blocks/index/changes.scss";
-@import "blocks/index/principles.scss";
-@import "blocks/index/principles-list.scss";
-@import "blocks/index/promo.scss";
-@import "blocks/index/slider.scss";
+@import "blocks/index/product-promotion";
+@import "blocks/index/cat-weight-headline";
+@import "blocks/index/changes";
+@import "blocks/index/principles";
+@import "blocks/index/principles-list";
+@import "blocks/index/promo";
+@import "blocks/index/slider";
 //catalog.html
-@import "blocks/page-main.scss";
-@import "blocks/catalog/product.scss";
-@import "blocks/catalog/product-list.scss";
-@import "blocks/catalog/product-div.scss";
-@import "blocks/catalog/product-description.scss";
-@import "blocks/catalog/product-name.scss";
-@import "blocks/catalog/show-button.scss";
-@import "blocks/catalog/additional-product-list.scss";
-@import "blocks/catalog/sale-block.scss";
+@import "blocks/catalog/product";
+@import "blocks/catalog/product-list";
+@import "blocks/catalog/product-div";
+@import "blocks/catalog/product-description";
+@import "blocks/catalog/product-name";
+@import "blocks/catalog/show-button";
+@import "blocks/catalog/additional-product-list";
+@import "blocks/catalog/sale-block";
 //form.html
-@import "blocks/form/form.scss";
+@import "blocks/form/form";
 
 body {
   background-color: #ffffff;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   color: #000000;
 }

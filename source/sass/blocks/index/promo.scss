@@ -1,33 +1,33 @@
 .promo {
-  background-color: $white-two;
+  background-color: $bg_color_white-lighten;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .promo__text {
   font-size: 14px;
-  font-family: "Arial", sans-serif;
+  font-family: $font_secondary;
   line-height: 18px;
-  color: $grey;
+  color: $color_grey;
 }
 
 .promo__attention {
   font-size: 24px;
   line-height: 24px;
-  color: $black;
+  color: $color_black;
   text-transform: uppercase;
 }
 
 .promo__span {
   font-size: 12px;
-  font-family: "Arial", sans-serif;
+  font-family: $font_secondary;
   line-height: 12px;
-  color: $grey;
+  color: $color_grey;
 }
 
 .promo__important-text {
   font-size: 14px;
   line-height: 20px;
-  color: $black;
+  color: $color_black;
   text-transform: uppercase;
 }

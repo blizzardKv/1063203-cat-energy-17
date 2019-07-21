@@ -1,13 +1,13 @@
 .product-div__link {
   font-size: 16px;
   line-height: 20px;
-  color: $black;
+  color: $color_black;
 }
 
 .product-div__product-name {
   font-size: 16px;
   line-height: 20px;
-  color: $black;
+  color: $color_black;
 }
 
 .product-div__product-description {
@@ -20,7 +20,7 @@
 
 .product-div__text {
   font-size: 12px;
-  font-family: "Arial", sans-serif;
+  font-family: $font_secondary;
   line-height: 16px;
-  color: $grey;
+  color: $color_grey;
 }

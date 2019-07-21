@@ -1,16 +1,15 @@
 .sale-block {
-  background-color: $green;
+  background-color: $bg_color_green;
   background-image: url("/img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  min-height: 289px;
 }
 
 .sale-block__text {
   font-size: 16px;
-  font-family: "Arial", sans-serif;
+  font-family: $font_secondary;
   line-height: 20px;
-  color: $white;
+  color: $color_white;
   padding-left: 60px;
   padding-right: 61px;
 }
