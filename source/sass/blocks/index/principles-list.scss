@@ -4,6 +4,18 @@
   padding: 0;
 }
 
+@media (min-width: $width_tablet) {
+  .principles-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $width_desktop) {
+  .principles-list {
+    display: flex;
+  }
+}
+
 .principles-list__item {
   font-size: 14px;
   font-family: $font_secondary;

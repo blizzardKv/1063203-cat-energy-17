@@ -11,6 +11,37 @@
   color: $color_grey;
 }
 
+@media (min-width: $width_tablet) {
+  .promo__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $width_desktop) {
+  .promo__container {
+    display: block;
+  }
+
+  .promo__desktop-container {
+    display: flex;
+  }
+
+  .promo__desktop-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.promo__div {
+  display: flex;
+}
+
+.promo__text-with-border {
+  display: flex;
+  flex-direction: column;
+}
+
 .promo__attention {
   font-size: 24px;
   line-height: 24px;

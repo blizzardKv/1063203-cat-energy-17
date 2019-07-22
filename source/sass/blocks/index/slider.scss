@@ -8,3 +8,21 @@
   background: none;
   border: 0 none;
 }
+
+@media (min-width: $width_desktop) {
+  .slider {
+    display: flex;
+  }
+
+  .slider__container {
+    display: flex;
+  }
+
+  .slider__image-div {
+    display: flex;
+  }
+
+  .slider__button-div {
+    display: flex;
+  }
+}

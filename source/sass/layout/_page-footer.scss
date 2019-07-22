@@ -2,6 +2,15 @@
   background-color: $bg_color_white-lighten;
 }
 
+.page-footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__div {
+  display: flex;
+}
+
 .page-footer__promo-link {
   font-size: 16px;
   font-family: $font_secondary;

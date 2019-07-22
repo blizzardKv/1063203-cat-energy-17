@@ -16,6 +16,18 @@ body {
   background-color: $bg_color_white;
 }
 
+@media (min-width: $width_tablet) {
+  body {
+    width: $width_tablet;
+  }
+}
+
+@media (min-width: $width_desktop) {
+  body {
+    width: $width_desktop;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;

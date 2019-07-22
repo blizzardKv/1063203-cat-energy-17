@@ -4,3 +4,10 @@
   color: $color_black;
   text-transform: uppercase;
 }
+
+@media (min-width: $width_tablet) {
+  .page-header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

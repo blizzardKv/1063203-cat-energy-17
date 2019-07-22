@@ -1,5 +1,6 @@
 .company-info__div {
   background-color: $bg_color_white-lighten;
+  display: flex;
 }
 
 .company-info__div--white-back {
@@ -10,7 +11,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $color_black;
-  text-transform: uppercase;
+text-transform: uppercase;
 }
 
 .company-info__text {
@@ -18,4 +19,9 @@
   font-family: $font_secondary;
   line-height: 20px;
   color: $color_grey;
+}
+
+.page-footer__promo-logo-div {
+  display: flex;
+  justify-content: space-between;
 }
