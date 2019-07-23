@@ -1,0 +1,18 @@
+.additional-product-div__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $color_dark;
+  text-transform: uppercase;
+}
+
+@media (min-width: $width_tablet) {
+  .additional-product-div__container {
+    display: flex;
+  }
+}
+
+@media (min-width: $width_desktop) {
+  .additional-product-div {
+    display: flex;
+  }
+}

@@ -21,10 +21,13 @@
 @import "blocks/catalog/product-description";
 @import "blocks/catalog/product-name";
 @import "blocks/catalog/show-button";
+@import "blocks/catalog/additional-product";
+@import "blocks/catalog/additional-product-div";
 @import "blocks/catalog/additional-product-list";
 @import "blocks/catalog/sale-block";
 //form.html
 @import "blocks/form/form";
+@import "blocks/form/fieldset-div";
 
 body {
   background-color: #ffffff;

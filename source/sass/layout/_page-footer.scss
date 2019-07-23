@@ -2,9 +2,11 @@
   background-color: $bg_color_white-lighten;
 }
 
-.page-footer__container {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: $width_tablet) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__div {
@@ -16,4 +18,8 @@
   font-family: $font_secondary;
   line-height: 16px;
   color: $color_grey;
+}
+
+.social-list {
+  display: flex;
 }

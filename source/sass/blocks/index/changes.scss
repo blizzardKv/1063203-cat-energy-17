@@ -3,11 +3,11 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+
 @media (min-width: $width_desktop) {
   .changes__container {
     display: flex;
   }
-
 }
 
 .changes__text {

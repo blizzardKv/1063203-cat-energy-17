@@ -3,3 +3,10 @@
   font-family: $font_secondary;
   line-height: 16px;
 }
+
+@media (min-width: $width_tablet) {
+  .product-description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
