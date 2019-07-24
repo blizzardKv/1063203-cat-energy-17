@@ -11,12 +11,19 @@ $color_green: #68b738;
 $bg_color_white: #ffffff;
 $bg_color_white-lighten: #f2f2f2;
 $bg_color_green: #68b738;
+$bg_color_dark: #222222;
 
 //fonts
 $font_main: "Oswald", "Arial", sans-serif;
 $font_secondary: "Arial", sans-serif;
 $font_optional: "Oswald Medium", "Arial", sans-serif;
 
-//body-width
+//width
 $width_tablet: 768px;
 $width_desktop: 1440px;
+$width_mobile_only: 767px;
+
+//borders
+$border_color_grey: #e6e6e6;
+$border_color_light-grey: #d9d9d9;
+$border_color_grey-solid: #cdcdcd;

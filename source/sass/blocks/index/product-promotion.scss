@@ -2,8 +2,14 @@
   background-image: url("/img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: $color_green;
+  //background-color: $color_green;
   background-size: 320px 305px;
+  margin-bottom: 28px;
+}
+
+.product-promotion__headline {
+  padding-top: 27px;
+  margin-bottom: 26px;
 }
 
 .product-promotion__slogan {
@@ -11,4 +17,17 @@
   line-height: 14px;
   color: $color_white;
   text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.product-promotion__div p{
+  text-align: center;
+  margin: 0;
+}
+
+.product-promotion__link {
+  display: block;
+  text-align: center;
+  padding: 11px 73px 11px 73px;
+  margin: 0 20px 22px 20px;
 }

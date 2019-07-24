@@ -1,14 +1,19 @@
 .promo {
   background-color: $bg_color_white-lighten;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+
+.promo__headline {
+  padding: 17px 20px 20px 20px;
 }
 
 .promo__text {
+  width: 270px;
   font-size: 14px;
   font-family: $font_secondary;
   line-height: 18px;
   color: $color_grey;
+  margin: 0 0 25px 0;
+  padding: 4px 20px 0 20px;
 }
 
 @media (min-width: $width_tablet) {
@@ -40,6 +45,7 @@
 .promo__text-with-border {
   display: flex;
   flex-direction: column;
+  margin: 0 0 20px 0;
 }
 
 .promo__attention {
@@ -47,13 +53,19 @@
   line-height: 24px;
   color: $color_black;
   text-transform: uppercase;
+  padding: 14px 0 0 63px;
+  margin-right: 24px;
 }
 
 .promo__span {
+  width: 60px;
   font-size: 12px;
   font-family: $font_secondary;
   line-height: 12px;
   color: $color_grey;
+  text-align: center;
+  padding: 8px 0 0 51px;
+  margin-right: 24px;
 }
 
 .promo__important-text {
@@ -61,4 +73,10 @@
   line-height: 20px;
   color: $color_black;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 34px 0;
+}
+
+.promo__span--right {
+  margin-left: 22px;
 }

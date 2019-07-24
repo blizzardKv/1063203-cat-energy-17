@@ -9,6 +9,77 @@
   border: 0 none;
 }
 
+.slider__image-div {
+  margin-bottom: 29px;
+}
+
+.slider__image-after {
+  display: none;
+}
+
+.slider__button-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.slider__button--before {
+  padding: 0 0 36px 5px;
+}
+
+.slider__button--after {
+  padding: 0 0 36px 4px;
+}
+
+.slider__button-before--active {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 6px;
+    background-color: $bg_color_green;
+    border-radius: 5px;
+    top: 7px;
+    right: -59px;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+//триггер после переключения слайдера
+.slider__button-after--active {
+  position: relative;
+  &::before {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 6px;
+    background-color: $bg_color_green;
+    border-radius: 5px;
+    top: 7px;
+    left: -54px;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+.slider__scale {
+  display: block;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 83px;
+    height: 12px;
+    background-color: $bg_color_white;
+    border: 1px solid $border_color_grey-solid;
+    border-radius: 7px;
+    top: 3px;
+    left: -40px;
+  }
+}
+
 @media (min-width: $width_desktop) {
   .slider {
     display: flex;
