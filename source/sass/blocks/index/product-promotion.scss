@@ -7,9 +7,21 @@
   margin-bottom: 28px;
 }
 
+@media (min-width: $width_tablet) {
+  .product-promotion__div {
+    background: none;
+  }
+}
+
 .product-promotion__headline {
   padding-top: 27px;
   margin-bottom: 26px;
+}
+
+@media (min-width: $width_tablet) {
+  .product-promotion__headline {
+    margin: 0;
+  }
 }
 
 .product-promotion__slogan {
@@ -20,14 +32,7 @@
   margin-bottom: 28px;
 }
 
-.product-promotion__div p{
+.product-promotion__div p {
   text-align: center;
   margin: 0;
-}
-
-.product-promotion__link {
-  display: block;
-  text-align: center;
-  padding: 11px 73px 11px 73px;
-  margin: 0 20px 22px 20px;
 }

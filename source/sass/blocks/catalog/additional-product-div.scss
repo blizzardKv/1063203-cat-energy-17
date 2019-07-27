@@ -1,8 +1,19 @@
+.additional-product-div__product-name {
+  margin: 0;
+}
+
 .additional-product-div__link {
+  display: block;
   font-size: 16px;
   line-height: 16px;
   color: $color_dark;
   text-transform: uppercase;
+  padding-top: 12px;
+  padding-left: 1px;
+}
+
+.additional-product-div__product-description {
+  margin: 0;
 }
 
 @media (min-width: $width_tablet) {
@@ -15,4 +26,11 @@
   .additional-product-div {
     display: flex;
   }
+}
+
+.additional-product-div__order-button {
+  display: block;
+  text-align: center;
+  padding: 10px 68px 10px 71px;
+  margin: 0 0 17px 0;
 }

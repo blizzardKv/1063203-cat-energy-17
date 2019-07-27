@@ -4,6 +4,7 @@
   line-height: 37px;
   color: $color_black;
   text-transform: uppercase;
+
   &::before {
     content: "";
     position: absolute;
@@ -16,6 +17,7 @@
     height: 49px;
     z-index: 2;
   }
+
   &::after {
     content: "";
     position: absolute;

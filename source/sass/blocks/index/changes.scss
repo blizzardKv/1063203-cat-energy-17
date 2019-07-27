@@ -15,6 +15,7 @@
 .changes__headline {
   margin: 0 0 0 91px;
   padding-top: 30px;
+  text-transform: uppercase;
 }
 
 .changes__text {
@@ -37,6 +38,7 @@
   text-transform: uppercase;
   padding: 0 0 23px 20px;
   margin-bottom: 20px;
+
   &::after {
     content: "";
     position: absolute;
@@ -50,12 +52,9 @@
   }
 }
 
-.changes__headline {
-  text-transform: uppercase;
-}
-
 .changes__headline--weight-gain {
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -68,6 +67,7 @@
     height: 28px;
     z-index: 2;
   }
+
   &::after {
     content: "";
     position: absolute;

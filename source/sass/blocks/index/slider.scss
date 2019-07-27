@@ -32,6 +32,7 @@
 
 .slider__button-before--active {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -49,6 +50,7 @@
 //триггер после переключения слайдера
 .slider__button-after--active {
   position: relative;
+
   &::before {
     display: none;
     position: absolute;
@@ -67,6 +69,7 @@
 .slider__scale {
   display: block;
   position: relative;
+
   &::before {
     position: absolute;
     content: "";

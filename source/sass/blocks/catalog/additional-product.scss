@@ -1,5 +1,17 @@
+.additional-product__headline {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid $border_color_grey-solid;
+}
+
 @media (min-width: $width_desktop) {
   .additional-product__box {
     display: flex;
   }
+}
+
+.additional-product__list {
+  margin: 0;
+  padding: 0;
 }

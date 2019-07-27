@@ -30,10 +30,9 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -68,6 +67,19 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   background-color: $color_green;
+}
+
+.order-button--extra-show {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $bg_color_white-lighten;
+  color: $color_grey;
+}
+
+.order-button--changed-font {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color_white;
 }
 
 .main-headline {

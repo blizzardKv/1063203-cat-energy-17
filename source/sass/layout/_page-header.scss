@@ -1,6 +1,4 @@
 .page-header {
-  font-size: 20px;
-  line-height: 20px;
   color: $color_black;
   text-transform: uppercase;
 }
@@ -15,8 +13,14 @@
 .page-header__div {
   display: flex;
   justify-content: left;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   border-bottom: 1px solid $border_color_grey;
+}
+
+@media (min-width: $width_tablet) {
+  .page-header__div {
+    border: none;
+  }
 }
 
 .cat-logo {
@@ -24,16 +28,35 @@
   padding-left: 20px;
 }
 
+@media (min-width: $width_tablet) {
+  .cat-logo {
+    padding-top: 33px;
+    padding-left: 51px;
+  }
+}
+
 .logo {
   padding-top: 23px;
   padding-left: 57px;
 }
 
+@media (min-width: $width_tablet) {
+  .logo {
+    padding-top: 35px;
+    padding-left: 45px;
+  }
+}
+
 .site-navigation {
   position: relative;
   width: 320px;
-  min-height: 65px;
   text-transform: uppercase;
+}
+
+@media (min-width: $width_tablet) {
+  .site-navigation {
+    width: 515px;
+  }
 }
 
 .site-navigation--closed .site-navigation__toggle {
@@ -61,6 +84,11 @@
   box-shadow: 0 8px 0 0 $color_dark, 0 16px 0 0 $color_dark;
 }
 
+.site-navigation__list {
+  margin: 0;
+  padding: 0;
+}
+
 .site-navigation--opened .site-navigation__toggle {
   position: absolute;
   top: -43px;
@@ -70,6 +98,7 @@
   background-color: $bg_color_white;
   border: none;
   cursor: pointer;
+
   &::before,
   &::after {
     content: "";
@@ -90,13 +119,15 @@
   }
 }
 
-.site-nav-list {
-  margin: 0;
-  padding: 0;
+@media (min-width: $width_tablet) {
+  .site-navigation__list {
+    margin: 27px 0 0 33px;
+    padding: 0;
+  }
+}
 
+.site-nav-list {
   list-style: none;
-  font-size: 20px;
-  line-height: 20px;
   font-family: $font_optional;
   color: $color_black;
 }
@@ -111,6 +142,7 @@
 .site-nav-list__item {
   padding-top: 22px;
   border-bottom: 1px solid $border_color_grey;
+  margin: 0;
 }
 
 .site-nav-list__link {
@@ -135,5 +167,19 @@
 
   .site-navigation--nojs .site-nav-list__item {
     display: block;
+  }
+}
+
+@media (min-width: $width_tablet) {
+  .site-nav-list__item {
+    font-size: 18px;
+    line-height: 25px;
+    color: $color_dark;
+    border: none;
+  }
+
+  .site-nav-list__link--active {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $border_color_green;
   }
 }

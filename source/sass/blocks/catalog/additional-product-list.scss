@@ -1,5 +1,13 @@
 .additional-product-list {
   list-style: none;
-  margin: 0;
+}
+
+.additional-product-list__item {
+  margin: 0 20px 0 20px;
   padding: 0;
+  border-bottom: 1px solid $border_color_grey-solid;
+}
+
+.additional-product-list__item:last-child {
+  margin-bottom: 40px;
 }

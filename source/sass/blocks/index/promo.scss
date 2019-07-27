@@ -53,19 +53,29 @@
   line-height: 24px;
   color: $color_black;
   text-transform: uppercase;
-  padding: 14px 0 0 63px;
-  margin-right: 24px;
+  padding: 13px 42px 16px 42px;
+  margin-left: 20px;
+  border: 1px solid $border_color_light-grey;
+  border-radius: 3px;
+}
+
+.promo__attention--intends {
+  margin: 0 0 0 32px;
+  padding: 13px 20px 16px 20px;
 }
 
 .promo__span {
-  width: 60px;
+  display: block;
+  width: 87px;
   font-size: 12px;
   font-family: $font_secondary;
   line-height: 12px;
   color: $color_grey;
   text-align: center;
-  padding: 8px 0 0 51px;
-  margin-right: 24px;
+  padding: 0 0 0 37px;
+  margin-right: 20px;
+  margin-top: -9px;
+  background-color: $bg_color_white-lighten;
 }
 
 .promo__important-text {
@@ -78,5 +88,5 @@
 }
 
 .promo__span--right {
-  margin-left: 22px;
+  margin-left: 13px;
 }

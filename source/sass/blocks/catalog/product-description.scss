@@ -10,3 +10,13 @@
     flex-wrap: wrap;
   }
 }
+
+.product-description__div {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-description__quantity {
+  margin: 0;
+}

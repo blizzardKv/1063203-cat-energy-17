@@ -22,12 +22,17 @@
   font-family: $font_secondary;
   line-height: 20px;
   color: $color_grey;
-  margin: 0;
-  padding-left: 15px;
-  padding-top: 2px;
+  margin: 0 0 25px 0;
+  padding: 2px 0 0 10px;
 }
 
 .page-footer__promo-logo-div {
   display: flex;
   justify-content: space-between;
+}
+
+.company-info__map {
+  display: block;
+  object-position: 0 -38px;
+  background-color: $bg_color_white-lighten;
 }

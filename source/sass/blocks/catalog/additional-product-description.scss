@@ -1,0 +1,21 @@
+.additional-product-description__div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.additional-product-description__product-value {
+  font-size: 14px;
+  font-family: $font_secondary;
+  line-height: 14px;
+  color: $color_grey;
+  padding: 14px 0 0 0;
+}
+
+.additional-product-description__product-quantity {
+  font-size: 14px;
+  font-family: $font_secondary;
+  line-height: 14px;
+  color: $color_grey;
+  padding: 14px 0 0 0;
+}

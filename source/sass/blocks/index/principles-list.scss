@@ -28,7 +28,7 @@
 .principles-list__item:first-child::before {
   content: "";
   position: absolute;
-  background-image: url(/img/advantage-leaf@1x.png);
+  background-image: url("/img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 3px;
@@ -41,7 +41,7 @@
 .principles-list__item:nth-child(2)::before {
   content: "";
   position: absolute;
-  background-image: url(/img/advantage-powder@1x.png);
+  background-image: url("/img/advantage-powder@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 3px;
@@ -54,7 +54,7 @@
 .principles-list__item:nth-child(3)::before {
   content: "";
   position: absolute;
-  background-image: url(/img/advantage-dining@1x.png);
+  background-image: url("/img/advantage-dining@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 3px;
@@ -67,7 +67,7 @@
 .principles-list__item:last-child::before {
   content: "";
   position: absolute;
-  background-image: url(/img/advantage-clock@1x.png);
+  background-image: url("/img/advantage-clock@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 3px;

@@ -1,6 +1,32 @@
 .product-name__link {
+  display: block;
+  position: relative;
   font-size: 16px;
   line-height: 20px;
   color: $color_black;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 60px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $border_color_grey-solid;
+    top: 21px;
+    left: 144px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $border_color_grey-solid;
+    top: 21px;
+    left: 144px;
+    transform: rotate(-90deg);
+  }
 }

@@ -1,6 +1,6 @@
 .page-main__headline {
-  padding-left: 22px;
-  margin-bottom: 36px;
+  padding: 26px 0 40px 20px;
+  text-align: left;
 }
 
 .page-main__text {
@@ -9,4 +9,8 @@
   color: $color_black;
   text-transform: uppercase;
   padding-left: 20px;
+}
+
+.page-main__headline--border {
+  border-bottom: 1px solid $border_color_grey-pure;
 }
