@@ -1,33 +1,41 @@
 //общее
 @import "vendor/normalize";
+//
 @import "common/common";
-@import "common/fonts";
+//
 @import "components/components";
-@import "layout/page-header";
+//
 @import "layout/page-footer";
+@import "layout/page-header";
 @import "layout/page-main";
+//button-close
+@import "blocks/button-close";
+//company-info
+@import "blocks/company-info";
+//logo
+@import "blocks/logo";
+//site-nav-list
+@import "blocks/site-nav-list";
+//site-navigation
+@import "blocks/site-navigation";
+//social-list
+@import "blocks/social-list";
 //index.html
-@import "blocks/index/product-promotion";
-@import "blocks/index/cat-weight-headline";
-@import "blocks/index/changes";
-@import "blocks/index/principles";
-@import "blocks/index/principles-list";
-@import "blocks/index/promo";
-@import "blocks/index/slider";
+@import "pages/index/cat-weight-headline";
+@import "pages/index/changes";
+@import "pages/index/principles";
+@import "pages/index/principles-list";
+@import "pages/index/product-promotion";
+@import "pages/index/promo";
+@import "pages/index/slider";
 //catalog.html
-@import "blocks/catalog/product";
-@import "blocks/catalog/product-list";
-@import "blocks/catalog/product-div";
-@import "blocks/catalog/product-description";
-@import "blocks/catalog/product-name";
-@import "blocks/catalog/show-button";
-@import "blocks/catalog/additional-product-list";
-@import "blocks/catalog/sale-block";
+@import "pages/catalog/additional-product-list";
+@import "pages/catalog/product";
+@import "pages/catalog/product-description";
+@import "pages/catalog/product-div";
+@import "pages/catalog/product-list";
+@import "pages/catalog/product-name";
+@import "pages/catalog/sale-block";
+@import "pages/catalog/show-button";
 //form.html
-@import "blocks/form/form";
-
-body {
-  background-color: #ffffff;
-  font-family: "Oswald Regular", "Arial", sans-serif;
-  color: #000000;
-}
+@import "pages/form/form";

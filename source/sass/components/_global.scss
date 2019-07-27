@@ -2,6 +2,12 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   width: 320px;
   margin: 0;
@@ -10,7 +16,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font_main;
   color: $color-black-darken;
 
   background-color: $bg_color_white;
@@ -56,10 +62,10 @@ a {
   font-size: 36px;
   line-height: 36px;
   color: $color_black;
-}
 
-.main-headline--white {
-  color: $color_white;
+  &--white {
+    color: $color_white;
+  }
 }
 
 .section-headline {
