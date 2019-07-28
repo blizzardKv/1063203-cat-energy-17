@@ -108,16 +108,20 @@
   margin-bottom: 33px;
 }
 
+.form__headline--intends {
+  margin-bottom: 25px;
+}
+
 .form__list-item--bot-intend:last-child {
   margin-bottom: 28px;
 }
 
 .form__fieldset--textarea {
-  margin-right: 26px;
+  margin-bottom: 25px;
 }
 
 .form__textarea {
-  width: 100%;
+  width: 87%; //при 100% растягивается до конца страницы
   min-height: 135px;
   font-size: 16px;
   line-height: 18px;
@@ -125,6 +129,45 @@
   text-transform: uppercase;
   padding-left: 14px;
   padding-top: 13px;
+}
+
+.form__label--checkbox {
+  display: block;
+  position: relative;
+  padding-left: 46px;
+  cursor: pointer;
+  user-select: none;
+  padding-top: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 1px solid $border_color_grey-solid;
+    top: 10px;
+    left: 0;
+  }
+}
+
+.form__checkbox:checked + label {
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("/img/tick-svg.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    fill: $color_green;
+    width: 21px;
+    height: 16px;
+    top: 17px;
+    left: 5px;
+  }
+}
+
+.form__list-item--checkbox {
+  margin-bottom: 8px;
 }
 
 .form__button-submit {

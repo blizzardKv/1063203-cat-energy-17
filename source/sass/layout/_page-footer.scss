@@ -53,3 +53,14 @@
   display: block;
   margin-top: -7px;
 }
+
+.page-footer__promo-logo-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info__map {
+  display: block;
+  object-position: 0 -38px;
+  background-color: $bg_color_white-lighten;
+}
