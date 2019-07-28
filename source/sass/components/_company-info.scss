@@ -1,5 +1,6 @@
 .company-info {
   &__div {
+    display: flex;
     background-color: $bg_color_white-lighten;
   }
 }

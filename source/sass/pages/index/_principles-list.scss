@@ -1,3 +1,9 @@
 .principles-list {
   list-style: none;
 }
+
+@media (min-width: $width_tablet) {
+  .principles-list {
+    display: flex;
+  }
+}

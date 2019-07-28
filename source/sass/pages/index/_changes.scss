@@ -2,6 +2,12 @@
   background-color: $bg_color_white-lighten;
 }
 
+@media (min-width: $width_desktop) {
+  .changes__container {
+    display: flex;
+  }
+}
+
 .changes__link {
   font-size: 16px;
   font-family: $font_secondary;
