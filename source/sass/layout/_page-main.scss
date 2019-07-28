@@ -1,15 +1,10 @@
 .page-main {
-  &__headline {
-    padding-left: 22px;
-    margin-bottom: 36px;
+  &__text {
+    font-size: 14px;
+    font-family: $font_secondary;
+    line-height: 18px;
+    color: $color_black;
+    text-transform: uppercase;
+    padding-left: 20px;
   }
-}
-
-.page-main__text {
-  font-size: 14px;
-  font-family: $font_secondary;
-  line-height: 18px;
-  color: $color_black;
-  text-transform: uppercase;
-  padding-left: 20px;
 }
