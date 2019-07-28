@@ -1,6 +1,8 @@
-.principles__headline {
-  margin-left: 20px;
-  margin-right: 20px;
+.principles {
+  &__headline {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .principles__list {

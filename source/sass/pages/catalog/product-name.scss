@@ -1,6 +1,8 @@
-.product-name__link {
-  font-size: 16px;
-  line-height: 20px;
-  color: $color_black;
-  text-transform: uppercase;
+.product-name {
+  &__link {
+    font-size: 16px;
+    line-height: 20px;
+    color: $color_black;
+    text-transform: uppercase;
+  }
 }

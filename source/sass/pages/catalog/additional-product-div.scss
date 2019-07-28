@@ -1,0 +1,9 @@
+.additional-product-div {
+  &__link {
+    font-size: 16px;
+    font-family: $font_secondary;
+    line-height: 16px;
+    color: $color_dark;
+    text-transform: uppercase;
+  }
+}

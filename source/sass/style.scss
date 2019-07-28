@@ -8,17 +8,11 @@
 @import "layout/page-footer";
 @import "layout/page-header";
 @import "layout/page-main";
-//button-close
 @import "blocks/button-close";
-//company-info
 @import "blocks/company-info";
-//logo
 @import "blocks/logo";
-//site-nav-list
 @import "blocks/site-nav-list";
-//site-navigation
 @import "blocks/site-navigation";
-//social-list
 @import "blocks/social-list";
 //index.html
 @import "pages/index/cat-weight-headline";
@@ -29,6 +23,8 @@
 @import "pages/index/promo";
 @import "pages/index/slider";
 //catalog.html
+@import "pages/catalog/additional-product";
+@import "pages/catalog/additional-product-div";
 @import "pages/catalog/additional-product-list";
 @import "pages/catalog/product";
 @import "pages/catalog/product-description";

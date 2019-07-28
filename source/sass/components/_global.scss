@@ -17,7 +17,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-family: $font_main;
-  color: $color-black-darken;
+  color: $color_grey;
 
   background-color: $bg_color_white;
 }
@@ -48,18 +48,9 @@ a {
   text-decoration: none;
 }
 
-.order-button {
-  font-size: 14px;
-  line-height: 18px;
-  color: $color_white;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: $color_green;
-}
-
 .main-headline {
   font-size: 36px;
+  font-family: $font_secondary;
   line-height: 36px;
   color: $color_black;
 
@@ -70,12 +61,14 @@ a {
 
 .section-headline {
   font-size: 36px;
+  font-family: $font_secondary;
   line-height: 60px;
   color: $color_black;
 }
 
 .thematic-headline {
   font-size: 24px;
+  font-family: $font_secondary;
   line-height: 24px;
   color: $color_black;
 }
