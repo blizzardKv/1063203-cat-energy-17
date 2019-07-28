@@ -18,10 +18,23 @@
   padding: 0;
 }
 
+@media (min-width: $width_tablet) {
+  .form__list--flexible {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .form__input::placeholder,
 .form__textarea::placeholder {
   color: $color_grey;
   text-transform: uppercase;
+}
+
+@media (min-width: $width_tablet) {
+  .form__button-box {
+    display: flex;
+  }
 }
 
 .form__hint {
