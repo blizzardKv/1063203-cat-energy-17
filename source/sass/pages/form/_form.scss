@@ -1,10 +1,9 @@
 .form {
-  &__radio {
-    font-size: 16px;
-    font-family: $font_secondary;
-    line-height: 18px;
-    color: $color_dark;
-  }
+  font-size: 16px;
+  font-family: $font_secondary;
+  line-height: 18px;
+  color: $color_dark;
+  text-transform: uppercase;
 }
 
 .form__fieldset {
@@ -19,43 +18,19 @@
   padding: 0;
 }
 
-.form__label {
-  font-size: 16px;
-  font-family: $font_secondary;
-  line-height: 18px;
-  color: $color_dark;
-  text-transform: uppercase;
-}
-
-.form__input {
-  font-size: 16px;
-  font-family: $font_secondary;
-  line-height: 18px;
+.form__input::placeholder {
   color: $color_grey;
 }
 
-.form__textarea {
-  font-size: 16px;
-  font-family: $font_secondary;
-  line-height: 18px;
+.form__textarea::placeholder {
   color: $color_grey;
   text-transform: uppercase;
-}
-
-.form__checkbox {
-  font-size: 16px;
-  font-family: $font_secondary;
-  line-height: 18px;
-  color: $color_dark;
-}
-
-.form__button-submit {
-  padding: 0;
-  border: none;
 }
 
 .form__hint {
   font-size: 14px;
+  font-family: $font_main;
   line-height: 16px;
   color: $color_grey;
+  text-transform: none;
 }

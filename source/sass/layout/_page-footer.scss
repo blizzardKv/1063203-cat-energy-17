@@ -1,5 +1,7 @@
 .page-footer {
   background-color: $bg_color_white-lighten;
+  margin: 0;
+  padding: 0;
 }
 
 .page-footer__promo-link {
@@ -7,9 +9,4 @@
   font-family: $font_secondary;
   line-height: 16px;
   color: $color_grey;
-}
-
-.page-footer__social-list {
-  margin: 0;
-  padding: 0;
 }
