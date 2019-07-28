@@ -5,14 +5,10 @@
 //
 @import "components/components";
 //
+@import "global";
 @import "layout/page-footer";
 @import "layout/page-header";
 @import "layout/page-main";
-@import "blocks/company-info";
-@import "blocks/logo";
-@import "blocks/site-nav-list";
-@import "blocks/site-navigation";
-@import "blocks/social-list";
 //index.html
 @import "pages/index/cat-weight-headline";
 @import "pages/index/changes";
