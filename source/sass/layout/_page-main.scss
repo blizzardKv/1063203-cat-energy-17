@@ -1,0 +1,9 @@
+.page-main {
+  &__text {
+    font-size: 14px;
+    font-family: $font_secondary;
+    line-height: 18px;
+    color: $color_black;
+    text-transform: uppercase;
+  }
+}

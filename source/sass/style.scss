@@ -1,3 +1,30 @@
-body {
-  visibility: visible;
-}
+//общее
+@import "vendor/normalize";
+//
+@import "common/common";
+//
+@import "global";
+@import "layout/page-footer";
+@import "layout/page-header";
+@import "layout/page-main";
+//
+@import "components/components";
+//index.html
+@import "pages/index/cat-weight-headline";
+@import "pages/index/changes";
+@import "pages/index/principles";
+@import "pages/index/principles-list";
+@import "pages/index/product-promotion";
+@import "pages/index/promo";
+@import "pages/index/slider";
+//catalog.html
+@import "pages/catalog/additional-product";
+@import "pages/catalog/additional-product-div";
+@import "pages/catalog/additional-product-list";
+@import "pages/catalog/product";
+@import "pages/catalog/product-description";
+@import "pages/catalog/product-div";
+@import "pages/catalog/product-list";
+@import "pages/catalog/sale-block";
+//form.html
+@import "pages/form/form";

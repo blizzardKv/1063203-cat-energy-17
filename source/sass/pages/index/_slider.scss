@@ -1,0 +1,12 @@
+.slider {
+  &__button {
+    font-size: 16px;
+    font-family: $font_secondary;
+    line-height: 20px;
+    color: $color_black;
+    text-transform: uppercase;
+    padding: 0;
+    background: none;
+    border: 0 none;
+  }
+}

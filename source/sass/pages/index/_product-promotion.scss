@@ -1,0 +1,17 @@
+.product-promotion {
+  &__div {
+    background-image: url("/img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: $color_green;
+    background-size: 320px 305px;
+  }
+}
+
+.product-promotion__slogan {
+  font-size: 14px;
+  font-family: $font_secondary;
+  line-height: 14px;
+  color: $color_white;
+  text-transform: uppercase;
+}

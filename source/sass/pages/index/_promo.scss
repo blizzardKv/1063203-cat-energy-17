@@ -1,0 +1,24 @@
+.promo {
+  background-color: $bg_color_white-lighten;
+}
+
+.promo__attention {
+  font-size: 24px;
+  font-family: $font_secondary;
+  line-height: 24px;
+  color: $color_black;
+  text-transform: uppercase;
+}
+
+.promo__span {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.promo__important-text {
+  font-size: 14px;
+  font-family: $font_secondary;
+  line-height: 20px;
+  color: $color_black;
+  text-transform: uppercase;
+}
