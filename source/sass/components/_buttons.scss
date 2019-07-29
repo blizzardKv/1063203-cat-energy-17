@@ -5,7 +5,6 @@
   font-family: $font_secondary;
   line-height: 18px;
   color: $color_white;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $color_green;
@@ -28,6 +27,7 @@
   font-size: 16px;
   font-family: $font_secondary;
   line-height: 20px;
+  text-align: center;
   color: $color_grey;
   text-transform: uppercase;
   background-color: $bg_color_white-lighten;

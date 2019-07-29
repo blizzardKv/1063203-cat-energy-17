@@ -18,6 +18,11 @@
   padding: 0;
 }
 
+.form__list-item input,
+.form__fieldset textarea{
+  width: 100%;
+}
+
 @media (min-width: $width_tablet) {
   .form__list--flexible {
     display: flex;
@@ -41,6 +46,7 @@
   font-size: 14px;
   font-family: $font_main;
   line-height: 16px;
+  text-align: center;
   color: $color_grey;
   text-transform: none;
 }
