@@ -1,8 +1,7 @@
 .company-info {
-  margin: 0 -20px;
-
   &__div {
     display: flex;
+    padding: 0 20px;
     background-color: $bg_color_white-lighten;
   }
 }

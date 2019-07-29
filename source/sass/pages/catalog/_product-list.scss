@@ -8,3 +8,7 @@
     flex-wrap: wrap;
   }
 }
+
+.product-list__item:last-child {
+  text-align: center;
+}
