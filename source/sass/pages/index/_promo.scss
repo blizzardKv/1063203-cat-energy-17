@@ -2,32 +2,6 @@
   background-color: $bg_color_white-lighten;
 }
 
-@media (min-width: $width_tablet) {
-  .promo__container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: $width_desktop) {
-  .promo__container {
-    display: block;
-  }
-
-  .promo__desktop-container {
-    display: flex;
-  }
-
-  .promo__desktop-div {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.promo__div {
-  display: flex;
-}
-
 .promo__attention {
   font-size: 24px;
   font-family: $font_secondary;

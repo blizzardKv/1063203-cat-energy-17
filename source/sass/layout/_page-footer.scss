@@ -4,21 +4,9 @@
   padding: 0;
 }
 
-@media (min-width: $width_tablet) {
-  .page-footer__container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .page-footer__promo-link {
   font-size: 16px;
   font-family: $font_secondary;
   line-height: 16px;
   color: $color_grey;
-}
-
-.page-footer__promo-logo-div {
-  display: flex;
-  justify-content: space-between;
 }
