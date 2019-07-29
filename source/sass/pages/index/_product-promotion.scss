@@ -1,8 +1,10 @@
 .product-promotion {
+  text-align: center;
+  margin: 0 -20px;
   &__div {
     background-image: url("/img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 50% 0;
     background-color: $color_green;
     background-size: 320px 305px;
   }

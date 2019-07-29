@@ -1,4 +1,8 @@
 .slider {
+  &__button-div {
+    text-align: center;
+  }
+
   &__button {
     font-size: 16px;
     font-family: $font_secondary;

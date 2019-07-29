@@ -1,5 +1,10 @@
 .promo {
   background-color: $bg_color_white-lighten;
+  margin: 0 -20px;
+  padding: 0 20px;
+  &__div {
+    display: flex;
+  }
 }
 
 .promo__attention {
@@ -19,6 +24,7 @@
   font-size: 14px;
   font-family: $font_secondary;
   line-height: 20px;
+  text-align: center;
   color: $color_black;
   text-transform: uppercase;
 }

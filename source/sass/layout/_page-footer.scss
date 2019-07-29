@@ -1,7 +1,13 @@
 .page-footer {
   background-color: $bg_color_white-lighten;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
   padding: 0;
+
+  &__promo-logo-div {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__promo-link {
