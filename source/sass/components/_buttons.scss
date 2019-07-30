@@ -5,6 +5,7 @@
   font-family: $font_secondary;
   line-height: 18px;
   color: $color_white;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $color_green;
@@ -24,6 +25,8 @@
 }
 
 .show-button {
+  display: block;
+  width: 100%;
   font-size: 16px;
   font-family: $font_secondary;
   line-height: 20px;
