@@ -7,12 +7,10 @@
   }
 
   &__item {
-    @media (min-width: $width_tablet) {
-      width: 50%;
+    width: 50%;
 
-      &:last-child {
-        text-align: center;
-      }
+    &:last-child {
+      text-align: center;
     }
   }
 }
