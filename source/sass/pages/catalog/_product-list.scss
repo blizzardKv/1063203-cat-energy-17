@@ -9,10 +9,10 @@
   &__item {
     @media (min-width: $width_tablet) {
       width: 50%;
-    }
-  }
 
-  &__item:last-child {
-    text-align: center;
+      &:last-child {
+        text-align: center;
+      }
+    }
   }
 }
