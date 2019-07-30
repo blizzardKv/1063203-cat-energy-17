@@ -5,3 +5,11 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (min-width: $width_tablet) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+}

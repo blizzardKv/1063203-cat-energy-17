@@ -8,6 +8,12 @@
   padding: 0;
 }
 
+@media (min-width: $width_tablet) {
+  .site-nav-list {
+    display: flex;
+  }
+}
+
 .site-nav-list__link {
   color: $color_black;
 }

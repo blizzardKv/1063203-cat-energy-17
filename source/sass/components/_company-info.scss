@@ -6,6 +6,14 @@
   }
 }
 
+@media (min-width: $width_tablet) {
+  .company-info {
+    &__div {
+      padding: 0 70px;
+    }
+  }
+}
+
 .company-info__div--white-back {
   background-color: $bg_color_white;
 }

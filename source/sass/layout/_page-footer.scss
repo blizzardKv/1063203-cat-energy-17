@@ -10,6 +10,15 @@
   }
 }
 
+@media (min-width: $width_tablet) {
+  .page-footer {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
 .page-footer__promo-link {
   font-size: 16px;
   font-family: $font_secondary;
