@@ -53,9 +53,18 @@ a {
   line-height: 36px;
   color: $color_black;
 
-  &--white {
+  &--lead {
     color: $color_white;
     text-align: center;
+  }
+}
+
+@media (min-width: $width_tablet) {
+  .main-headline {
+    &--lead {
+      color: $color_black;
+      text-align: left;
+    }
   }
 }
 

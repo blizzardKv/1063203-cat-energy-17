@@ -23,6 +23,10 @@
   .page-main {
     margin: 0 30px;
 
+    &__form {
+      padding: 0 40px;
+    }
+
     &__promo {
       margin: 0 -30px;
       padding: 0 30px;
@@ -32,12 +36,13 @@
       margin: 0 -30px;
     }
 
-    &--form {
-      margin: 0 70px;
-    }
-
     &__side-intends--form {
       margin: 0 -70px;
+    }
+
+    &__text {
+      width: 50%;
+      padding: 0 40px;
     }
   }
 }

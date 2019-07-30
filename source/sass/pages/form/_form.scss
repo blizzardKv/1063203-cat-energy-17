@@ -32,6 +32,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .form__list--flexible .form__list-item {
+    width: 50%;
+  }
 }
 
 .form__input::placeholder,
