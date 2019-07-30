@@ -28,7 +28,7 @@
     margin: 0 -20px;
 
     @media (min-width: $width_tablet) {
-      margin: 0 -30px;
+      margin: 0;
     }
   }
 
@@ -43,10 +43,10 @@
   }
 
   &__side-intends--form {
-    margin: 0 -30px;
+    margin: 0 -20px;
 
     @media (min-width: $width_tablet) {
-      margin: 0 -70px;
+      margin: 0 -30px;
     }
   }
 }

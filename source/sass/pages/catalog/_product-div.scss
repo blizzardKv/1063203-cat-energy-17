@@ -5,8 +5,11 @@
     color: $color_black;
   }
 
-  &__product-card {
+  &__wrapper-for-product-card {
+    display: flex;
+
     @media (min-width: $width_tablet) {
+      display: block;
       background-color: $bg_color_white-lighten;
     }
   }

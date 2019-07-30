@@ -1,4 +1,5 @@
 .product-promotion {
+  position: relative;
   text-align: center;
 
   &__div {
@@ -25,5 +26,9 @@
       color: $color_black;
       text-align: left;
     }
+  }
+
+  &__link {
+    margin: 0 20px;
   }
 }
