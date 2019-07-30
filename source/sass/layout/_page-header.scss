@@ -4,10 +4,8 @@
   color: $color_black;
   text-transform: uppercase;
   text-align: center;
-}
 
-@media (min-width: $width_tablet) {
-  .page-header {
+  @media (min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
     margin: 0 30px;

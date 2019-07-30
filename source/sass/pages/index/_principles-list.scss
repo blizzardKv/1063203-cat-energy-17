@@ -1,10 +1,14 @@
 .principles-list {
   list-style: none;
-}
 
-@media (min-width: $width_tablet) {
-  .principles-list {
+  @media (min-width: $width_tablet) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  &__item {
+    @media (min-width: $width_tablet) {
+      width: 50%;
+    }
   }
 }

@@ -1,48 +1,52 @@
 .page-main {
   margin: 0 20px;
 
+  @media (min-width: $width_tablet) {
+    margin: 0 30px;
+  }
+
+  &__form {
+    @media (min-width: $width_tablet) {
+      padding: 0 40px;
+    }
+  }
+
   &__text {
     font-size: 14px;
     font-family: $font_secondary;
     line-height: 18px;
     color: $color_black;
     text-transform: uppercase;
+
+    @media (min-width: $width_tablet) {
+      width: 50%;
+      padding: 0 40px;
+    }
   }
 
   &__side-intends {
     margin: 0 -20px;
+
+    @media (min-width: $width_tablet) {
+      margin: 0 -30px;
+    }
   }
 
   &__promo {
     margin: 0 -20px;
     padding: 0 20px;
-  }
-}
 
-@media (min-width: $width_tablet) {
-  .page-main {
-    margin: 0 30px;
-
-    &__form {
-      padding: 0 40px;
-    }
-
-    &__promo {
+    @media (min-width: $width_tablet) {
       margin: 0 -30px;
       padding: 0 30px;
     }
+  }
 
-    &__side-intends {
-      margin: 0 -30px;
-    }
+  &__side-intends--form {
+    margin: 0 -30px;
 
-    &__side-intends--form {
+    @media (min-width: $width_tablet) {
       margin: 0 -70px;
-    }
-
-    &__text {
-      width: 50%;
-      padding: 0 40px;
     }
   }
 }

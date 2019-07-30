@@ -1,11 +1,15 @@
 .changes {
   background-color: $bg_color_white-lighten;
-}
 
-.changes__link {
-  font-size: 16px;
-  font-family: $font_secondary;
-  line-height: 16px;
-  color: $color_black;
-  text-transform: uppercase;
+  @media (min-width: $width_tablet) {
+    padding: 0 55px;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-family: $font_secondary;
+    line-height: 16px;
+    color: $color_black;
+    text-transform: uppercase;
+  }
 }

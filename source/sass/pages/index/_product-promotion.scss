@@ -7,28 +7,23 @@
     background-position: 50% 0;
     background-color: $color_green;
     background-size: 320px 305px;
-  }
-}
 
-@media (min-width: $width_tablet) {
-  .product-promotion {
-    &__div {
+    @media (min-width: $width_tablet) {
       background-color: inherit;
+      background-image: none;
     }
   }
-}
 
-.product-promotion__slogan {
-  font-size: 14px;
-  font-family: $font_secondary;
-  line-height: 14px;
-  color: $color_white;
-  text-transform: uppercase;
-}
+  &__slogan {
+    font-size: 14px;
+    font-family: $font_secondary;
+    line-height: 14px;
+    color: $color_white;
+    text-transform: uppercase;
 
-@media (min-width: $width_tablet) {
-  .product-promotion__slogan {
-    color: $color_black;
-    text-align: left;
+    @media (min-width: $width_tablet) {
+      color: $color_black;
+      text-align: left;
+    }
   }
 }

@@ -1,14 +1,18 @@
 .product-list {
   list-style: none;
-}
 
-@media (min-width: $width_tablet) {
-  .product-list {
+  @media (min-width: $width_tablet) {
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-.product-list__item:last-child {
-  text-align: center;
+  &__item {
+    @media (min-width: $width_tablet) {
+      width: 50%;
+    }
+  }
+
+  &__item:last-child {
+    text-align: center;
+  }
 }

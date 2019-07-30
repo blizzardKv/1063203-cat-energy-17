@@ -56,12 +56,8 @@ a {
   &--lead {
     color: $color_white;
     text-align: center;
-  }
-}
 
-@media (min-width: $width_tablet) {
-  .main-headline {
-    &--lead {
+    @media (min-width: $width_tablet) {
       color: $color_black;
       text-align: left;
     }

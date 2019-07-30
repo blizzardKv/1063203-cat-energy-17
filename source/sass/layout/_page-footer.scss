@@ -4,26 +4,29 @@
   text-align: center;
   padding: 0 20px;
 
-  &__promo-logo-div {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: $width_tablet) {
-  .page-footer {
+  @media (min-width: $width_tablet) {
     padding: 0 30px;
+    flex-wrap: wrap;
 
     &__container {
       display: flex;
       justify-content: space-between;
     }
   }
-}
 
-.page-footer__promo-link {
-  font-size: 16px;
-  font-family: $font_secondary;
-  line-height: 16px;
-  color: $color_grey;
+  &__promo-logo-div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $width_tablet) {
+    padding: 0 30px;
+  }
+
+  &__promo-link {
+    font-size: 16px;
+    font-family: $font_secondary;
+    line-height: 16px;
+    color: $color_grey;
+  }
 }
