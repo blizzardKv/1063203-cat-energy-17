@@ -1,4 +1,4 @@
-.go-to-form-button {
+.button {
   display: block;
   font-size: 14px;
   font-family: $font_secondary;
@@ -14,12 +14,27 @@
   @media (min-width: $width_tablet) {
     position: absolute;
     top: 30%;
-    left: 36%;
+    left: 0;
+  }
+
+  &--order,
+  &--submit {
+    position: inherit;
+    width: 100%;
   }
 
   &--catalog-font {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  &--show {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color_grey;
+    background-color: $bg_color_white-lighten;
   }
 }
 
@@ -27,32 +42,4 @@
   padding: 0;
   background: none;
   border: 0 none;
-}
-
-.show-button {
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  font-family: $font_secondary;
-  line-height: 20px;
-  text-align: center;
-  color: $color_grey;
-  text-transform: uppercase;
-  background-color: $bg_color_white-lighten;
-}
-
-.submit-button,
-.order-button {
-  display: block;
-  width: 100%;
-  font-size: 14px;
-  font-family: $font_secondary;
-  line-height: 18px;
-  color: $color_white;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: $color_green;
-  border: none;
-  padding: 0;
 }

@@ -12,6 +12,7 @@
     @media (min-width: $width_tablet) {
       background-color: inherit;
       background-image: none;
+      padding: 0 90px;
     }
   }
 
@@ -30,5 +31,9 @@
 
   &__link {
     margin: 0 20px;
+
+    @media (min-width: $width_tablet) {
+      margin: 0 90px;
+    }
   }
 }

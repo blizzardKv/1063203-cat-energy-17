@@ -30,6 +30,12 @@
     @media (min-width: $width_tablet) {
       margin: 0;
     }
+
+    &--extra-intends {
+      @media (min-width: $width_tablet) {
+        margin: 0 -30px;
+      }
+    }
   }
 
   &__promo {
