@@ -8,8 +8,8 @@
   &__main-box-desktop {
     @media (min-width: $width_desktop) {
       display: flex;
-      margin: 0 -110px;
-      padding: 0 110px;
+      margin: 0 -400%;
+      padding: 0 400%;
       background-color: $bg_color_white-lighten;
     }
   }
