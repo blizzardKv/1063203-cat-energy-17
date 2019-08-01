@@ -13,6 +13,10 @@
     @media (min-width: $width_tablet) {
       padding: 0 40px;
     }
+
+    @media (min-width: $width_desktop) {
+      padding: 0;
+    }
   }
 
   &__text {
@@ -25,6 +29,11 @@
     @media (min-width: $width_tablet) {
       width: 50%;
       padding: 0 40px;
+    }
+
+    @media (min-width: $width_desktop) {
+      width: auto;
+      padding: 0;
     }
   }
 

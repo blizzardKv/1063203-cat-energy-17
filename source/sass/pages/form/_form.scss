@@ -39,6 +39,12 @@
         width: 50%;
       }
     }
+
+    @media (min-width: $width_desktop) {
+      > .form__list-item {
+        width: 25%;
+      }
+    }
   }
 
   &__input::placeholder,
