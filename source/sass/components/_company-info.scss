@@ -1,4 +1,6 @@
 .company-info {
+  position: relative;
+
   &__div {
     display: flex;
     justify-content: space-between;
@@ -7,6 +9,13 @@
 
     @media (min-width: $width_tablet) {
       padding: 0 70px;
+    }
+
+    @media (min-width: $width_desktop) {
+      position: absolute;
+      width: 570px; //временно фиксируем ширину для наглядности
+      top: 20%;
+      left: 8%;
     }
 
     &--white-back {

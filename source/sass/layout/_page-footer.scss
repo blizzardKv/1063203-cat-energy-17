@@ -13,6 +13,11 @@
     }
   }
 
+  @media (min-width: $width_desktop) {
+    margin: 0;
+    padding: 0 110px;
+  }
+
   &__promo-logo-div {
     display: flex;
     justify-content: space-between;

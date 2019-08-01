@@ -15,8 +15,12 @@ body {
   line-height: 18px;
   font-family: $font_main;
   color: $color_grey;
-
   background-color: $bg_color_white;
+
+  @media (min-width: $width_desktop) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 img {

@@ -5,6 +5,10 @@
     margin: 0 30px;
   }
 
+  @media (min-width: $width_desktop) {
+    margin: 0 110px;
+  }
+
   &__form {
     @media (min-width: $width_tablet) {
       padding: 0 40px;
@@ -34,6 +38,10 @@
     &--extra-intends {
       @media (min-width: $width_tablet) {
         margin: 0 -30px;
+      }
+
+      @media (min-width: $width_desktop) {
+        margin: 0 -110px;
       }
     }
   }

@@ -10,4 +10,9 @@
     justify-content: space-between;
     margin: 0 30px;
   }
+
+  @media (min-width: $width_desktop) {
+    margin: 0;
+    padding: 0 110px;
+  }
 }

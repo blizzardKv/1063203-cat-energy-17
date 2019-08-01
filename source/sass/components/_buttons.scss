@@ -17,6 +17,10 @@
     left: 0;
   }
 
+  @media (min-width: $width_desktop) {
+    top: 40%;
+  }
+
   &--order,
   &--submit {
     position: inherit;

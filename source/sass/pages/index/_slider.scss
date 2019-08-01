@@ -1,6 +1,14 @@
 .slider {
+  @media (min-width: $width_tablet) {
+    background-color: $bg_color_white-lighten;
+  }
+
   &__image-div {
     text-align: center;
+
+    @media (min-width: $width_desktop) {
+      display: flex;
+    }
   }
 
   &__button-div {

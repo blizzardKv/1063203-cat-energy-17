@@ -13,5 +13,10 @@
 
   &__link {
     color: $color_black;
+
+    @media (min-width: $width_desktop) {
+      color: $color_white;
+      background-color: $bg_color_green; //временно для видимости
+    }
   }
 }
