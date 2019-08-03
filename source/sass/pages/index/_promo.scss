@@ -12,7 +12,6 @@
 
 .promo__main-box-desktop {
   @media (min-width: $width_desktop) {
-    display: flex;
     background-color: $bg_color_white-lighten;
     left: 50%;
     margin-left: -50vw;
@@ -24,9 +23,11 @@
 }
 
 .promo__box {
-  width: 1220px;
-  display: flex;
-  margin: 0 auto;
+  @media (min-width: $width_desktop) {
+    width: 1220px;
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 .promo__desktop-div {

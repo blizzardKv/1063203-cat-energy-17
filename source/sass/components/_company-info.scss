@@ -24,6 +24,10 @@
     background-color: $bg_color_white;
     z-index: 2;
   }
+
+  &--white-back {
+    background-color: $bg_color_white;
+  }
 }
 
 .company-info__lead-text {
