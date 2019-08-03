@@ -5,7 +5,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
 
+.product-list__item {
   @media (min-width: $width_tablet) {
     width: 50%;
   }
@@ -14,9 +16,7 @@
     width: 25%;
     background-color: $bg_color_white-lighten;
   }
-}
 
-.product-list__item {
   &:last-child {
     text-align: center;
 

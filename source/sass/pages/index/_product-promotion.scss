@@ -29,7 +29,7 @@
 
 .product-promotion__box {
   @media (min-width: $width_desktop) {
-    padding-left: 83px;
+    margin-left: 83px;
   }
 }
 
@@ -50,6 +50,10 @@
   margin: 0 20px;
 
   @media (min-width: $width_tablet) {
+    margin-left: 90px;
+  }
+
+  @media (min-width: $width_desktop) {
     margin-left: 83px;
   }
 }

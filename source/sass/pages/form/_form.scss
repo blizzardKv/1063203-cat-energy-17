@@ -32,6 +32,13 @@
   padding: 0;
 
   &--flexible {
+    @media (min-width: $width_desktop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &--flexible-checkbox {
     @media (min-width: $width_tablet) {
       display: flex;
       flex-wrap: wrap;

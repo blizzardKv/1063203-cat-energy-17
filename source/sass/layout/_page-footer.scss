@@ -15,8 +15,10 @@
 }
 
 .page-footer__container {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: $width_tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__promo-logo-div {
