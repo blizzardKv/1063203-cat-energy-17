@@ -12,7 +12,7 @@
   margin: 0;
 
   @media (min-width: $width_desktop) {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -39,6 +39,10 @@
     @media (min-width: $width_desktop) {
       display: flex;
       flex-wrap: wrap;
+
+      > .form__list-item {
+        width: 50%;
+      }
     }
   }
 
