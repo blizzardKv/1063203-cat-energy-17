@@ -4,19 +4,34 @@
   @media (min-width: $width_tablet) {
     background-color: $bg_color_white;
   }
+
+  @media (min-width: $width_desktop) {
+    background-color: $bg_color_white;
+  }
 }
 
 .promo__main-box-desktop {
   @media (min-width: $width_desktop) {
     display: flex;
-    margin: 0 -400%;
-    padding: 0 400%;
     background-color: $bg_color_white-lighten;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
   }
+}
+
+.promo__box {
+  width: 1220px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .promo__desktop-div {
   @media (min-width: $width_desktop) {
+    margin: 0 auto;
     width: 50%;
   }
 }
@@ -80,6 +95,7 @@
 
   @media (min-width: $width_desktop) {
     margin: 0;
+    width: 50%;
   }
 }
 

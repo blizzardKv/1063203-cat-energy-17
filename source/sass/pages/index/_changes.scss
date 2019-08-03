@@ -24,9 +24,3 @@
     display: flex;
   }
 }
-
-.changes__headline {
-  @media (min-width: $width_desktop) {
-    padding-left: 166px;
-  }
-}
