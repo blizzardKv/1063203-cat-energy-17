@@ -4,33 +4,34 @@
   line-height: 18px;
   color: $color_dark;
   text-transform: uppercase;
+}
 
-  &__fieldset {
-    border: 0;
-    padding: 0;
-    margin: 0;
+.form__fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+
+  &::placeholder {
+    color: $color_grey;
+    text-transform: uppercase;
   }
+}
 
-  &__input,
-  &__textarea {
-    width: 100%;
-  }
+.form__label {
+  white-space: nowrap;
+}
 
-  &__label {
-    white-space: nowrap;
-  }
+.form__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__list-item {
-    display: flex;
-  }
-
-  &__list--flexible {
+  &--flexible {
     @media (min-width: $width_tablet) {
       display: flex;
       flex-wrap: wrap;
@@ -46,25 +47,23 @@
       }
     }
   }
+}
 
-  &__input::placeholder,
-  &__textarea::placeholder {
-    color: $color_grey;
-    text-transform: uppercase;
-  }
+.form__list-item {
+  display: flex;
+}
 
-  &__button-box {
-    @media (min-width: $width_tablet) {
-      display: flex;
-    }
+.form__button-box {
+  @media (min-width: $width_tablet) {
+    display: flex;
   }
+}
 
-  &__hint {
-    font-size: 14px;
-    font-family: $font_main;
-    line-height: 16px;
-    text-align: center;
-    color: $color_grey;
-    text-transform: none;
-  }
+.form__hint {
+  font-size: 14px;
+  font-family: $font_main;
+  line-height: 16px;
+  text-align: center;
+  color: $color_grey;
+  text-transform: none;
 }

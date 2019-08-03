@@ -2,27 +2,27 @@
   @media (min-width: $width_tablet) {
     background-color: $bg_color_white-lighten;
   }
+}
 
-  &__image-div {
-    text-align: center;
+.promo__image-div {
+  text-align: center;
 
-    @media (min-width: $width_desktop) {
-      display: flex;
-    }
+  @media (min-width: $width_desktop) {
+    display: flex;
   }
+}
 
-  &__button-div {
-    text-align: center;
-  }
+.promo__button-div {
+  text-align: center;
+}
 
-  &__button {
-    font-size: 16px;
-    font-family: $font_secondary;
-    line-height: 20px;
-    color: $color_black;
-    text-transform: uppercase;
-    padding: 0;
-    background: none;
-    border: 0 none;
-  }
+.promo__button {
+  font-size: 16px;
+  font-family: $font_secondary;
+  line-height: 20px;
+  color: $color_black;
+  text-transform: uppercase;
+  padding: 0;
+  background: none;
+  border: 0 none;
 }

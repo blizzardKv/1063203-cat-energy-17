@@ -1,5 +1,5 @@
-@media (min-width: $width_desktop) {
-  .fieldset-div {
+.fieldset-div {
+  @media (min-width: $width_desktop) {
     display: flex;
   }
 }

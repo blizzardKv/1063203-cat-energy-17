@@ -9,14 +9,14 @@
   @media (min-width: $width_desktop) {
     flex-wrap: nowrap;
   }
+}
 
-  &__item {
-    @media (min-width: $width_tablet) {
-      width: 50%;
-    }
+.principles-list__item {
+  @media (min-width: $width_tablet) {
+    width: 50%;
+  }
 
-    @media (min-width: $width_desktop) {
-      width: auto;
-    }
+  @media (min-width: $width_desktop) {
+    width: auto;
   }
 }

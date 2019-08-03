@@ -10,15 +10,15 @@
   @media (min-width: $width_tablet) {
     display: flex;
   }
+}
 
-  &__link {
-    color: $color_black;
+.site-nav-list__link {
+  color: $color_black;
 
-    &--index {
-      @media (min-width: $width_desktop) {
-        color: $color_white;
-        background-color: $bg_color_green; //временно для видимости
-      }
+  &--index {
+    @media (min-width: $width_desktop) {
+      color: $color_white;
+      background-color: $bg_color_green; //временно для видимости
     }
   }
 }

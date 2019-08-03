@@ -6,27 +6,27 @@
 
   @media (min-width: $width_tablet) {
     padding: 0 30px;
-
-    &__container {
-      display: flex;
-      justify-content: space-between;
-    }
   }
 
   @media (min-width: $width_desktop) {
     margin: 0 -400%;
     padding: 0 400%;
   }
+}
 
-  &__promo-logo-div {
-    display: flex;
-    justify-content: space-between;
-  }
+.page-footer__container {
+  display: flex;
+  justify-content: space-between;
+}
 
-  &__promo-link {
-    font-size: 16px;
-    font-family: $font_secondary;
-    line-height: 16px;
-    color: $color_grey;
-  }
+.page-footer__promo-logo-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__promo-link {
+  font-size: 16px;
+  font-family: $font_secondary;
+  line-height: 16px;
+  color: $color_grey;
 }

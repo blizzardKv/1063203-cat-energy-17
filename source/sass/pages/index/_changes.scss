@@ -9,24 +9,24 @@
   @media (min-width: $width_desktop) {
     padding: 0 50px;
   }
+}
 
-  &__link {
-    font-size: 16px;
-    font-family: $font_secondary;
-    line-height: 16px;
-    color: $color_black;
-    text-transform: uppercase;
+.changes__link {
+  font-size: 16px;
+  font-family: $font_secondary;
+  line-height: 16px;
+  color: $color_black;
+  text-transform: uppercase;
+}
+
+.changes__container {
+  @media (min-width: $width_desktop) {
+    display: flex;
   }
+}
 
-  &__container {
-    @media (min-width: $width_desktop) {
-      display: flex;
-    }
-  }
-
-  &__headline {
-    @media (min-width: $width_desktop) {
-      padding-left: 166px;
-    }
+.changes__headline {
+  @media (min-width: $width_desktop) {
+    padding-left: 166px;
   }
 }

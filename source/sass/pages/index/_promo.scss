@@ -4,88 +4,88 @@
   @media (min-width: $width_tablet) {
     background-color: $bg_color_white;
   }
+}
 
-  &__main-box-desktop {
-    @media (min-width: $width_desktop) {
-      display: flex;
-      margin: 0 -400%;
-      padding: 0 400%;
-      background-color: $bg_color_white-lighten;
-    }
-  }
-
-  &__desktop-div {
-    @media (min-width: $width_desktop) {
-      width: 50%;
-    }
-  }
-
-  &__headline {
-    @media (min-width: $width_desktop) {
-      background-color: $bg_color_white;
-    }
-  }
-
-  &__div {
+.promo__main-box-desktop {
+  @media (min-width: $width_desktop) {
     display: flex;
-    justify-content: center;
+    margin: 0 -400%;
+    padding: 0 400%;
+    background-color: $bg_color_white-lighten;
+  }
+}
 
-    @media (min-width: $width_desktop) {
-      justify-content: left;
-    }
+.promo__desktop-div {
+  @media (min-width: $width_desktop) {
+    width: 50%;
+  }
+}
+
+.promo__headline {
+  @media (min-width: $width_desktop) {
+    background-color: $bg_color_white;
+  }
+}
+
+.promo__div {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $width_desktop) {
+    justify-content: left;
+  }
+}
+
+.promo__container {
+  @media (min-width: $width_tablet) {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__container {
-    @media (min-width: $width_tablet) {
-      display: flex;
-      justify-content: space-between;
-    }
+  @media (min-width: $width_desktop) {
+    display: block;
+  }
+}
 
-    @media (min-width: $width_desktop) {
-      display: block;
-    }
+.promo__attention {
+  font-size: 24px;
+  font-family: $font_secondary;
+  line-height: 24px;
+  color: $color_black;
+  text-transform: uppercase;
+}
+
+.promo__span {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.promo__important-text {
+  font-size: 14px;
+  font-family: $font_secondary;
+  line-height: 20px;
+  text-align: center;
+  color: $color_black;
+  text-transform: uppercase;
+
+  @media (min-width: $width_desktop) {
+    text-align: left;
+  }
+}
+
+.promo__slider-div {
+  @media (min-width: $width_tablet) {
+    margin: 0 -30px;
   }
 
-  &__attention {
-    font-size: 24px;
-    font-family: $font_secondary;
-    line-height: 24px;
-    color: $color_black;
-    text-transform: uppercase;
+  @media (min-width: $width_desktop) {
+    margin: 0;
   }
+}
 
-  &__span {
-    font-size: 12px;
-    line-height: 12px;
-  }
-
-  &__important-text {
-    font-size: 14px;
-    font-family: $font_secondary;
-    line-height: 20px;
-    text-align: center;
-    color: $color_black;
-    text-transform: uppercase;
-
-    @media (min-width: $width_desktop) {
-      text-align: left;
-    }
-  }
-
-  &__slider-div {
-    @media (min-width: $width_tablet) {
-      margin: 0 -30px;
-    }
-
-    @media (min-width: $width_desktop) {
-      margin: 0;
-    }
-  }
-
-  &__text-with-border {
-    @media (min-width: $width_desktop) {
-      display: flex;
-      flex-direction: column;
-    }
+.promo__text-with-border {
+  @media (min-width: $width_desktop) {
+    display: flex;
+    flex-direction: column;
   }
 }
