@@ -9,12 +9,12 @@ html {
 }
 
 body {
+  min-width: $width_phone;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   font-family: $font_main;
   color: $color_grey;
-
   background-color: $bg_color_white;
 }
 
@@ -52,9 +52,14 @@ a {
   line-height: 36px;
   color: $color_black;
 
-  &--white {
+  &--lead {
     color: $color_white;
     text-align: center;
+
+    @media (min-width: $width_tablet) {
+      color: $color_black;
+      text-align: left;
+    }
   }
 }
 

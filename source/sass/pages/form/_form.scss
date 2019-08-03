@@ -10,24 +10,75 @@
   border: 0;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $width_desktop) {
+    width: 100%;
+  }
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+
+  &::placeholder {
+    color: $color_grey;
+    text-transform: uppercase;
+  }
+}
+
+.form__label {
+  white-space: nowrap;
 }
 
 .form__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  &--flexible {
+    @media (min-width: $width_desktop) {
+      display: flex;
+      flex-wrap: wrap;
+
+      > .form__list-item {
+        width: 50%;
+      }
+    }
+  }
+
+  &--flexible-checkbox {
+    @media (min-width: $width_tablet) {
+      display: flex;
+      flex-wrap: wrap;
+
+      > .form__list-item {
+        width: 50%;
+      }
+    }
+
+    @media (min-width: $width_desktop) {
+      > .form__list-item {
+        width: 25%;
+      }
+    }
+  }
 }
 
-.form__input::placeholder,
-.form__textarea::placeholder {
-  color: $color_grey;
-  text-transform: uppercase;
+.form__list-item {
+  display: flex;
+}
+
+.form__button-box {
+  @media (min-width: $width_tablet) {
+    display: flex;
+  }
 }
 
 .form__hint {
   font-size: 14px;
   font-family: $font_main;
   line-height: 16px;
+  text-align: center;
   color: $color_grey;
   text-transform: none;
 }

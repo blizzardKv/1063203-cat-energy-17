@@ -1,6 +1,10 @@
-.additional-product {
-  &__list {
-    margin: 0;
-    padding: 0;
+.additional-product__list {
+  margin: 0;
+  padding: 0;
+}
+
+.additional-product__box {
+  @media (min-width: $width_desktop) {
+    display: flex;
   }
 }

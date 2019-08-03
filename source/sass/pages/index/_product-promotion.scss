@@ -1,10 +1,35 @@
 .product-promotion {
-  &__div {
-    background-image: url("/img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-color: $color_green;
-    background-size: 320px 305px;
+  position: relative;
+  text-align: center;
+}
+
+.product-promotion__div {
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-color: $color_green;
+  background-size: 320px 305px;
+
+  @media (min-width: $width_tablet) {
+    background-color: inherit;
+    background-image: none;
+    padding: 0 90px;
+  }
+
+  @media (min-width: $width_desktop) {
+    display: flex;
+    padding: 0;
+    //background-color: $bg_color_green;
+    //background-image: url("/img/index-background-desktop@1x.jpg");
+    //background-position: 0 0;
+    //background-repeat: no-repeat;
+    //background-size: 720px 696px;
+  }
+}
+
+.product-promotion__box {
+  @media (min-width: $width_desktop) {
+    margin-left: 83px;
   }
 }
 
@@ -14,4 +39,21 @@
   line-height: 14px;
   color: $color_white;
   text-transform: uppercase;
+
+  @media (min-width: $width_tablet) {
+    color: $color_black;
+    text-align: left;
+  }
+}
+
+.product-promotion__link {
+  margin: 0 20px;
+
+  @media (min-width: $width_tablet) {
+    margin-left: 90px;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin-left: 83px;
+  }
 }

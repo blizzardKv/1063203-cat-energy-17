@@ -1,3 +1,27 @@
 .product-list {
   list-style: none;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.product-list__item {
+  @media (min-width: $width_tablet) {
+    width: 50%;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 25%;
+    background-color: $bg_color_white-lighten;
+  }
+
+  &:last-child {
+    text-align: center;
+
+    @media (min-width: $width_desktop) {
+      background-color: $bg_color_white;
+    }
+  }
 }

@@ -1,3 +1,22 @@
 .principles-list {
   list-style: none;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.principles-list__item {
+  @media (min-width: $width_tablet) {
+    width: 50%;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: auto;
+  }
 }

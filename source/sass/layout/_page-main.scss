@@ -1,9 +1,76 @@
 .page-main {
-  &__text {
-    font-size: 14px;
-    font-family: $font_secondary;
-    line-height: 18px;
-    color: $color_black;
-    text-transform: uppercase;
+  margin: 0 20px;
+
+  @media (min-width: $width_tablet) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.page-main__form {
+  @media (min-width: $width_tablet) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 0;
+  }
+}
+
+.page-main__text {
+  font-size: 14px;
+  font-family: $font_secondary;
+  line-height: 18px;
+  color: $color_black;
+  text-transform: uppercase;
+
+  @media (min-width: $width_tablet) {
+    width: 50%;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: auto;
+    padding: 0;
+  }
+}
+
+.page-main__side-intends {
+  margin: 0 -20px;
+
+  @media (min-width: $width_tablet) {
+    margin: 0;
+  }
+
+  &--extra-intends {
+    @media (min-width: $width_tablet) {
+      margin: 0 -30px;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin: 0 -110px;
+    }
+  }
+
+  &--form {
+    margin: 0 -20px;
+
+    @media (min-width: $width_tablet) {
+      margin: 0 -30px;
+    }
+  }
+}
+
+.page-main__promo {
+  margin: 0 -20px;
+  padding: 0 20px;
+
+  @media (min-width: $width_tablet) {
+    margin: 0 -30px;
+    padding: 0 30px;
   }
 }

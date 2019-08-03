@@ -1,8 +1,15 @@
-.product-div {
-  &__link {
-    font-size: 16px;
-    line-height: 20px;
-    color: $color_black;
+.product-div__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color_black;
+}
+
+.product-div__wrapper-for-product-card {
+  display: flex;
+
+  @media (min-width: $width_tablet) {
+    display: block;
+    background-color: $bg_color_white-lighten;
   }
 }
 

@@ -3,4 +3,16 @@
   line-height: 20px;
   color: $color_black;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
 }
