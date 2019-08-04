@@ -4,12 +4,6 @@
 }
 
 .product-promotion__div {
-  background-image: url("/img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-color: $color_green;
-  background-size: 320px 305px;
-
   @media (min-width: $width_tablet) {
     background-color: inherit;
     background-image: none;
@@ -28,12 +22,25 @@
 }
 
 .product-promotion__box {
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-color: $color_green;
+  background-size: 320px 305px;
+
   @media (min-width: $width_desktop) {
     margin-left: 83px;
   }
 }
 
+.product-promotion__headline {
+  padding-top: 27px;
+  margin-bottom: 25px;
+}
+
 .product-promotion__slogan {
+  margin: 0 0 28px 0;
+  padding-bottom: 167px;
   font-size: 14px;
   font-family: $font_secondary;
   line-height: 14px;
@@ -44,6 +51,10 @@
     color: $color_black;
     text-align: left;
   }
+}
+
+.product-promotion__image {
+  margin-top: -167px;
 }
 
 .product-promotion__link {

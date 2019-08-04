@@ -1,8 +1,8 @@
 .page-footer {
-  background-color: $bg_color_white-lighten;
   margin: 0 auto;
-  text-align: center;
   padding: 0 20px;
+  text-align: center;
+  background-color: $bg_color_white-lighten;
 
   @media (min-width: $width_tablet) {
     padding: 0 30px;
@@ -28,11 +28,17 @@
 .page-footer__promo-logo-div {
   display: flex;
   justify-content: space-between;
+  padding: 22px 0 10px 0;
 }
 
 .page-footer__promo-link {
+  display: block;
   font-size: 16px;
-  font-family: $font_secondary;
   line-height: 16px;
   color: $color_grey;
+  padding-top: 8px;
+}
+
+.page-footer__promo-img-link {
+  display: block;
 }

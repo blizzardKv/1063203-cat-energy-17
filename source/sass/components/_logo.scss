@@ -1,4 +1,17 @@
-.logo__image {
+.logo {
+  display: block;
+  text-align: center;
   width: 101px;
   height: 18px;
+
+  &--intends {
+    margin: 24px 51px 0  0;
+  }
+}
+
+.logo__image {
+  &--footer {
+    width: 128px;
+    height: 24px;
+  }
 }

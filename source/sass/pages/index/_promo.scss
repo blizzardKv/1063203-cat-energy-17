@@ -10,6 +10,15 @@
   }
 }
 
+.promo__headline {
+  padding-top: 17px;
+  margin-bottom: 24px;
+
+  @media (min-width: $width_desktop) {
+    background-color: $bg_color_white;
+  }
+}
+
 .promo__main-box-desktop {
   @media (min-width: $width_desktop) {
     background-color: $bg_color_white-lighten;
@@ -31,25 +40,16 @@
 }
 
 .promo__desktop-div {
+  margin-bottom: 38px;
+
   @media (min-width: $width_desktop) {
     margin: 0 auto;
     width: 50%;
   }
 }
 
-.promo__headline {
-  @media (min-width: $width_desktop) {
-    background-color: $bg_color_white;
-  }
-}
-
-.promo__div {
-  display: flex;
-  justify-content: center;
-
-  @media (min-width: $width_desktop) {
-    justify-content: left;
-  }
+.promo__text {
+  margin: 0 0 25px 0;
 }
 
 .promo__container {
@@ -63,11 +63,69 @@
   }
 }
 
+.promo__div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+
+  @media (min-width: $width_desktop) {
+    justify-content: left;
+  }
+}
+
+.promo__text-with-border {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+  border-top: 1px solid $border_color_light-grey;
+  border-left: 1px solid $border_color_light-grey;
+  border-right: 1px solid $border_color_light-grey;
+  border-radius: 3px;
+  //костыль ниже
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 18px;
+    height: 0;
+    border-bottom: 1px solid $border_color_light-grey;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 18px;
+    height: 0;
+    border-bottom: 1px solid $border_color_light-grey;
+    border-radius: 3px;
+  }
+
+  &:first-child {
+    padding: 16px 20px 4px 19px;
+  }
+
+  &:last-child {
+    padding: 15px 7px 5px 7px;
+  }
+
+  @media (min-width: $width_desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .promo__attention {
   font-size: 24px;
   font-family: $font_secondary;
   line-height: 24px;
   color: $color_black;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -77,6 +135,7 @@
 }
 
 .promo__important-text {
+  margin: 0;
   font-size: 14px;
   font-family: $font_secondary;
   line-height: 20px;
@@ -97,12 +156,5 @@
   @media (min-width: $width_desktop) {
     margin: 0;
     width: 50%;
-  }
-}
-
-.promo__text-with-border {
-  @media (min-width: $width_desktop) {
-    display: flex;
-    flex-direction: column;
   }
 }

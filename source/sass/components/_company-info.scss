@@ -9,7 +9,7 @@
 .company-info__div {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 29px 20px 24px 20px;
   background-color: $bg_color_white-lighten;
 
   @media (min-width: $width_tablet) {
@@ -31,6 +31,8 @@
 }
 
 .company-info__lead-text {
+  width: 50%;
+  margin: 0;
   font-size: 16px;
   font-family: $font_secondary;
   line-height: 20px;
@@ -39,6 +41,8 @@
 }
 
 .company-info__text {
+  width: 50%;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: $color_grey;
@@ -52,4 +56,10 @@
   position: relative;
   right: 50%;
   width: 100vw;
+}
+
+.company-info__map {
+  display: block;
+  object-position: 0 -37px;
+  background-color: $bg_color_white-lighten;
 }
