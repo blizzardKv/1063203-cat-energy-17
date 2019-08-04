@@ -47,6 +47,8 @@
   }
 
   &--extra-intends {
+    margin-bottom: 0;
+
     @media (min-width: $width_tablet) {
       margin: 0 -30px;
     }
