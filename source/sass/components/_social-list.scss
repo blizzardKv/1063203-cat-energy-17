@@ -12,11 +12,7 @@
 }
 
 .social-list__item {
-  &:first-child {
-    margin-right: 29px;
-  }
-
-  &:nth-child(2) {
-    margin-right: 46px;
+  &:not(:last-child) {
+    margin-right: 37px;
   }
 }

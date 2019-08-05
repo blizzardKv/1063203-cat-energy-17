@@ -8,12 +8,12 @@
   border: none;
   cursor: pointer;
 
-  &--opened {
+  &--closed {
     &::before {
       content: "";
       position: absolute;
       top: 15px;
-      left: 21px;
+      left: -9px;
       width: 24px;
       height: 2px;
       background-color: $bg_color_dark;
@@ -21,7 +21,7 @@
     }
   }
 
-  &--closed {
+  &--opened {
     &::before,
     &::after {
       content: "";

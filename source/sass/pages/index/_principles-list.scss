@@ -1,5 +1,7 @@
 .principles-list {
   list-style: none;
+  position: relative;
+  flex-direction: column;
 
   @media (min-width: $width_tablet) {
     display: flex;
@@ -12,9 +14,12 @@
 }
 
 .principles-list__item {
+  display: flex;
   position: relative;
+  align-items: center;
   padding-left: 80px;
   margin-bottom: 27px;
+  min-height: 50px;
 
   &:first-child {
     &::before {
