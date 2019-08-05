@@ -43,6 +43,7 @@
 }
 
 .promo__text {
+  width: 266px;
   margin: 0 0 25px 0;
 }
 
@@ -74,29 +75,6 @@
   margin: 0 0 20px 0;
   border: 1px solid $border_color_light-grey;
   border-radius: 3px;
-  //костыль ниже
-  //&::before {
-  //  content: "";
-  //  display: block;
-  //  position: absolute;
-  //  top: 100%;
-  //  left: 0;
-  //  width: 18px;
-  //  height: 0;
-  //  border-bottom: 1px solid $border_color_light-grey;
-  //}
-  //
-  //&::after {
-  //  content: "";
-  //  display: block;
-  //  position: absolute;
-  //  top: 100%;
-  //  right: 0;
-  //  width: 18px;
-  //  height: 0;
-  //  border-bottom: 1px solid $border_color_light-grey;
-  //  border-radius: 3px;
-  //}
 
   &:first-child {
     padding: 16px 42px 17px 42px;
