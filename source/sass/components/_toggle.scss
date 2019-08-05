@@ -1,0 +1,48 @@
+.toggle {
+  position: absolute;
+  top: 8px;
+  right: 41px;
+  z-index: 2;
+  display: block;
+  background-color: $bg_color_white;
+  border: none;
+  cursor: pointer;
+
+  &--opened {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 21px;
+      width: 24px;
+      height: 2px;
+      background-color: $bg_color_dark;
+      box-shadow: 0 8px 0 0 $color_dark, 0 16px 0 0 $color_dark;
+    }
+  }
+
+  &--closed {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: -20px;
+      width: 22px;
+      height: 2px;
+      background-color: $bg_color_dark;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--nojs {
+    display: none;
+  }
+}

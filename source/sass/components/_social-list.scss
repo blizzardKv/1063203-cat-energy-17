@@ -1,12 +1,22 @@
 .social-list {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   border-bottom: 1px solid $border_color_light-grey;
   margin: 0;
   padding: 0;
 
   &--intends {
     padding: 25px 0 14px 0;
+  }
+}
+
+.social-list__item {
+  &:first-child {
+    margin-right: 29px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 46px;
   }
 }
