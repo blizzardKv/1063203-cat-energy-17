@@ -76,3 +76,11 @@
     padding: 0 30px;
   }
 }
+
+.page-main__headline {
+  &--catalog {
+    margin: 0 -20px;
+    padding: 27px 0 40px 20px;
+    border-bottom: 1px solid $border_color_grey-pure;
+  }
+}

@@ -1,0 +1,21 @@
+.product-name__link {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 31px;
+    height: 2px;
+    background-color: $bg_color_dark;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: -38px;
+    left: 86px;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}

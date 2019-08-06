@@ -1,0 +1,14 @@
+.additional-product-description {
+  margin: 0;
+}
+
+.additional-product-description__div {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: $font_main;
+  line-height: 14px;
+  color: $color-grey;
+  text-transform: none;
+}

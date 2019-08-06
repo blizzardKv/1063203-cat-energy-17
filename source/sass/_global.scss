@@ -74,10 +74,23 @@ a {
 }
 
 .thematic-headline {
+  position: relative;
+  margin: 0;
   font-size: 24px;
   font-family: $font_secondary;
   font-weight: 400;
   line-height: 24px;
   color: $color_black;
   text-transform: none;
+  border-bottom: 1px solid $border_color_grey-pure;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 3px;
+    background-color: $bg_color_green;
+    top: 13px;
+    right: -18px;
+  }
 }

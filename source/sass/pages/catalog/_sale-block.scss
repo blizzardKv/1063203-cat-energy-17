@@ -7,7 +7,23 @@
 }
 
 .sale-block__text {
+  position: relative;
+  margin: 0;
+  padding: 187px 43px 0 43px;
+  min-height: 289px;
   font-size: 16px;
   line-height: 20px;
   color: $color_white;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("/img/svg/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 64px;
+    left: 113px;
+    width: 56px;
+    height: 61px;
+  }
 }

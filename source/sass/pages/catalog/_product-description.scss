@@ -4,14 +4,20 @@
   color: $color_grey;
 }
 
-.product-description__product-value {
-  font-size: 14px;
-  line-height: 14px;
+.product-description__div {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-description__value {
+  font-size: 12px;
+  line-height: 16px;
   color: $color_grey;
 }
 
-.product-description__product-quantity {
-  font-size: 14px;
-  line-height: 14px;
+.product-description__quantity {
+  font-size: 12px;
+  line-height: 16px;
   color: $color_grey;
 }
