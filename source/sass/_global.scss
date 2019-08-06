@@ -23,7 +23,8 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+//:not(:focus):not(:active) - ломает радиобаттоны и чексбоксы при кастомизации
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -82,12 +83,11 @@ a {
   line-height: 24px;
   color: $color_black;
   text-transform: none;
-  border-bottom: 1px solid $border_color_grey-pure;
 
   &::after {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 16vw;
     height: 3px;
     background-color: $bg_color_green;
     top: 13px;
