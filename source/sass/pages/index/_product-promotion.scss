@@ -28,6 +28,10 @@
   background-color: $color_green;
   background-size: 320px 305px;
 
+  @media (min-width: $width_tablet) {
+    background: none;
+  }
+
   @media (min-width: $width_desktop) {
     margin-left: 83px;
   }
@@ -36,10 +40,13 @@
 .product-promotion__headline {
   padding-top: 27px;
   margin-bottom: 25px;
+
+  @media (min-width: $width_tablet) {
+    margin-bottom: 41px;
+  }
 }
 
 .product-promotion__slogan {
-  margin: 0 0 28px 0;
   padding-bottom: 167px;
   font-size: 14px;
   font-family: $font_secondary;
@@ -48,13 +55,20 @@
   text-transform: uppercase;
 
   @media (min-width: $width_tablet) {
+    font-size: 20px;
+    line-height: 20px;
     color: $color_black;
     text-align: left;
   }
 }
 
 .product-promotion__image {
-  margin-top: -167px;
+  margin-top: -151px;
+
+  @media (min-width: $width_tablet) {
+    width: 709px;
+    height: 609px;
+  }
 }
 
 .product-promotion__link {

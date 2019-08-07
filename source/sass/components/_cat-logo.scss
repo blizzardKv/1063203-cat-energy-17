@@ -3,4 +3,14 @@
   display: block;
   width: 33px;
   height: 38px;
+
+  @media (min-width: $width_tablet) {
+    position: unset;
+  }
+
+  &--intends {
+    @media (min-width: $width_tablet) {
+      margin-right: 20px;
+    }
+  }
 }

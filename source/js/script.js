@@ -18,4 +18,4 @@ navToggle.addEventListener('click', function () {
     navToggle.classList.remove('toggle--opened');
     navToggle.classList.add('toggle--closed');
   }
-  });
+});

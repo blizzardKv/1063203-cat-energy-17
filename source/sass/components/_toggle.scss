@@ -45,4 +45,8 @@
   &--nojs {
     display: none;
   }
+
+  @media (min-width: $width_tablet) {
+    display: none;
+  }
 }

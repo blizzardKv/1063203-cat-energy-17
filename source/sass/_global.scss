@@ -54,6 +54,11 @@ a {
   line-height: 36px;
   color: $color_black;
 
+  @media (min-width: $width_tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   &--lead {
     color: $color_white;
     text-align: center;
@@ -87,10 +92,10 @@ a {
   &::after {
     position: absolute;
     content: "";
-    width: 16vw;
+    margin-left: 24px;
+    width: 100vw;
     height: 3px;
     background-color: $bg_color_green;
     top: 13px;
-    right: -18px;
   }
 }

@@ -19,11 +19,11 @@
   }
 }
 
-.promo__main-box-desktop {
-  @media (min-width: $width_desktop) {
-    @include image-fullscreen;
-  }
-}
+//.promo__main-box-desktop {
+//  @media (min-width: $width_desktop) {
+//    @include image-fullscreen;
+//  }
+//}
 
 .promo__box {
   @media (min-width: $width_desktop) {
@@ -43,8 +43,9 @@
 }
 
 .promo__text {
-  width: 266px;
   margin: 0 0 25px 0;
+  padding-right: 1px;
+  font-family: "ArialMT", sans-serif;
 }
 
 .promo__container {

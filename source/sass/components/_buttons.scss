@@ -11,30 +11,25 @@
   border: none;
   padding: 10px 0 10px 0;
 
-  @media (min-width: $width_tablet) {
-    position: absolute;
-    top: 30%;
-    left: 0;
-  }
+  &--index {
+    @media (min-width: $width_tablet) {
+      position: absolute;
+      font-size: 20px;
+      line-height: 20px;
+      top: 30%;
+      left: 0;
+      padding: 16px 26px;
+    }
 
-  @media (min-width: $width_desktop) {
-    top: 40%;
+    @media (min-width: $width_desktop) {
+      top: 40%;
+    }
   }
 
   &--order,
   &--submit {
     position: inherit;
     width: 100%;
-  }
-
-  @media (min-width: $width_tablet) {
-    position: absolute;
-    top: 30%;
-    left: 0;
-  }
-
-  @media (min-width: $width_desktop) {
-    top: 40%;
   }
 
   &--catalog-font {

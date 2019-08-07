@@ -9,6 +9,10 @@
 
   @media (min-width: $width_tablet) {
     display: flex;
+    font-size: 18px;
+    font-family: $font_secondary;
+    line-height: 25px;
+    color: $color_dark;
   }
 }
 
@@ -16,6 +20,14 @@
   margin: 0;
   padding: 22px 0 23px 0;
   border-bottom: 1px solid $border_color_grey;
+
+  @media (min-width: $width_tablet) {
+    border: none;
+
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
 }
 
 .site-nav-list__link {
@@ -26,6 +38,13 @@
     @media (min-width: $width_desktop) {
       color: $color_white;
       background-color: $bg_color_green; //временно для видимости
+    }
+  }
+
+  &--active {
+    @media (min-width: $width_tablet) {
+      padding-bottom: 6px;
+      border-bottom: 2px solid $color_green;
     }
   }
 }
