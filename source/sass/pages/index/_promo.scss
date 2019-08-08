@@ -152,6 +152,7 @@
   background-color: $bg_color_white-lighten;
 
   @media (min-width: $width_tablet) {
+    max-width: 90%;
     font-size: 14px;
     line-height: 14px;
     background-color: $bg_color_white;
