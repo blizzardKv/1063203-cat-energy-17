@@ -16,6 +16,13 @@
     height: 50px;
     border-radius: 50%;
     background-color: $bg_color_green;
+
+    @media (min-width: $width_tablet) {
+      width: 200px;
+      height: 200px;
+      top: 88px;
+      left: 391px;
+    }
   }
 
   &--weight-loss {
@@ -30,6 +37,13 @@
       width: 35px;
       height: 49px;
       z-index: 2;
+
+      @media (min-width: $width_tablet) {
+        width: 141px;
+        height: 194px;
+        top: 76px;
+        left: 421px;
+      }
     }
   }
 
@@ -45,6 +59,13 @@
       width: 67px;
       height: 28px;
       z-index: 2;
+
+      @media (min-width: $width_tablet) {
+        width: 268px;
+        height: 113px;
+        top: 133px;
+        left: 357px;
+      }
     }
   }
 }

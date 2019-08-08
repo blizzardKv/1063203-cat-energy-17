@@ -17,6 +17,7 @@
   @media (min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
+    padding-top: 51px;
   }
 
   @media (min-width: $width_desktop) {
@@ -25,10 +26,18 @@
   }
 }
 
+.page-footer__div {
+  margin-left: 20px;
+}
+
 .page-footer__promo-logo-div {
   display: flex;
   justify-content: space-between;
   padding: 22px 0 10px 0;
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 0 0;
+  }
 }
 
 .page-footer__promo-link {
@@ -41,4 +50,5 @@
 
 .page-footer__promo-img-link {
   display: block;
+  margin-left: 20px;
 }

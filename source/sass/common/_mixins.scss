@@ -7,3 +7,8 @@
   right: 50%;
   width: 100vw;
 }
+
+@mixin reset-image-fullscreen {
+  right: 0;
+  left: 0;
+}

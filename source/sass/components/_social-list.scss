@@ -9,6 +9,14 @@
   &--intends {
     padding: 25px 0 14px 0;
   }
+
+  @media (min-width: $width_tablet) {
+    border: none;
+
+    &--intends {
+      padding: 7px 0 14px 0;
+    }
+  }
 }
 
 .social-list__item {

@@ -14,6 +14,10 @@
   padding-top: 17px;
   margin-bottom: 24px;
 
+  @media (min-width: $width_tablet) {
+    margin-bottom: 63px;
+  }
+
   @media (min-width: $width_desktop) {
     background-color: $bg_color_white;
   }
@@ -36,6 +40,10 @@
 .promo__desktop-div {
   margin-bottom: 38px;
 
+  @media (min-width: $width_tablet) {
+    margin-bottom: 222px;
+  }
+
   @media (min-width: $width_desktop) {
     margin: 0 auto;
     width: 50%;
@@ -46,6 +54,19 @@
   margin: 0 0 25px 0;
   padding-right: 1px;
   font-family: "ArialMT", sans-serif;
+
+  @media (min-width: $width_tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 692px;
+    word-wrap: break-word;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $width_desktop) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .promo__container {
@@ -85,6 +106,21 @@
     padding: 17px 21px 8px 20px;
   }
 
+  @media (min-width: $width_tablet) {
+    &:first-child {
+      padding: 16px 56px 17px 56px;
+      margin-right: 42px;
+    }
+
+    &:last-child {
+      padding: 17px 29px 8px 29px;
+
+      > .promo__span {
+        left: 10px;
+      }
+    }
+  }
+
   @media (min-width: $width_desktop) {
     display: flex;
     flex-direction: column;
@@ -98,18 +134,31 @@
   color: $color_black;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $width_tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .promo__span {
-  display: block;
   position: absolute;
+  max-width: 67%;
   font-size: 12px;
   line-height: 12px;
   top: 48px;
   left: 16px;
   text-align: center;
   background-color: $bg_color_white-lighten;
-  padding: 0 18px 0 18px;
+
+  @media (min-width: $width_tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $bg_color_white;
+    top: 63px;
+    left: 25px;
+    padding: 0 9px 0 6px;
+  }
 }
 
 .promo__important-text {
@@ -120,6 +169,14 @@
   text-align: center;
   color: $color_black;
   text-transform: uppercase;
+
+  @media (min-width: $width_tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 174px;
+    padding-top: 12px;
+    text-align: right;
+  }
 
   @media (min-width: $width_desktop) {
     text-align: left;
