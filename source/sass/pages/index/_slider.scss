@@ -53,9 +53,6 @@
 
     @include reset-image-fullscreen;
   }
-
-  @media (min-width: $width_desktop) {
-  }
 }
 
 .slider__image-after {
@@ -72,10 +69,6 @@
     height: 517px;
 
     @include reset-image-fullscreen;
-  }
-
-  @media (min-width: $width_desktop) {
-
   }
 }
 
