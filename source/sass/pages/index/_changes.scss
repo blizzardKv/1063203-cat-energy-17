@@ -9,7 +9,7 @@
       margin-bottom: 30px;
 
       > .changes__text {
-        max-width: 372px;
+        max-width: 60%;
       }
     }
   }
@@ -24,7 +24,7 @@
 }
 
 .changes__headline {
-  margin: 0 0 29px 0;
+  margin-bottom: 29px;
   padding: 28px 0 0 71px;
 
   @media (min-width: $width_tablet) {
@@ -36,10 +36,10 @@
 }
 
 .changes__text {
-  margin: 0 0 24px 0;
+  margin-bottom: 24px;
 
   @media (min-width: $width_tablet) {
-    margin: 0 0 36px 0;
+    margin-bottom: 36px;
     font-size: 16px;
     line-height: 24px;
     max-width: 340px;
@@ -78,7 +78,7 @@
     padding-bottom: 63px;
     font-size: 20px;
     line-height: 20px;
-    border: none;
+    border: 0 none;
   }
 }
 

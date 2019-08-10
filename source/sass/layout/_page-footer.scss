@@ -17,17 +17,13 @@
   @media (min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
-    padding-top: 51px;
+    padding-top: 52px;
   }
 
   @media (min-width: $width_desktop) {
     max-width: 1220px;
     margin: 0 auto;
   }
-}
-
-.page-footer__div {
-  margin-left: 20px;
 }
 
 .page-footer__promo-logo-div {

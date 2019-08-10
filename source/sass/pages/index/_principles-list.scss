@@ -6,6 +6,7 @@
   @media (min-width: $width_tablet) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -78,15 +79,11 @@
     font-size: 16px;
     line-height: 24px;
     padding: 0;
-    max-width: 245px;
+    max-width: 39%;
 
     &:first-child,
     &:nth-child(2) {
       margin-bottom: 245px;
-    }
-
-    &:nth-child(2n+1) {
-      margin-right: 138px;
     }
 
     &::after {

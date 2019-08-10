@@ -22,7 +22,7 @@
   border-bottom: 1px solid $border_color_grey;
 
   @media (min-width: $width_tablet) {
-    border: none;
+    border: 0 none;
 
     &:not(:last-child) {
       margin-right: 36px;

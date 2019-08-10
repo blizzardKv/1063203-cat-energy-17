@@ -81,7 +81,7 @@
   }
 
   &--radio {
-    margin: 0 0 9px 0;
+    margin-bottom: 9px;
 
     &:last-child {
       margin-bottom: 27px;
@@ -103,8 +103,7 @@
 .form__textarea {
   width: 100%;
   min-height: 152px;
-  padding-left: 14px;
-  padding-top: 13px;
+  padding: 13px 0 0 14px;
 
   &::placeholder {
     color: $color_grey;
@@ -197,7 +196,7 @@
 }
 
 .form__hint {
-  margin: 0 0 32px 0;
+  margin-bottom: 32px;
   padding-top: 23px;
   font-size: 14px;
   font-family: $font_main;

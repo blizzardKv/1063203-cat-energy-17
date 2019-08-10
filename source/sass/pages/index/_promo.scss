@@ -53,7 +53,7 @@
 .promo__text {
   margin: 0 0 25px 0;
   padding-right: 1px;
-  font-family: "ArialMT", sans-serif;
+  font-family: $font_main;
 
   @media (min-width: $width_tablet) {
     font-size: 16px;

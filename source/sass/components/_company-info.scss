@@ -1,9 +1,5 @@
 .company-info {
   position: relative;
-
-  &--white-back {
-    background-color: $bg_color_white;
-  }
 }
 
 .company-info__div {
@@ -42,7 +38,7 @@
   @media (min-width: $width_tablet) {
     font-size: 20px;
     line-height: 25px;
-    max-width: 154px;
+    max-width: 25%;
   }
 }
 
@@ -75,6 +71,15 @@
     top: 29%;
     left: 30%;
     z-index: 3;
+  }
+
+  @media (min-width: $width_tablet) {
+    &::before {
+      width: 113px;
+      height: 106px;
+      top: 36%;
+      left: 42%;
+    }
   }
 }
 

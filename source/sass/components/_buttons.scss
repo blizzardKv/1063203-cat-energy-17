@@ -8,8 +8,8 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $color_green;
-  border: none;
-  padding: 10px 0 10px 0;
+  border: 0 none;
+  padding: 10px 0;
 
   &--index {
     @media (min-width: $width_tablet) {
@@ -28,7 +28,6 @@
 
   &--order,
   &--submit {
-    position: inherit;
     width: 100%;
   }
 
