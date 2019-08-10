@@ -14,6 +14,11 @@
     line-height: 25px;
     color: $color_dark;
   }
+
+  @media (min-width: $width_desktop) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .site-nav-list__item {
@@ -37,7 +42,6 @@
   &--index {
     @media (min-width: $width_desktop) {
       color: $color_white;
-      background-color: $bg_color_green; //временно для видимости
     }
   }
 
@@ -45,6 +49,10 @@
     @media (min-width: $width_tablet) {
       padding-bottom: 6px;
       border-bottom: 2px solid $color_green;
+    }
+
+    @media (min-width: $width_desktop) {
+      border-bottom: 2px solid $color_white;
     }
   }
 }

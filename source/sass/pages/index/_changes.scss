@@ -12,6 +12,20 @@
         max-width: 60%;
       }
     }
+
+    @media (min-width: $width_desktop) {
+      width: 98%;
+      padding: 0 0 0 50px;
+
+      > .changes__text {
+        max-width: 89%;
+      }
+
+      &:first-child {
+        margin-right: 80px;
+        margin-bottom: 0;
+      }
+    }
   }
 
   @media (min-width: $width_tablet) {
@@ -33,6 +47,11 @@
     line-height: 37px;
     padding: 74px 0 0 0;
   }
+
+  @media (min-width: $width_desktop) {
+    margin: 0 0 75px 0;
+    padding: 77px 0 0 164px;
+  }
 }
 
 .changes__text {
@@ -42,7 +61,12 @@
     margin-bottom: 36px;
     font-size: 16px;
     line-height: 24px;
-    max-width: 340px;
+    max-width: 55%;
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 100%;
+    margin-bottom: 12px;
   }
 }
 
@@ -91,5 +115,6 @@
 
   @media (min-width: $width_desktop) {
     display: flex;
+    margin-bottom: 70px;
   }
 }

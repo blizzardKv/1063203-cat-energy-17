@@ -6,6 +6,11 @@
     padding-bottom: 75px;
     border-bottom: 1px solid $border_color_grey-pure;
   }
+
+  @media (min-width: $width_desktop) {
+    margin-bottom: 33px;
+    border-bottom: 0 none;
+  }
 }
 
 .principles__headline {

@@ -23,6 +23,13 @@
       top: 79%;
       left: 63%;
     }
+
+    @media (min-width: $width_desktop) {
+      width: 100px;
+      height: 100px;
+      top: 42%;
+      left: 0;
+    }
   }
 
   &--weight-loss {
@@ -43,6 +50,13 @@
         height: 194px;
         top: 69%;
         left: 68%;
+      }
+
+      @media (min-width: $width_desktop) {
+        width: 71px;
+        height: 97px;
+        top: 36%;
+        left: 3%;
       }
     }
   }
@@ -65,6 +79,13 @@
         height: 113px;
         top: 120%;
         left: 57%;
+      }
+
+      @media (min-width: $width_desktop) {
+        width: 134px;
+        height: 57px;
+        top: 61%;
+        left: -4%;
       }
     }
   }

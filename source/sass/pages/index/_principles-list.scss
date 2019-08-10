@@ -113,9 +113,25 @@
         right: -2px;
       }
     }
+  }
 
-    @media (min-width: $width_desktop) {
-      width: auto;
+  @media (min-width: $width_desktop) {
+    margin-bottom: 0;
+    margin-right: -97px;
+    max-width: 23%;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3),
+    &:last-child {
+      > .principles-list__span {
+        top: -151px;
+        right: 15px;
+      }
     }
   }
 }
@@ -133,5 +149,9 @@
     z-index: -1;
     top: -151px;
     right: 15px;
+  }
+
+  @media (min-width: $width_desktop) {
+    right: 33px;
   }
 }

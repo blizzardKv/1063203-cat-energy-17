@@ -19,15 +19,17 @@
   }
 
   @media (min-width: $width_desktop) {
+    margin-bottom: 76px;
     background-color: $bg_color_white;
   }
 }
 
-//.promo__main-box-desktop {
-//  @media (min-width: $width_desktop) {
-//    @include image-fullscreen;
-//  }
-//}
+.promo__background {
+  @media (min-width: $width_desktop) {
+    @include image-fullscreen;
+    background-color: $bg_color_white-lighten;
+  }
+}
 
 .promo__box {
   @media (min-width: $width_desktop) {
@@ -64,8 +66,11 @@
   }
 
   @media (min-width: $width_desktop) {
+    padding-top: 72px;
+    margin-bottom: 66px;
     font-size: 16px;
     line-height: 24px;
+    max-width: 71%;
   }
 }
 
@@ -87,6 +92,7 @@
 
   @media (min-width: $width_desktop) {
     justify-content: left;
+    margin-bottom: 28px;
   }
 }
 
@@ -160,6 +166,10 @@
     left: 25px;
     padding: 0 9px 0 6px;
   }
+
+  @media (min-width: $width_desktop) {
+    background-color: $bg_color_white-lighten;
+  }
 }
 
 .promo__important-text {
@@ -181,6 +191,7 @@
 
   @media (min-width: $width_desktop) {
     text-align: left;
+    max-width: 100%;
   }
 }
 

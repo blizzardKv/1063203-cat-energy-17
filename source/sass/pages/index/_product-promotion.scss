@@ -1,6 +1,10 @@
 .product-promotion {
   position: relative;
   text-align: center;
+
+  @media (min-width: $width_desktop) {
+    margin-bottom: 130px;
+  }
 }
 
 .product-promotion__div {
@@ -11,13 +15,21 @@
   }
 
   @media (min-width: $width_desktop) {
-    display: flex;
-    padding: 0;
-    //background-color: $bg_color_green;
-    //background-image: url("/img/index-background-desktop@1x.jpg");
-    //background-position: 0 0;
-    //background-repeat: no-repeat;
-    //background-size: 720px 696px;
+    padding: 0 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("/img/index-background-desktop@1x.jpg");
+      background-color: $bg_color_green;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: -23%;
+      right: -9%;
+      width: 719px;
+      height: 696px;
+      z-index: -1;
+    }
   }
 }
 
@@ -33,7 +45,8 @@
   }
 
   @media (min-width: $width_desktop) {
-    margin-left: 83px;
+    padding-top: 75px;
+    max-width: 50%;
   }
 }
 
@@ -71,6 +84,13 @@
     height: 609px;
     max-width: 100vw;
     margin: 0 -90px;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 552px;
+    height: 499px;
+    max-width: 100vw;
+    margin: -280px 0 0 235px;
   }
 }
 
