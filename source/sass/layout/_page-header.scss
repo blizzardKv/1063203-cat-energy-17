@@ -1,3 +1,20 @@
+.page-header__wrapper {
+  @media (min-width: $width_desktop) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("/img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 50%;
+      min-width: 100%;
+      min-height: 696px;
+    }
+  }
+}
+
 .page-header {
   position: relative;
   font-size: 20px;

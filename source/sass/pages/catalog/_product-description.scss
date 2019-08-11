@@ -8,16 +8,38 @@
   width: 140px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $width_tablet) {
+    margin: 0 auto;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    min-width: 77%;
+    border-bottom: 1px solid $border_color_grey-solid;
+
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .product-description__value {
   font-size: 12px;
   line-height: 16px;
   color: $color_grey;
+
+  @media (min-width: $width_tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .product-description__quantity {
   font-size: 12px;
   line-height: 16px;
   color: $color_grey;
+
+  @media (min-width: $width_tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

@@ -1,5 +1,6 @@
 .page-main {
   margin: 0 20px;
+  position: relative;
 
   @media (min-width: $width_tablet) {
     margin: 0 30px;
@@ -84,6 +85,11 @@
     margin: 0 -20px;
     padding: 27px 0 40px 20px;
     border-bottom: 1px solid $border_color_grey-pure;
+
+    @media (min-width: $width_tablet) {
+      margin-bottom: 125px;
+      border: 0 none;
+    }
   }
 
   &--form {
