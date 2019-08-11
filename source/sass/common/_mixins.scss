@@ -9,6 +9,10 @@
 }
 
 @mixin reset-image-fullscreen {
-  right: 0;
+  position: static;
   left: 0;
+  margin-left: 0;
+  margin-right: 0;
+  right: 0;
+  width: auto;
 }

@@ -3,7 +3,8 @@
   text-align: center;
 
   @media (min-width: $width_desktop) {
-    margin-bottom: 130px;
+    max-width: 1220px;
+    margin: 0 auto 130px;
   }
 }
 

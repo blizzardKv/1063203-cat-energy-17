@@ -49,8 +49,10 @@
   @media (min-width: $width_tablet) {
     display: block;
     height: 499px;
-    margin-left: 0;
+    margin-left: 32px;
+  }
 
+  @media (min-width: $width_desktop) {
     @include reset-image-fullscreen;
   }
 }
@@ -67,7 +69,9 @@
   @media (min-width: $width_tablet) {
     display: block;
     height: 517px;
+  }
 
+  @media (min-width: $width_desktop) {
     @include reset-image-fullscreen;
   }
 }

@@ -18,6 +18,10 @@
   @media (min-width: $width_desktop) {
     font-size: 20px;
     line-height: 25px;
+
+    &--index {
+      color: $color_white;
+    }
   }
 }
 
@@ -38,12 +42,6 @@
 .site-nav-list__link {
   margin-bottom: 23px;
   color: $color_black;
-
-  &--index {
-    @media (min-width: $width_desktop) {
-      color: $color_white;
-    }
-  }
 
   &--active {
     @media (min-width: $width_tablet) {

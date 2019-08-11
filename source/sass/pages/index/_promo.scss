@@ -4,10 +4,6 @@
   @media (min-width: $width_tablet) {
     background-color: $bg_color_white;
   }
-
-  @media (min-width: $width_desktop) {
-    background-color: $bg_color_white;
-  }
 }
 
 .promo__headline {
@@ -19,15 +15,16 @@
   }
 
   @media (min-width: $width_desktop) {
-    margin-bottom: 76px;
-    background-color: $bg_color_white;
+    max-width: 1220px;
+    margin: 0 auto 76px;
   }
 }
 
 .promo__background {
   @media (min-width: $width_desktop) {
-    @include image-fullscreen;
     background-color: $bg_color_white-lighten;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -60,7 +57,7 @@
   @media (min-width: $width_tablet) {
     font-size: 16px;
     line-height: 24px;
-    max-width: 692px;
+    max-width: 96%;
     word-wrap: break-word;
     margin-bottom: 53px;
   }

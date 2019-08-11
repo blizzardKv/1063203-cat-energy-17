@@ -22,16 +22,13 @@
     }
 
     @media (min-width: $width_desktop) {
-      top: 40%;
-    }
-
-    @media (min-width: $width_desktop) {
       top: 64%;
     }
   }
 
   &--order,
   &--submit {
+    position: static;
     width: 100%;
   }
 
