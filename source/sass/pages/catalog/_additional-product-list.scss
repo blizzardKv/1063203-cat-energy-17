@@ -4,6 +4,12 @@
   @media (min-width: $width_desktop) {
     min-width: 733px;
   }
+
+  @media (min-width: $width_desktop) {
+    display: block;
+    min-width: 73%;
+    margin: 0;
+  }
 }
 
 .additional-product-list__item {
@@ -11,5 +17,15 @@
 
   &:first-child {
     border-top: 1px solid $border_color_grey-pure;
+  }
+
+  @media (min-width: $width_tablet) {
+    border-left: 1px solid $border_color_grey-pure;
+    border-right: 1px solid $border_color_grey-pure;
+  }
+
+  @media (min-width: $width_desktop) {
+    border-left: 0 none;
+    border-right: 0 none;
   }
 }

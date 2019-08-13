@@ -91,8 +91,14 @@
     border-bottom: 1px solid $border_color_grey-pure;
 
     @media (min-width: $width_tablet) {
-      margin-bottom: 125px;
+      margin-bottom: 41px;
       border: 0 none;
+    }
+
+    @media (min-width: $width_desktop) {
+      max-width: 1220px;
+      margin: 0 auto 80px;
+      padding: 69px 0 0 0;
     }
   }
 

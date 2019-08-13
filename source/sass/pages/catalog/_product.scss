@@ -4,6 +4,11 @@
   @media (min-width: $width_tablet) {
     margin: 0 -30px 29px -30px;
   }
+
+  @media (min-width: $width_desktop) {
+    max-width: 1220px;
+    margin: 0 auto 18px;
+  }
 }
 
 .product__list {

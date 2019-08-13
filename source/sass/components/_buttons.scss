@@ -40,6 +40,20 @@
       max-width: 77%;
       margin: 0 auto;
     }
+
+    @media (min-width: $width_desktop) {
+      max-width: 69%;
+    }
+  }
+
+  &--additional-catalog {
+    @media (min-width: $width_tablet) {
+      max-width: 89%;
+    }
+
+    @media (min-width: $width_desktop) {
+      max-width: 27%;
+    }
   }
 
   &--show {

@@ -94,25 +94,26 @@ a {
   color: $color_black;
   text-transform: none;
 
-  &::after {
-    position: absolute;
-    content: "";
-    margin-left: 24px;
-    width: 100vw;
-    height: 3px;
-    background-color: $bg_color_green;
-    top: 50%;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    margin-left: -100vw;
-    width: 100vw;
-    height: 3px;
-    background-color: #68b738;
-    top: 50%;
-  }
+  //добавляет полосу прокрутки width 100vw, надо фиксить
+  //&::after {
+  //  position: absolute;
+  //  content: "";
+  //  margin-left: 24px;
+  //  width: 100vw;
+  //  height: 3px;
+  //  background-color: $bg_color_green;
+  //  top: 50%;
+  //}
+  //
+  //&::before {
+  //  position: absolute;
+  //  content: "";
+  //  margin-left: -100vw;
+  //  width: 100vw;
+  //  height: 3px;
+  //  background-color: #68b738;
+  //  top: 50%;
+  //}
 
   @media (min-width: $width_tablet) {
     font-size: 36px;

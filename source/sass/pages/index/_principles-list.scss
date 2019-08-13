@@ -118,7 +118,7 @@
   @media (min-width: $width_desktop) {
     margin-bottom: 0;
     margin-right: -35px;
-    max-width: calc(100% / 4);
+    max-width: calc(100% / 4 - 2%);
 
     &:first-child,
     &:nth-child(2) {
@@ -130,7 +130,7 @@
     &:last-child {
       > .principles-list__span {
         top: -151px;
-        right: 15px;
+        right: 35px;
       }
     }
   }
@@ -148,10 +148,10 @@
     color: $color_white-lighten;
     z-index: -1;
     top: -151px;
-    right: 15px;
+    right: 43px;
   }
 
   @media (min-width: $width_desktop) {
-    right: 33px;
+    right: 50px;
   }
 }

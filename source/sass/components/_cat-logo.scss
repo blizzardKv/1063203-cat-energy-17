@@ -5,6 +5,9 @@
   height: 38px;
 
   @media (min-width: $width_tablet) {
+    position: static;
+    width: 50px;
+    height: 59px;
   }
 
   &--intends {

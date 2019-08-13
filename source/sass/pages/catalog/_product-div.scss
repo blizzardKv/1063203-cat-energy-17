@@ -4,12 +4,22 @@
   @media (min-width: $width_tablet) {
     margin: 0 30px;
     padding-bottom: 16px;
-    background-color: $bg_color_white-lighten;
+    background-image: linear-gradient(#ffffff 80px, #f2f2f2 80px);
 
     &--last-child {
+      margin-top: 80px;
+      background-image: none;
       background-color: $bg_color_white;
       border: 1px solid $border_color_grey-solid;
       padding-bottom: 14px;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    margin: 0;
+
+    &--last-child {
+      padding-bottom: 18px;
     }
   }
 }
@@ -28,6 +38,10 @@
     line-height: 20px;
     text-align: center;
   }
+
+  @media (min-width: $width_desktop) {
+    min-width: 55%;
+  }
 }
 
 .product-div__wrapper-for-product-card {
@@ -35,17 +49,25 @@
 
   @media (min-width: $width_tablet) {
     display: block;
-    background-color: $bg_color_white-lighten;
+  }
+}
+
+.product-div__product-link {
+  @media (min-width: $width_tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 210px;
   }
 }
 
 .product-div__product-image {
   display: block;
-  width: 140px;
-  height: 144px;
 
   @media (min-width: $width_tablet) {
     margin: 0 auto;
+    width: 324px;
+    height: auto;
   }
 }
 
@@ -66,6 +88,7 @@
 
   @media (min-width: $width_tablet) {
     margin-bottom: 17px;
+    padding-top: 39px;
 
     &--intends {
       padding-top: 164px;
@@ -79,7 +102,7 @@
 }
 
 .product-div__order-button {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .product-div__text {
@@ -92,5 +115,9 @@
     font-size: 16px;
     max-width: 52%;
     margin: 0 auto 88px;
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 69%;
   }
 }
