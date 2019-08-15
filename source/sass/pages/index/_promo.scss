@@ -23,7 +23,7 @@
 
 .promo__background {
   @media (min-width: $width_desktop) {
-    background-color: $bg_color_white-lighten;
+    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 63%, rgba(234, 234, 234, 1) 100%);
     margin: 0;
     padding: 0;
   }

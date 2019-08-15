@@ -61,7 +61,13 @@
   }
 
   @media (min-width: $width_desktop) {
-    @include reset-image-fullscreen;
+    position: relative;
+    left: -29px;
+    margin-left: 0;
+    margin-right: 0;
+    right: 0;
+    width: auto;
+    top: -12px;
   }
 }
 
@@ -80,9 +86,13 @@
   }
 
   @media (min-width: $width_desktop) {
-    @include reset-image-fullscreen;
-    left: -366px;
-    top: 20px;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    right: 0;
+    width: auto;
+    left: -363px;
+    top: -5px;
   }
 }
 
