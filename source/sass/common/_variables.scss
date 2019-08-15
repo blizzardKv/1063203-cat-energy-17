@@ -6,12 +6,16 @@ $color_grey: #444444;
 $color_white: #ffffff;
 $color_white-lighten: #f2f2f2;
 $color_green: #68b738;
+$color_green-30: rgba(104, 183, 56, 0.3);
 
 //bg-colors
 $bg_color_white: #ffffff;
 $bg_color_white-lighten: #f2f2f2;
 $bg_color_green: #68b738;
 $bg_color_dark: #222222;
+$bg_color_grey-shade: rgba(234, 234, 234, 1);
+$bg_color_green-solid: #5eaa2f;
+$bg_color_grey-strong: #ebebeb;
 
 //fonts
 $font_main: "Arial", sans-serif;
@@ -27,10 +31,13 @@ $width_desktop: 1300px;
 //borders
 $border_color_grey: #e6e6e6;
 $border_color_light-grey: #d9d9d9;
+$border_color_grey-solid-50: rgba(68, 68, 68, 0.5);
 $border_color_grey-solid: #cdcdcd;
 $border_color_green: #68b738;
 $border_color_grey-pure: #ededed;
-$border_color_grey-solid: #d3d3d3;
+$border_color_black: #444444;
+$border_color_red: #ff8282;
+$border_color_grey-filth: #bababa;
 
 //scale
 $scale_color: #dcdcdc;

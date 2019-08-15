@@ -6,13 +6,29 @@
 
   @media (min-width: $width_tablet) {
     position: static;
-    width: 50px;
-    height: 59px;
+    width: 69px;
+    height: 65px;
   }
 
   &--intends {
     @media (min-width: $width_tablet) {
       margin-right: 20px;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin-right: 14px;
+    }
+  }
+}
+
+.cat-logo__image {
+  @media (min-width: $width_tablet) {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
     }
   }
 }

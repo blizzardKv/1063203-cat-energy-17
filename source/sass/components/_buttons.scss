@@ -26,6 +26,26 @@
     }
   }
 
+  &--green {
+    &:hover {
+      background-color: $bg_color_green-solid;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--grey {
+    &:hover {
+      background-color: $bg_color_grey-strong;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   &--order,
   &--submit {
     position: static;
@@ -48,7 +68,7 @@
 
   &--additional-catalog {
     @media (min-width: $width_tablet) {
-      max-width: 89%;
+      max-width: 100%;
     }
 
     @media (min-width: $width_desktop) {
@@ -64,6 +84,11 @@
     line-height: 20px;
     color: $color_grey;
     background-color: $bg_color_white-lighten;
+  }
+
+  &--form-font {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

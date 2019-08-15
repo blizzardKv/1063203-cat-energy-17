@@ -24,3 +24,13 @@
     margin-right: 37px;
   }
 }
+
+.social-list__link {
+  &:hover {
+    fill: $color_green;
+  }
+
+  &:active {
+    fill: $color_green-30;
+  }
+}

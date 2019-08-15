@@ -4,14 +4,14 @@
   @media (min-width: $width_tablet) {
     margin: 0 30px;
     padding-bottom: 16px;
-    background-image: linear-gradient(#ffffff 80px, #f2f2f2 80px);
+    background-image: linear-gradient(#ffffff 84px, #f2f2f2 80px);
 
     &--last-child {
       margin-top: 80px;
       background-image: none;
       background-color: $bg_color_white;
       border: 1px solid $border_color_grey-solid;
-      padding-bottom: 14px;
+      padding-bottom: 13px;
     }
   }
 
@@ -19,7 +19,7 @@
     margin: 0;
 
     &--last-child {
-      padding-bottom: 18px;
+      padding-bottom: 14px;
     }
   }
 }
@@ -113,6 +113,7 @@
 
   @media (min-width: $width_tablet) {
     font-size: 16px;
+    line-height: 19px;
     max-width: 52%;
     margin: 0 auto 88px;
   }

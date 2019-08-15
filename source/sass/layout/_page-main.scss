@@ -11,6 +11,14 @@
   }
 }
 
+.page-main__upper-container {
+  @media (min-width: $width_desktop) {
+    width: 1220px;
+    margin: 0 auto 66px;
+    padding: 0;
+  }
+}
+
 .page-main__form {
   @media (min-width: $width_tablet) {
     padding: 0 40px;
@@ -31,12 +39,16 @@
   text-transform: uppercase;
 
   @media (min-width: $width_tablet) {
-    width: 50%;
+    width: 57%;
+    margin: 0 0 67px 0;
     padding: 0 40px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $width_desktop) {
-    width: auto;
+    width: 27%;
+    margin: 0;
     padding: 0;
   }
 }
@@ -105,5 +117,15 @@
   &--form {
     padding-top: 28px;
     margin-bottom: 36px;
+
+    @media (min-width: $width_tablet) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin: 0 auto 56px;
+      padding-top: 68px;
+      width: 1220px;
+    }
   }
 }

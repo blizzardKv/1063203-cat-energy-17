@@ -4,16 +4,22 @@
   line-height: 18px;
   color: $color_dark;
   text-transform: uppercase;
+
+  @media (min-width: $width_tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .form__fieldset {
   border: 0;
   padding: 0;
   margin: 0;
-
-  @media (min-width: $width_desktop) {
-    width: 100%;
-  }
 
   &--radio {
     margin-bottom: 28px;
@@ -30,6 +36,35 @@
   &--checkbox {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $width_tablet) {
+    width: 100%;
+    margin-bottom: 50px;
+
+    &--user {
+      margin-bottom: 44px;
+    }
+
+    &--textarea {
+      margin-bottom: 44px;
+    }
+
+    &--checkbox {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    &--cat-info {
+      width: 88%;
+      margin-right: 80px;
+    }
+
+    &--radio {
+      width: 88%;
+      margin: 0;
+    }
+  }
 }
 
 .form__list {
@@ -41,16 +76,17 @@
     margin: 0 -20px;
     border: 1px solid $border_color_grey-pure;
     padding: 13px 20px 0 20px;
+
+    @media (min-width: $width_tablet) {
+      border: 1px solid $border_color_grey-solid;
+      margin: 0;
+    }
   }
 
   &--flexible {
     @media (min-width: $width_desktop) {
       display: flex;
       flex-wrap: wrap;
-
-      > .form__list-item {
-        width: 50%;
-      }
     }
   }
 
@@ -87,27 +123,141 @@
       margin-bottom: 27px;
     }
   }
+
+  @media (min-width: $width_tablet) {
+    margin-bottom: 20px;
+
+    &--radio {
+      margin-bottom: 14px;
+
+      &:last-child {
+        margin-bottom: 34px;
+      }
+    }
+
+    &--checkbox {
+      @media (min-width: $width_tablet) {
+        &:first-child,
+        &:nth-child(2) {
+          margin-bottom: 40px;
+        }
+
+        &:nth-child(2n) > .form__label--checkbox {
+          padding-left: 88px;
+
+          &::before {
+            left: 30px;
+          }
+        }
+
+        &:nth-child(2n) > .form__checkbox:checked + .form__label--checkbox::after {
+          top: 8px;
+          left: 41px;
+        }
+      }
+
+      @media (min-width: $width_desktop) {
+        &:nth-child(2n) > .form__label--checkbox {
+          padding-left: 78px;
+
+          &::before {
+            left: 21px;
+          }
+        }
+
+        &:nth-child(2n) > .form__checkbox:checked + .form__label--checkbox::after {
+          left: 33px;
+        }
+
+
+        &:nth-child(3) > .form__label--checkbox {
+          padding-left: 99px;
+
+          &::before {
+            left: 40px;
+          }
+        }
+
+        &:nth-child(3) > .form__checkbox:checked + .form__label--checkbox::after {
+          left: 51px;
+        }
+
+        &:last-child > .form__label--checkbox {
+          padding-left: 117px;
+
+          &::before {
+            left: 61px;
+          }
+        }
+
+        &:last-child > .form__checkbox:checked + .form__label--checkbox::after {
+          left: 72px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    &--email {
+      width: 47%;
+      margin-right: 80px;
+    }
+
+    &--tel {
+      width: 46%;
+    }
+  }
 }
 
 .form__input {
   width: 100%;
   padding-left: 13px;
   min-height: 45px;
+  border: 1px solid $border_color_grey-solid-50;
 
   &::placeholder {
     color: $color_grey;
     text-transform: uppercase;
   }
+
+  &:hover {
+    border: 1px solid $border_color_grey-solid;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid $border_color_black;
+  }
+
+  &:focus:checked:invalid {
+    outline: 2px solid $border_color_red;
+    border: 0 none;
+  }
+
+  @media (min-width: $width_tablet) {
+    padding: 3px 0 0 20px;
+    min-height: 52px;
+  }
+}
+
+.form__icon {
+  display: block;
+  position: absolute;
 }
 
 .form__textarea {
   width: 100%;
   min-height: 152px;
   padding: 13px 0 0 14px;
+  border: 1px solid $border_color_grey-solid;
 
   &::placeholder {
     color: $color_grey;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $width_tablet) {
+    min-height: 174px;
   }
 }
 
@@ -119,10 +269,9 @@
   &--radio {
     display: block;
     position: relative;
-    padding-left: 46px;
     cursor: pointer;
     user-select: none;
-    padding-top: 16px;
+    padding: 16px 0 0 46px;
 
     &::before {
       position: absolute;
@@ -133,6 +282,27 @@
       border: 1px solid $border_color_grey-solid;
       top: 10px;
       left: 0;
+    }
+
+    &:hover {
+      &::before {
+        border: 1px solid $border_color_grey-filth;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $width_tablet) {
+      padding: 20px 0 0 67px;
+
+      &::before {
+        width: 40px;
+        height: 40px;
+        top: 12px;
+        left: 8px;
+      }
     }
   }
 
@@ -154,6 +324,21 @@
       top: 2px;
       left: 0;
     }
+
+    @media (min-width: $width_tablet) {
+      padding-left: 59px;
+
+      &::before {
+        width: 40px;
+        height: 40px;
+        top: -4px;
+        left: 0;
+      }
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    margin-right: 19px;
   }
 }
 
@@ -167,6 +352,15 @@
     background-color: $bg_color_green;
     top: 19px;
     left: 9px;
+  }
+
+  @media (min-width: $width_tablet) {
+    &::after {
+      width: 18px;
+      height: 18px;
+      top: 23px;
+      left: 19px;
+    }
   }
 }
 
@@ -183,15 +377,48 @@
     top: 9px;
     left: 5px;
   }
+
+  @media (min-width: $width_tablet) {
+    &::after {
+      top: 8px;
+      left: 10px;
+    }
+  }
 }
 
 .form__headline {
   margin-bottom: 32px;
+
+  @media (min-width: $width_tablet) {
+    margin: 0 0 76px 0;
+
+    &--checkbox-intends {
+      margin-bottom: 62px;
+    }
+  }
 }
 
 .form__button-box {
   @media (min-width: $width_tablet) {
     display: flex;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin-bottom: 81px;
+  }
+}
+
+.form__button-submit {
+  @media (min-width: $width_tablet) {
+    width: 45%;
+    padding: 17px 0 17px 0;
+    margin-right: 62px;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 47%;
+    margin-right: 78px;
   }
 }
 
@@ -204,6 +431,13 @@
   text-align: center;
   color: $color_grey;
   text-transform: none;
+
+  @media (min-width: $width_tablet) {
+    margin: 0;
+    padding: 16px 0 0 0;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 //доступность
 [type="radio"]:focus + label,

@@ -75,11 +75,11 @@
   }
 
   @media (min-width: $width_tablet) {
-    width: 50%;
+    width: 34%;
     font-size: 16px;
     line-height: 24px;
     padding: 0;
-    max-width: calc (100% / 2);
+    max-width: 50%;
 
     &:first-child,
     &:nth-child(2) {
