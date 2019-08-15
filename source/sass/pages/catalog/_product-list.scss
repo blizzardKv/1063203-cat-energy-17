@@ -22,7 +22,7 @@
     margin-bottom: 55px;
 
     &:last-child,
-    &:nth-last-child(2) {
+    &:nth-last-child(2n) {
       margin-bottom: 37px;
     }
   }

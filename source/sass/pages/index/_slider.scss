@@ -1,14 +1,8 @@
-.slider {
-  @media (min-width: $width_tablet) {
-    background: linear-gradient(90deg, $color_white-lighten 50%, $bg_color_grey-shade 100%);
-  }
-}
-
 .slider__container {
   padding-bottom: 36px;
 
   @media (min-width: $width_tablet) {
-    padding-bottom: 73px;
+    padding-bottom: 67px;
   }
 }
 
@@ -17,12 +11,12 @@
   text-align: center;
 
   @media (min-width: $width_tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     display: flex;
   }
 
   @media (min-width: $width_desktop) {
-    margin-bottom: 9px;
+    margin-bottom: 43px;
   }
 }
 
@@ -30,7 +24,7 @@
   @media (min-width: $width_tablet) {
     width: 50%;
     overflow-x: hidden;
-    margin-top: -157px;
+    margin-top: -173px;
   }
 
   @media (min-width: $width_desktop) {
@@ -42,7 +36,7 @@
   @media (min-width: $width_tablet) {
     width: 50%;
     overflow-x: hidden;
-    margin-top: -169px;
+    margin-top: -196px;
   }
 }
 
@@ -62,12 +56,12 @@
 
   @media (min-width: $width_desktop) {
     position: relative;
-    left: -29px;
+    left: -35px;
     margin-left: 0;
     margin-right: 0;
     right: 0;
     width: auto;
-    top: -12px;
+    top: -2px;
   }
 }
 
@@ -92,7 +86,7 @@
     right: 0;
     width: auto;
     left: -363px;
-    top: -5px;
+    top: 5px;
   }
 }
 
@@ -118,6 +112,8 @@
   @media (min-width: $width_tablet) {
     font-size: 20px;
     line-height: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted rgba(68, 68, 68, 0.23);
   }
 }
 

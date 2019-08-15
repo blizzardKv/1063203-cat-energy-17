@@ -87,8 +87,13 @@
   }
 
   &--form-font {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
+
+    @media (min-width: $width_tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
 

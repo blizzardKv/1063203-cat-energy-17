@@ -17,7 +17,7 @@
         <img class="cat-logo__image" src="./img/logo-mobile.png" alt="Логотип компании Кэт Энерджи.">
       </picture>
     </a>
-    <a class="logo logo--intends" href="index.html"><img class="logo__image" src="img/logo-mobile-header.png" alt="Текстовый логотип Кэт Энерджи."></a>
+    <a class="logo logo--intends" href="index.html"><img class="logo__image" src="img/svg/logo-footer.svg" alt="Текстовый логотип Кэт Энерджи."></a>
   </div>
   <button class="toggle close-button toggle--closed toggle--nojs" type="button" aria-label="Закрыть"></button>
   <nav class="site-navigation">
@@ -37,6 +37,7 @@
   <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
     <div class="fieldset-div">
       <fieldset class="form__fieldset form__fieldset--cat-info">
+        <legend class="visually-hidden">Информация о коте</legend>
         <ul class="form__list">
           <li class="form__list-item">
             <label class="form__label" for="cat-name">Имя:*</label>
@@ -53,6 +54,7 @@
         </ul>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--radio">
+        <legend class="visually-hidden">Цель программы</legend>
         <ul class="form__list form__list--radio">
           <li class="form__list-item form__list-item--radio">
             <input class="form__radio visually-hidden" id="weight-loss" name="about-weight" type="radio" value="weight-loss" checked>
@@ -70,6 +72,7 @@
       </fieldset>
     </div>
     <fieldset class="form__fieldset form__fieldset--user">
+      <legend class="visually-hidden">Информация о хозяине/хозяйке кота</legend>
       <h2 class="form__headline thematic-headline">Контактные данные (владельца кота)</h2>
       <ul class="form__list form__list--flexible">
         <li class="form__list-item form__list-item--email">
@@ -84,11 +87,13 @@
       </ul>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--textarea">
+      <legend class="visually-hidden">Комментарий</legend>
       <h2 class="form__headline thematic-headline">Комментарий</h2>
       <textarea class="form__textarea" id="about-cat" name="about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
       <label class="form__label" for="about-cat"></label>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset--checkbox">
+      <legend class="visually-hidden">Дополнительный заказ</legend>
       <h2 class="form__headline form__headline--checkbox-intends thematic-headline">Дополнительно</h2>
       <ul class="form__list form__list--flexible-checkbox">
         <li class="form__list-item form__list-item--checkbox">
@@ -123,7 +128,7 @@
       <p class="company-info__text">ул. Большая Конюшенная, д. 19/8, Санкт-Петербург</p>
     </div>
     <div class="company-info__map-div">
-      <img class="company-info__map map" src="./img/bg-map-mobile@1x.png" alt="Карта по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+      <iframe class="company-info__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.32085871600612!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565867688615!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </section>
 </main>

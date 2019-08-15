@@ -46,11 +46,11 @@
     }
 
     &--textarea {
-      margin-bottom: 44px;
+      margin-bottom: 47px;
     }
 
     &--checkbox {
-      margin-bottom: 25px;
+      margin-bottom: 19px;
     }
   }
 
@@ -63,6 +63,10 @@
     &--radio {
       width: 88%;
       margin: 0;
+    }
+
+    &--checkbox {
+      margin-bottom: 24px;
     }
   }
 }
@@ -94,16 +98,7 @@
     @media (min-width: $width_tablet) {
       display: flex;
       flex-wrap: wrap;
-
-      > .form__list-item {
-        width: 50%;
-      }
-    }
-
-    @media (min-width: $width_desktop) {
-      > .form__list-item {
-        width: 25%;
-      }
+      justify-content: space-between;
     }
   }
 }
@@ -112,16 +107,8 @@
   display: flex;
   margin-bottom: 14px;
 
-  &:last-child {
-    margin-bottom: 21px;
-  }
-
   &--radio {
     margin-bottom: 9px;
-
-    &:last-child {
-      margin-bottom: 27px;
-    }
   }
 
   @media (min-width: $width_tablet) {
@@ -137,62 +124,9 @@
 
     &--checkbox {
       @media (min-width: $width_tablet) {
-        &:first-child,
-        &:nth-child(2) {
-          margin-bottom: 40px;
-        }
-
-        &:nth-child(2n) > .form__label--checkbox {
-          padding-left: 88px;
-
-          &::before {
-            left: 30px;
-          }
-        }
-
-        &:nth-child(2n) > .form__checkbox:checked + .form__label--checkbox::after {
-          top: 8px;
-          left: 41px;
-        }
-      }
-
-      @media (min-width: $width_desktop) {
-        &:nth-child(2n) > .form__label--checkbox {
-          padding-left: 78px;
-
-          &::before {
-            left: 21px;
-          }
-        }
-
-        &:nth-child(2n) > .form__checkbox:checked + .form__label--checkbox::after {
-          left: 33px;
-        }
-
-
-        &:nth-child(3) > .form__label--checkbox {
-          padding-left: 99px;
-
-          &::before {
-            left: 40px;
-          }
-        }
-
-        &:nth-child(3) > .form__checkbox:checked + .form__label--checkbox::after {
-          left: 51px;
-        }
-
-        &:last-child > .form__label--checkbox {
-          padding-left: 117px;
-
-          &::before {
-            left: 61px;
-          }
-        }
-
-        &:last-child > .form__checkbox:checked + .form__label--checkbox::after {
-          left: 72px;
-        }
+        width: 50%;
+        margin-bottom: 40px;
+        padding-left: 12px;
       }
     }
   }
@@ -205,6 +139,13 @@
 
     &--tel {
       width: 46%;
+    }
+
+    &--checkbox {
+      @media (min-width: $width_tablet) {
+        width: 20%;
+        padding-left: 12px;
+      }
     }
   }
 }
@@ -265,6 +206,7 @@
   white-space: nowrap;
   margin-right: 14px;
   padding-top: 14px;
+  color: $color_dark;
 
   &--radio {
     display: block;
@@ -326,19 +268,13 @@
     }
 
     @media (min-width: $width_tablet) {
-      padding-left: 59px;
-
       &::before {
         width: 40px;
         height: 40px;
-        top: -4px;
-        left: 0;
+        top: -2px;
+        left: -12px;
       }
     }
-  }
-
-  @media (min-width: $width_desktop) {
-    margin-right: 19px;
   }
 }
 
@@ -380,8 +316,8 @@
 
   @media (min-width: $width_tablet) {
     &::after {
-      top: 8px;
-      left: 10px;
+      top: 10px;
+      left: -2px;
     }
   }
 }
@@ -424,7 +360,7 @@
 
 .form__hint {
   margin-bottom: 32px;
-  padding-top: 23px;
+  padding-top: 9px;
   font-size: 14px;
   font-family: $font_main;
   line-height: 16px;

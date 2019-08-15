@@ -14,4 +14,12 @@
     width: 121px;
     height: 17px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

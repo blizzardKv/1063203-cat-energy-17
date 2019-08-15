@@ -3,27 +3,27 @@
 
   @media (min-width: $width_tablet) {
     margin: 0 0 27px 0;
-    padding-bottom: 97px;
+    padding-bottom: 28px;
     border-bottom: 1px solid $border_color_grey-pure;
   }
 
   @media (min-width: $width_desktop) {
     max-width: 1220px;
-    margin: 0 auto 12px;
-    padding-bottom: 50px;
+    margin: 0 auto 52px;
+    padding-bottom: 0;
     border-bottom: 0 none;
   }
 }
 
 .principles__headline {
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 
   @media (min-width: $width_tablet) {
-    margin: 0 0 184px 0;
+    margin: 0 0 13px 0;
   }
 
   @media (min-width: $width_desktop) {
-    margin: 0 0 184px 0;
+    margin: 0 0 13px 0;
   }
 }
 

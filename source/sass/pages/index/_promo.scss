@@ -17,13 +17,13 @@
   @media (min-width: $width_desktop) {
     max-width: 1220px;
     margin: 0 auto 74px;
-    padding-top: 50px;
+    padding-top: 73px;
   }
 }
 
 .promo__background {
   @media (min-width: $width_desktop) {
-    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 63%, rgba(234, 234, 234, 1) 100%);
+    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 50%, rgba(234, 234, 234, 1) 100%);
     margin: 0;
     padding: 0;
   }
@@ -41,7 +41,7 @@
   margin-bottom: 38px;
 
   @media (min-width: $width_tablet) {
-    margin-bottom: 222px;
+    margin-bottom: 247px;
   }
 
   @media (min-width: $width_desktop) {
