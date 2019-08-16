@@ -33,7 +33,7 @@
   padding: 22px 0 10px 0;
 
   @media (min-width: $width_tablet) {
-    padding: 0 0 0 0;
+    padding: 0;
   }
 }
 
@@ -52,4 +52,10 @@
 .page-footer__promo-img-link {
   display: block;
   margin-left: 20px;
+}
+
+.page-footer__promo-img {
+  &:active {
+    opacity: 0.3;
+  }
 }

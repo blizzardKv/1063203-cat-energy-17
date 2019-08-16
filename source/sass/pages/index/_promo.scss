@@ -104,19 +104,17 @@
 
   &:first-child {
     padding: 16px 42px 17px 42px;
+
+    @media (min-width: $width_tablet) {
+      padding: 16px 56px 17px 56px;
+      margin-right: 42px;
+    }
   }
 
   &:last-child {
     padding: 17px 21px 8px 20px;
-  }
 
-  @media (min-width: $width_tablet) {
-    &:first-child {
-      padding: 16px 56px 17px 56px;
-      margin-right: 42px;
-    }
-
-    &:last-child {
+    @media (min-width: $width_tablet) {
       padding: 17px 29px 8px 29px;
 
       > .promo__span {

@@ -12,31 +12,31 @@
   border-right: 1px solid $border_color_grey-pure;
   border-bottom: 1px solid $border_color_grey-pure;
 
-  &:last-child {
-    text-align: center;
-  }
-
   @media (min-width: $width_tablet) {
     width: 50%;
     border: 0 none;
     margin-bottom: 55px;
-
-    &:last-child,
-    &:nth-last-child(2n) {
-      margin-bottom: 37px;
-    }
   }
 
   @media (min-width: $width_desktop) {
     width: calc(25% - 5%);
     margin-bottom: 54px;
+  }
 
-    &:not(:nth-child(4n)) {
-      margin-right: 81px;
+  &:last-child {
+    text-align: center;
+
+    @media (min-width: $width_tablet) {
+      &:last-child,
+      &:nth-last-child(2n) {
+        margin-bottom: 37px;
+      }
     }
+  }
 
-    &:last-child {
-      margin-top: 83px;
+  &:not(:nth-child(4n)) {
+    @media (min-width: $width_desktop) {
+      margin-right: 81px;
     }
   }
 }

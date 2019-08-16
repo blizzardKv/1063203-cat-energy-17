@@ -26,12 +26,6 @@
   line-height: 20px;
   color: $color_white;
 
-  @media (min-width: $width_tablet) {
-    max-width: 83%;
-    padding: 72px 0 0 60%;
-    text-align: left;
-  }
-
   &::before {
     position: absolute;
     content: "";
@@ -46,6 +40,12 @@
     @media (min-width: $width_tablet) {
       left: 91px;
     }
+  }
+
+  @media (min-width: $width_tablet) {
+    max-width: 83%;
+    padding: 72px 0 0 60%;
+    text-align: left;
   }
 
   @media (min-width: $width_desktop) {

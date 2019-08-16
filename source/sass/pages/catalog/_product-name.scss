@@ -13,6 +13,12 @@
     background-position: 0 0;
     top: -38px;
     left: 86px;
+
+    @media (min-width: $width_tablet) {
+      width: 61px;
+      top: -194%;
+      left: 29%;
+    }
   }
 
   &::after {
@@ -25,17 +31,10 @@
     line-height: 20px;
     display: block;
     margin: 0 auto;
-    max-width: 42%;
-
-    &::before,
-    &::after {
-      width: 61px;
-      top: -194%;
-      left: 29%;
-    }
+    max-width: 62%;
   }
 
   @media (min-width: $width_desktop) {
-    max-width: 56%;
+    max-width: 92%;
   }
 }

@@ -3,23 +3,26 @@
 
   @media (min-width: $width_tablet) {
     margin: 0 30px;
-    padding-bottom: 16px;
+    padding: 0 40px 16px;
     background-image: linear-gradient(#ffffff 84px, #f2f2f2 80px);
+  }
 
-    &--last-child {
+  @media (min-width: $width_desktop) {
+    margin: 0;
+    padding: 0 40px 15px;
+  }
+
+  &--last-child {
+    @media (min-width: $width_tablet) {
       margin-top: 80px;
       background-image: none;
       background-color: $bg_color_white;
       border: 1px solid $border_color_grey-solid;
       padding-bottom: 13px;
     }
-  }
 
-  @media (min-width: $width_desktop) {
-    margin: 0;
-
-    &--last-child {
-      padding-bottom: 13px;
+    @media (min-width: $width_desktop) {
+      padding: 0 30px 13px 30px;
     }
   }
 }
@@ -33,14 +36,14 @@
 
   @media (min-width: $width_tablet) {
     margin: 0 auto;
-    min-width: 43%;
+    min-width: 60%;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
   }
 
   @media (min-width: $width_desktop) {
-    min-width: 55%;
+    min-width: 80%;
   }
 }
 
@@ -57,6 +60,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin: 0 -40px;
     height: 210px;
   }
 }
@@ -81,17 +85,17 @@
   color: $color_black;
   text-transform: uppercase;
 
-  &--intends {
-    padding-top: 80px;
-    margin-bottom: 7px;
-  }
-
   @media (min-width: $width_tablet) {
     margin-bottom: 17px;
     padding-top: 39px;
+  }
 
-    &--intends {
-      padding-top: 164px;
+  &--intends {
+    padding-top: 80px;
+    margin-bottom: 7px;
+
+    @media (min-width: $width_tablet) {
+      padding-top: 167px;
       margin-bottom: 28px;
     }
   }
@@ -114,12 +118,12 @@
   @media (min-width: $width_tablet) {
     font-size: 16px;
     line-height: 19px;
-    max-width: 52%;
+    max-width: 76%;
     margin: 0 auto 88px;
   }
 
   @media (min-width: $width_desktop) {
-    max-width: 69%;
+    max-width: 100%;
     margin: 0 auto 85px;
   }
 }

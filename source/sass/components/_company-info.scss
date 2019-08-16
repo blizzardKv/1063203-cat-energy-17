@@ -67,7 +67,15 @@
 }
 
 .company-info__map-div {
-  @include image-fullscreen;
+  display: block;
+  width: 100%;
+  min-height: 363px;
+  object-position: 0 -37px;
+  background-color: $bg_color_white-lighten;
+  background-image: url("/img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
 
   &::before {
     content: "";
@@ -79,46 +87,33 @@
     height: 53px;
     top: 29%;
     left: 30%;
-    z-index: 3;
-  }
+    z-index: 1;
 
-  @media (min-width: $width_tablet) {
-    &::before {
+    @media (min-height: $width_tablet) {
       width: 113px;
       height: 106px;
       top: 39%;
       left: 42%;
     }
-  }
 
-  @media (min-width: $width_desktop) {
-    @include reset-image-fullscreen;
-
-    &::before {
+    @media (min-width: $width_desktop) {
       width: 113px;
       height: 106px;
       top: 38%;
       left: 68%;
     }
   }
-}
-
-.company-info__map {
-  display: block;
-  object-position: 0 -37px;
-  background-color: $bg_color_white-lighten;
-  background-image: url("img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 
   @media (min-width: $width_tablet) {
+    min-height: 393px;
     object-position: 0 0;
-    background-image: url("img/bg-map-tablet@1x.png");
+    background-image: url("/img/bg-map-tablet@1x.png");
   }
 
   @media (min-width: $width_desktop) {
     object-position: 0 0;
-    background-image: url("img/bg-map-desktop@1x.png");
+    min-height: 400px;
+    background-image: url("/img/bg-map-desktop@1x.png");
   }
 }
 

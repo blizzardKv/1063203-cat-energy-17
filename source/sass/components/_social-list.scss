@@ -8,13 +8,13 @@
 
   &--intends {
     padding: 25px 0 14px 0;
-  }
 
-  @media (min-width: $width_tablet) {
-    border: 0 none;
+    @media (min-width: $width_tablet) {
+      border: 0 none;
 
-    &--intends {
-      padding: 7px 0 14px 0;
+      &--intends {
+        padding: 7px 0 14px 0;
+      }
     }
   }
 }
