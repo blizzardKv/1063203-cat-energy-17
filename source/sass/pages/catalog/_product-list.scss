@@ -25,13 +25,6 @@
 
   &:last-child {
     text-align: center;
-
-    @media (min-width: $width_tablet) {
-      &:last-child,
-      &:nth-last-child(2n) {
-        margin-bottom: 37px;
-      }
-    }
   }
 
   &:not(:nth-child(4n)) {

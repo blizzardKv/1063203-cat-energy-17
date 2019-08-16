@@ -89,7 +89,7 @@
     left: 30%;
     z-index: 1;
 
-    @media (min-height: $width_tablet) {
+    @media (min-width: $width_tablet) {
       width: 113px;
       height: 106px;
       top: 39%;
