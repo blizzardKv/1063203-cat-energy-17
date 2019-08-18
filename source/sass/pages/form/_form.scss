@@ -36,7 +36,7 @@
   }
 
   &--user {
-    margin-bottom: 10px;
+    margin-bottom: 17px;
 
     @media (min-width: $width_tablet) {
       margin-bottom: 44px;
@@ -52,10 +52,10 @@
   }
 
   &--checkbox {
-    margin-bottom: 10px;
+    margin-bottom: 19px;
 
     @media (min-width: $width_tablet) {
-      margin-bottom: 19px;
+      margin-bottom: 15px;
     }
 
     @media (min-width: $width_desktop) {
@@ -64,6 +64,12 @@
   }
 
   &--cat-info {
+    margin-bottom: 10px;
+
+    @media (min-width: $width_tablet) {
+      margin-bottom: 52px;
+    }
+
     @media (min-width: $width_desktop) {
       width: 88%;
       margin-right: 80px;
@@ -79,11 +85,12 @@
   &--radio {
     margin: 0 -20px;
     border: 1px solid $border_color_grey-pure;
-    padding: 13px 20px 0 20px;
+    padding: 11px 20px 17px;
 
     @media (min-width: $width_tablet) {
       border: 1px solid $border_color_grey-solid;
       margin: 0;
+      padding: 11px 20px 1px;
     }
   }
 
@@ -91,6 +98,7 @@
     @media (min-width: $width_desktop) {
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
     }
   }
 
@@ -134,18 +142,28 @@
       width: 20%;
       padding-left: 12px;
     }
+
+    &:nth-child(even) {
+      @media (min-width: $width_tablet) {
+        padding-left: 42px;
+      }
+
+      @media (min-width: $width_desktop) {
+        padding-left: 12px;
+      }
+    }
   }
 
   &--email {
     @media (min-width: $width_desktop) {
-      width: 47%;
-      margin-right: 80px;
+      width: 46.72%;
+      margin-right: 78px;
     }
   }
 
   &--tel {
     @media (min-width: $width_desktop) {
-      width: 46%;
+      width: 46.72%;
     }
   }
 }
@@ -175,9 +193,11 @@
     outline: 2px solid $border_color_black;
   }
 
-  &:invalid {
-    outline: 2px solid $border_color_red;
-    border: 0 none;
+  &:not(:placeholder-shown) {
+    &:invalid {
+      outline: 2px solid $border_color_red;
+      border: 0 none;
+    }
   }
 }
 
@@ -271,7 +291,7 @@
       &::before {
         width: 40px;
         height: 40px;
-        top: -2px;
+        top: -5px;
         left: -12px;
       }
     }
@@ -316,7 +336,7 @@
 
   @media (min-width: $width_tablet) {
     &::after {
-      top: 10px;
+      top: 7px;
       left: -2px;
     }
   }
@@ -361,7 +381,7 @@
 }
 
 .form__hint {
-  margin-bottom: 32px;
+  margin-bottom: 29px;
   padding-top: 9px;
   font-size: 14px;
   font-family: $font_main;

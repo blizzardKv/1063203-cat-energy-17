@@ -15,9 +15,10 @@
 
   @media (min-width: $width_desktop) {
     position: absolute;
-    width: 36%;
+    width: 40%;
+    padding: 64px 116px 64px 73px;
     top: 24%;
-    left: 156px;
+    left: 10%;
     background-color: $bg_color_white;
     z-index: 2;
   }
@@ -57,12 +58,13 @@
   @media (min-width: $width_tablet) {
     font-size: 16px;
     line-height: 20px;
-    max-width: 160px;
+    max-width: 30%;
     text-align: right;
   }
 
   @media (min-width: $width_desktop) {
     text-align: left;
+    max-width: 40%;
   }
 }
 

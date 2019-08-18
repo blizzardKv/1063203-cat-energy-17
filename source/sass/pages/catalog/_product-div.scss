@@ -13,30 +13,64 @@
   }
 
   &--last-child {
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 31px;
+      height: 2px;
+      background-color: $bg_color_dark;
+      opacity: 0.2;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: 20%;
+      left: 44.5%;
+
+      @media (min-width: $width_tablet) {
+        width: 60px;
+        top: 19%;
+        left: 41%;
+      }
+
+      @media (min-width: $width_desktop) {
+        width: 60px;
+        left: 38%;
+      }
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+
     @media (min-width: $width_tablet) {
-      margin-top: 80px;
+      margin-top: 84px;
+      min-height: 432px;
       background-image: none;
       background-color: $bg_color_white;
-      border: 1px solid $border_color_grey-solid;
-      padding-bottom: 13px;
+      border: 1px solid $border_color_grey-solid-50;
+      padding-bottom: 17px;
     }
 
     @media (min-width: $width_desktop) {
-      padding: 0 30px 13px 30px;
+      margin-top: 85px;
+      padding: 0 37px 13px;
     }
   }
 }
 
 .product-div__link {
   display: block;
-  width: 90px;
+  width: 70%;
   font-size: 16px;
   line-height: 20px;
   color: $color_black;
 
   @media (min-width: $width_tablet) {
     margin: 0 auto;
-    min-width: 60%;
+    max-width: 57%;
+    min-height: 40px;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -49,6 +83,8 @@
 
 .product-div__wrapper-for-product-card {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 1px;
 
   @media (min-width: $width_tablet) {
     display: block;
@@ -75,6 +111,14 @@
   }
 }
 
+.product-div__product-card {
+  width: 50%;
+
+  @media (min-width: $width_tablet) {
+    width: 100%;
+  }
+}
+
 .product-div__product-name {
   margin: 0 0 14px 0;
   padding-top: 21px;
@@ -87,7 +131,7 @@
 
   @media (min-width: $width_tablet) {
     margin-bottom: 17px;
-    padding-top: 39px;
+    padding-top: 38px;
   }
 
   &--intends {
@@ -95,8 +139,8 @@
     margin-bottom: 7px;
 
     @media (min-width: $width_tablet) {
-      padding-top: 167px;
-      margin-bottom: 28px;
+      padding-top: 163px;
+      margin-bottom: 26px;
     }
   }
 }
@@ -106,7 +150,7 @@
 }
 
 .product-div__order-button {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .product-div__text {
@@ -119,7 +163,8 @@
     font-size: 16px;
     line-height: 19px;
     max-width: 76%;
-    margin: 0 auto 88px;
+    min-height: 37px;
+    margin: 0 auto 85px;
   }
 
   @media (min-width: $width_desktop) {

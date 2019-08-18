@@ -5,14 +5,13 @@
 }
 
 .product-description__div {
-  width: 140px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $width_tablet) {
     margin: 0 auto;
-    padding-top: 7px;
-    padding-bottom: 8px;
+    padding: 8px 0;
     min-width: 100%;
     border-bottom: 1px solid $border_color_grey-solid;
 

@@ -1,31 +1,8 @@
 .product-name__link {
   position: relative;
 
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    width: 31px;
-    height: 2px;
-    background-color: $bg_color_dark;
-    opacity: 0.2;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    top: -38px;
-    left: 86px;
-
-    @media (min-width: $width_tablet) {
-      width: 61px;
-      top: -194%;
-      left: 29%;
-    }
-  }
-
-  &::after {
-    transform: rotate(90deg);
-  }
-
   @media (min-width: $width_tablet) {
+    min-height: 40px;
     font-size: 20px;
     font-family: $font_secondary;
     line-height: 20px;

@@ -38,11 +38,12 @@
 }
 
 .product-promotion__headline {
-  padding-top: 27px;
+  padding: 27px 20px 0 20px;
   margin-bottom: 25px;
 
   @media (min-width: $width_tablet) {
     margin-bottom: 41px;
+    padding: 27px 20px 0 0;
   }
 }
 
