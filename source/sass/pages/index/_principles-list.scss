@@ -8,7 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 0 0 30px;
+    margin: 0;
     width: 100%;
   }
 
@@ -64,7 +64,7 @@
   }
 
   @media (min-width: $width_tablet) {
-    max-width: 48%;
+    max-width: 46%;
     font-size: 16px;
     line-height: 24px;
     margin-top: 59px;
@@ -134,7 +134,7 @@
   padding-top: 2px;
 
   @media (min-width: $width_tablet) {
-    width: 74%;
+    width: 77%;
     margin-top: 112px;
   }
 
