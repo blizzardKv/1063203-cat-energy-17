@@ -15,35 +15,6 @@
   &--last-child {
     position: relative;
 
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 31px;
-      height: 2px;
-      background-color: $bg_color_dark;
-      opacity: 0.2;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      top: 20%;
-      left: 44.5%;
-
-      @media (min-width: $width_tablet) {
-        width: 60px;
-        top: 19%;
-        left: 41%;
-      }
-
-      @media (min-width: $width_desktop) {
-        width: 60px;
-        left: 38%;
-      }
-    }
-
-    &::after {
-      transform: rotate(90deg);
-    }
-
     @media (min-width: $width_tablet) {
       margin-top: 84px;
       min-height: 432px;
@@ -135,11 +106,10 @@
   }
 
   &--intends {
-    padding-top: 80px;
     margin-bottom: 7px;
+    padding-top: 15px;
 
     @media (min-width: $width_tablet) {
-      padding-top: 163px;
       margin-bottom: 26px;
     }
   }
@@ -170,5 +140,45 @@
   @media (min-width: $width_desktop) {
     max-width: 100%;
     margin: 0 auto 85px;
+  }
+}
+
+.product-div__add-goods {
+  position: relative;
+  transform: translateX(-50%);
+  margin: 31px -14px 0;
+  display: block;
+  width: 31px;
+  height: 31px;
+  left: 50%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 31px;
+    height: 2px;
+    background-color: $bg_color_dark;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 20%;
+    left: 45%;
+
+    @media (min-width: $width_tablet) {
+      width: 60px;
+    }
+
+    @media (min-width: $width_desktop) {
+      width: 60px;
+    }
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $width_tablet) {
+    margin: 77px -27px 40px;
   }
 }

@@ -3,6 +3,14 @@
   background-color: $bg_color_white-lighten;
 }
 
+.company-info__container {
+  @media (min-width: $width_desktop) {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .company-info__div {
   display: flex;
   justify-content: space-between;
@@ -15,10 +23,9 @@
 
   @media (min-width: $width_desktop) {
     position: absolute;
-    width: 40%;
-    padding: 64px 116px 64px 73px;
-    top: 24%;
-    left: 10%;
+    width: 567px;
+    padding: 64px 78px 64px 73px;
+    top: 95px;
     background-color: $bg_color_white;
     z-index: 2;
   }
