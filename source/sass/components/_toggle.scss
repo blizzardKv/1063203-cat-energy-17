@@ -1,19 +1,22 @@
 .toggle {
   position: absolute;
-  top: 8px;
-  right: 41px;
+  top: 18px;
+  right: 20px;
   z-index: 2;
   display: block;
   background-color: $bg_color_white;
   border: 0 none;
   cursor: pointer;
+  width: 24px;
+  height: 24px;
+
 
   &--closed {
     &::before {
       content: "";
       position: absolute;
-      top: 14px;
-      left: -3px;
+      top: 5px;
+      right: 0;
       width: 24px;
       height: 2px;
       background-color: $bg_color_dark;
@@ -26,10 +29,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 23px;
-      right: -20px;
       width: 22px;
       height: 2px;
+      top: 12px;
+      right: 0;
       background-color: $bg_color_dark;
     }
 

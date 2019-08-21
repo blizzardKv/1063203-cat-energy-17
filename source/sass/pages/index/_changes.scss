@@ -7,6 +7,7 @@
   }
 
   @media (min-width: $width_desktop) {
+    width: 100%;
     padding: 0 50px;
   }
 
@@ -17,21 +18,25 @@
       margin-bottom: 30px;
 
       > .changes__text {
-        max-width: 60%;
+        @media (min-width: $width_tablet) {
+          max-width: 60%;
+        }
       }
     }
 
     @media (min-width: $width_desktop) {
-      width: calc(100% - 2%);
-      padding: 0 0 64px 50px;
-
-      > .changes__text {
-        max-width: 89%;
-      }
+      width: 100%;
+      padding: 0 50px 64px 50px;
 
       &:first-child {
         margin-right: 80px;
         margin-bottom: 0;
+      }
+
+      > .changes__text {
+        @media (min-width: $width_tablet) {
+          max-width: 100%;
+        }
       }
     }
   }
@@ -42,7 +47,7 @@
   padding: 28px 0 0 71px;
 
   @media (min-width: $width_tablet) {
-    margin: 0 0 24px 0;
+    margin: 0 0 26px 0;
     font-size: 36px;
     line-height: 37px;
     padding: 74px 0 0 0;
@@ -110,7 +115,7 @@
   }
 
   @media (min-width: $width_tablet) {
-    padding-bottom: 63px;
+    padding-bottom: 61px;
     font-size: 20px;
     line-height: 20px;
     border: 0 none;
