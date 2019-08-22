@@ -1,4 +1,16 @@
 .site-navigation {
   margin: 0;
   padding: 0;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+
+    @media (min-width: $width_tablet) {
+      display: block;
+    }
+  }
 }

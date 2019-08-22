@@ -1,22 +1,145 @@
 .principles-list {
   list-style: none;
+  position: relative;
+  flex-direction: column;
 
   @media (min-width: $width_tablet) {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
   }
 
   @media (min-width: $width_desktop) {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    margin: 0;
   }
 }
 
 .principles-list__item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  min-height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $bg_color_green;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+  }
+
+  &:first-child {
+    &::before {
+      background-image: url("/img/advantage-leaf@1x.png");
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      background-image: url("/img/advantage-powder@1x.png");
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      background-image: url("/img/advantage-dining@1x.png");
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      background-image: url("/img/advantage-clock@1x.png");
+    }
+  }
+
   @media (min-width: $width_tablet) {
-    width: 50%;
+    max-width: 46%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 59px;
+    margin-bottom: 72px;
+    padding: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      background-position: 15px 15px;
+    }
+
+    &::after {
+      position: absolute;
+      display: block;
+      font-size: 281px;
+      font-family: $font_secondary;
+      line-height: 281px;
+      color: $color_white-lighten;
+      z-index: -1;
+      width: 107px;
+      height: 264px;
+    }
+
+    &:first-child {
+      &::after {
+        content: "1";
+        left: 119px;
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        content: "2";
+        left: 111px;
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        content: "3";
+        left: 114px;
+      }
+    }
+
+    &:nth-child(4) {
+      &::after {
+        content: "4";
+        left: 113px;
+      }
+    }
   }
 
   @media (min-width: $width_desktop) {
-    width: auto;
+    margin-bottom: 0;
+    margin-right: -35px;
+    max-width: calc(100% / 4 - 2%);
+
+    &::after {
+      top: -39px;
+    }
+  }
+}
+
+.principles-list__text {
+  margin: 0;
+  padding-top: 2px;
+
+  @media (min-width: $width_tablet) {
+    width: 77%;
+    margin-top: 112px;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 90%;
+    padding: 0;
   }
 }

@@ -23,7 +23,8 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+//:not(:focus):not(:active) - ломает радиобаттоны и чексбоксы при кастомизации
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -46,11 +47,17 @@ a {
 }
 
 .main-headline {
+  margin: 0;
   font-size: 36px;
   font-family: $font_secondary;
   font-weight: 400;
   line-height: 36px;
   color: $color_black;
+
+  @media (min-width: $width_tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 
   &--lead {
     color: $color_white;
@@ -66,16 +73,50 @@ a {
 .section-headline {
   font-size: 36px;
   font-family: $font_secondary;
+  margin: 0;
   font-weight: 400;
   line-height: 60px;
   color: $color_black;
+
+  @media (min-width: $width_tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .thematic-headline {
+  position: relative;
+  margin: 0;
   font-size: 24px;
   font-family: $font_secondary;
   font-weight: 400;
   line-height: 24px;
   color: $color_black;
   text-transform: none;
+
+  //&::after {
+  //  position: absolute;
+  //  content: "";
+  //  margin-left: 40px;
+  //  width: 100vw;
+  //  height: 3px;
+  //  background-color: $bg_color_green;
+  //  top: 50%;
+  //}
+  //
+  //&::before {
+  //  position: absolute;
+  //  content: "";
+  //  margin-left: -103vw;
+  //  width: 100vw;
+  //  height: 3px;
+  //  background-color: #68b738;
+  //  top: 50%;
+  //}
+
+  @media (min-width: $width_tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 38px;
+  }
 }

@@ -2,4 +2,39 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid $border_color_light-grey;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $width_tablet) {
+    border: 0 none;
+  }
+
+  &--intends {
+    padding: 25px 0 14px 0;
+
+    @media (min-width: $width_tablet) {
+      padding: 7px 0 14px 0;
+    }
+  }
+}
+
+.social-list__item {
+  &:not(:last-child) {
+    margin-right: 37px;
+  }
+}
+
+.social-list__link {
+  &:hover {
+    fill: $color_green;
+  }
+
+  &:active {
+    fill: $color_green-30;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 25px;
+  }
 }

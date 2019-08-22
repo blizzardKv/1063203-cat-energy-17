@@ -8,31 +8,78 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $color_green;
-  border: none;
-  padding: 0;
+  border: 0 none;
+  padding: 10px 0;
 
-  @media (min-width: $width_tablet) {
-    position: absolute;
-    top: 30%;
-    left: 0;
+  &--index {
+    @media (min-width: $width_tablet) {
+      position: absolute;
+      font-size: 20px;
+      line-height: 20px;
+      top: 30%;
+      left: 0;
+      padding: 16px 26px;
+    }
+
+    @media (min-width: $width_desktop) {
+      top: 64%;
+    }
   }
 
-  @media (min-width: $width_desktop) {
-    top: 40%;
+  &--green {
+    &:hover {
+      background-color: $bg_color_green-solid;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--grey {
+    &:hover {
+      background-color: $bg_color_grey-strong;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--order,
   &--submit {
-    position: inherit;
+    position: static;
     width: 100%;
   }
 
   &--catalog-font {
     font-size: 16px;
     line-height: 20px;
+
+    @media (min-width: $width_tablet) {
+      min-width: 100%;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $width_desktop) {
+      max-width: 69%;
+    }
+  }
+
+  &--additional-catalog {
+    @media (min-width: $width_tablet) {
+      max-width: 100%;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $width_desktop) {
+      min-width: 25%;
+    }
   }
 
   &--show {
+    margin-bottom: 22px;
     position: relative;
     width: 100%;
     font-size: 16px;
@@ -40,9 +87,20 @@
     color: $color_grey;
     background-color: $bg_color_white-lighten;
   }
+
+  &--form-font {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $width_tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
 }
 
 .close-button {
+  position: absolute;
   padding: 0;
   background: none;
   border: 0 none;

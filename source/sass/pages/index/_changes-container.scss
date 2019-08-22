@@ -1,0 +1,13 @@
+.changes-container {
+  margin-bottom: 16px;
+
+  @media (min-width: $width_tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 1220px;
+    display: flex;
+    margin: 0 auto 70px;
+  }
+}

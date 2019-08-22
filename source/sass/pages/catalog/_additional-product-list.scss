@@ -2,6 +2,59 @@
   list-style: none;
 
   @media (min-width: $width_desktop) {
-    min-width: 733px;
+    display: block;
+    min-width: 73%;
+    margin: 0;
+  }
+}
+
+.additional-product-list__wrapper {
+  position: relative;
+  margin: 0 -20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("/img/svg/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 61px;
+
+    @media (min-width: $width_tablet) {
+      top: 32%;
+      left: 18%;
+    }
+
+    @media (min-width: $width_desktop) {
+      top: 23%;
+      left: 50%;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 20%;
+    margin: 0;
+  }
+}
+
+.additional-product-list__item {
+  border-bottom: 1px solid $border_color_grey-pure;
+
+  &:first-child {
+    border-top: 1px solid $border_color_grey-pure;
+  }
+
+  @media (min-width: $width_tablet) {
+    border-left: 1px solid $border_color_grey-pure;
+    border-right: 1px solid $border_color_grey-pure;
+  }
+
+  @media (min-width: $width_desktop) {
+    border-left: 0 none;
+    border-right: 0 none;
   }
 }

@@ -1,4 +1,36 @@
+.principles {
+  margin-bottom: 46px;
+
+  @media (min-width: $width_tablet) {
+    margin: 27px -30px 0 -30px;
+    padding: 0 30px 28px 30px;
+    border-bottom: 1px solid $border_color_grey-pure;
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 1220px;
+    margin: 0 auto 47px;
+    padding: 0;
+    border-bottom: 0 none;
+  }
+}
+
+.principles__headline {
+  margin-bottom: 28px;
+
+  @media (min-width: $width_tablet) {
+    margin: 0 30px 13px 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin: 0 0 13px 0;
+  }
+}
+
 .principles__list {
   padding: 0;
-  margin: 0;
+
+  @media (min-width: $width_tablet) {
+    margin: 0;
+  }
 }

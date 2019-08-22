@@ -1,5 +1,10 @@
 .fieldset-div {
+  @media (min-width: $width_tablet) {
+    margin-bottom: 75px;
+  }
+
   @media (min-width: $width_desktop) {
     display: flex;
+    margin-bottom: 0;
   }
 }

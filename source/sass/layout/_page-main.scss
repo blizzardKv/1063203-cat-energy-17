@@ -1,13 +1,21 @@
 .page-main {
   margin: 0 20px;
+  position: relative;
 
   @media (min-width: $width_tablet) {
     margin: 0 30px;
   }
 
   @media (min-width: $width_desktop) {
-    max-width: 1220px;
-    margin: 0 auto;
+    margin: 0;
+  }
+}
+
+.page-main__upper-container {
+  @media (min-width: $width_desktop) {
+    width: 1220px;
+    margin: 0 auto 66px;
+    padding: 0;
   }
 }
 
@@ -22,6 +30,8 @@
 }
 
 .page-main__text {
+  margin: 0 0 40px 0;
+  padding-right: 10px;
   font-size: 14px;
   font-family: $font_secondary;
   line-height: 18px;
@@ -29,30 +39,36 @@
   text-transform: uppercase;
 
   @media (min-width: $width_tablet) {
-    width: 50%;
+    width: 57%;
+    margin: 0 0 67px 0;
     padding: 0 40px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $width_desktop) {
-    width: auto;
+    width: 27%;
+    margin: 0;
     padding: 0;
   }
 }
 
 .page-main__side-intends {
-  margin: 0 -20px;
+  margin: 0 -20px 25px -20px;
 
   @media (min-width: $width_tablet) {
     margin: 0;
   }
 
   &--extra-intends {
+    margin-bottom: 0;
+
     @media (min-width: $width_tablet) {
       margin: 0 -30px;
     }
 
     @media (min-width: $width_desktop) {
-      margin: 0 -110px;
+      margin: 0;
     }
   }
 
@@ -72,5 +88,44 @@
   @media (min-width: $width_tablet) {
     margin: 0 -30px;
     padding: 0 30px;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.page-main__headline {
+  &--catalog {
+    margin: 0 -20px;
+    padding: 27px 0 40px 20px;
+    border-bottom: 1px solid $border_color_grey-pure;
+
+    @media (min-width: $width_tablet) {
+      margin-bottom: 41px;
+      border: 0 none;
+    }
+
+    @media (min-width: $width_desktop) {
+      max-width: 1220px;
+      margin: 0 auto 80px;
+      padding: 69px 0 0 0;
+    }
+  }
+
+  &--form {
+    padding-top: 28px;
+    margin-bottom: 36px;
+
+    @media (min-width: $width_tablet) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin: 0 auto 56px;
+      padding-top: 68px;
+      width: 1220px;
+    }
   }
 }

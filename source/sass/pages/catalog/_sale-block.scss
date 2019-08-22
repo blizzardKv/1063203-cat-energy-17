@@ -1,13 +1,41 @@
 .sale-block {
   text-align: center;
   background-color: $bg_color_green;
+  background-size: cover;
   background-image: url("/img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 50%;
+  min-height: 289px;
+  margin: 0 20px;
+
+  @media (min-width: $width_tablet) {
+    background-image: url("/img/gift-photo-tablet@1x.jpg");
+    min-height: 200px;
+  }
+
+  @media (min-width: $width_desktop) {
+    background-image: url("/img/gift-photo-desktop@1x.jpg");
+    margin: 0;
+  }
 }
 
 .sale-block__text {
+  position: relative;
+  margin: 0;
+  padding: 187px 43px 0 43px;
   font-size: 16px;
   line-height: 20px;
   color: $color_white;
+
+  @media (min-width: $width_tablet) {
+    max-width: 83%;
+    padding: 72px 0 0 60%;
+    text-align: left;
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 83%;
+    padding: 187px 0 43px 40px;
+    text-align: center;
+  }
 }

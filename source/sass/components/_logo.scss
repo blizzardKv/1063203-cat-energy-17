@@ -1,4 +1,25 @@
-.logo__image {
+.logo {
+  display: block;
   width: 101px;
   height: 18px;
+  margin: 0 auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $width_tablet) {
+    width: 84px;
+    height: 17px;
+  }
+
+  @media (min-width: $width_desktop) {
+    display: block;
+    width: 121px;
+    height: 17px;
+  }
 }

@@ -1,26 +1,127 @@
 .changes {
+  padding: 0 20px 22px 20px;
   background-color: $bg_color_white-lighten;
-  padding: 0 20px;
 
   @media (min-width: $width_tablet) {
     padding: 0 30px 0 55px;
   }
 
   @media (min-width: $width_desktop) {
+    width: 100%;
     padding: 0 50px;
+  }
+
+  &:first-child {
+    margin-bottom: 21px;
+
+    @media (min-width: $width_tablet) {
+      margin-bottom: 30px;
+
+      > .changes__text {
+        @media (min-width: $width_tablet) {
+          max-width: 60%;
+        }
+      }
+    }
+
+    @media (min-width: $width_desktop) {
+      width: 100%;
+      padding: 0 50px 64px 50px;
+
+      &:first-child {
+        margin-right: 80px;
+        margin-bottom: 0;
+      }
+
+      > .changes__text {
+        @media (min-width: $width_tablet) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.changes__headline {
+  margin-bottom: 29px;
+  padding: 28px 0 0 71px;
+
+  @media (min-width: $width_tablet) {
+    margin: 0 0 26px 0;
+    font-size: 36px;
+    line-height: 37px;
+    padding: 74px 0 0 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin: 0 0 73px 0;
+    padding: 77px 0 0 164px;
+  }
+}
+
+.changes__text {
+  margin-bottom: 24px;
+
+  @media (min-width: $width_tablet) {
+    margin-bottom: 36px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 55%;
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 100%;
+    margin-bottom: 12px;
   }
 }
 
 .changes__link {
+  position: relative;
+  display: block;
+  padding-top: 20px;
   font-size: 16px;
-  font-family: $font_secondary;
   line-height: 16px;
+  font-family: $font_secondary;
   color: $color_black;
   text-transform: uppercase;
-}
+  border-top: 1px solid $border_color_light-grey;
 
-.changes__container {
+  &:hover {
+    &::after {
+      width: 34px;
+      height: 12px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 97px;
+    width: 24px;
+    height: 11px;
+    background-image: url("/img/svg/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $width_tablet) {
+      top: 25px;
+      left: 130px;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    padding-bottom: 61px;
+    font-size: 20px;
+    line-height: 20px;
+    border: 0 none;
+  }
+
   @media (min-width: $width_desktop) {
-    display: flex;
+    padding-bottom: 0;
   }
 }

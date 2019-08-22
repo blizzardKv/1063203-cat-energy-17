@@ -1,0 +1,55 @@
+.toggle {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  background-color: $bg_color_white;
+  border: 0 none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+
+
+  &--closed {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $bg_color_dark;
+      box-shadow: 0 8px 0 0 $color_dark, 0 16px 0 0 $color_dark;
+    }
+  }
+
+  &--opened {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      top: 12px;
+      right: 0;
+      background-color: $bg_color_dark;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--nojs {
+    display: none;
+  }
+
+  @media (min-width: $width_tablet) {
+    display: none;
+  }
+}

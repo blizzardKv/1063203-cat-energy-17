@@ -8,20 +8,28 @@
 }
 
 .product-list__item {
+  border-left: 1px solid $border_color_grey-pure;
+  border-right: 1px solid $border_color_grey-pure;
+  border-bottom: 1px solid $border_color_grey-pure;
+
   @media (min-width: $width_tablet) {
     width: 50%;
+    border: 0 none;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $width_desktop) {
-    width: 25%;
-    background-color: $bg_color_white-lighten;
+    width: calc(25% - 5%);
+    margin-bottom: 54px;
   }
 
   &:last-child {
     text-align: center;
+  }
 
+  &:not(:nth-child(4n)) {
     @media (min-width: $width_desktop) {
-      background-color: $bg_color_white;
+      margin-right: 81px;
     }
   }
 }
