@@ -306,6 +306,12 @@
     padding-top: 5px;
     padding-bottom: 7px;
 
+    &:hover {
+      &::before {
+        border-color: $border_color_grey-filth;
+      }
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -371,6 +377,10 @@
       left: 10px;
     }
   }
+}
+
+.form__checkbox:disabled + .form__label--checkbox {
+  opacity: 0.3;
 }
 
 .form__headline {
