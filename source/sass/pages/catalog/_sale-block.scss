@@ -2,20 +2,35 @@
   text-align: center;
   background-color: $bg_color_green;
   background-size: cover;
-  background-image: url("/img/gift-photo-mobile@1x.jpg");
+  background-image: url("img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   min-height: 289px;
   margin: 0 20px;
 
+  @media (min-resolution: $width_retina-dpi), (min-resolution: $width_retina-dppx) {
+    background-image: url("/img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
+  }
+
   @media (min-width: $width_tablet) {
     background-image: url("/img/gift-photo-tablet@1x.jpg");
     min-height: 200px;
+
+    @media (min-resolution: $width_retina-dpi), (min-resolution: $width_retina-dppx) {
+      background-image: url("/img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   @media (min-width: $width_desktop) {
-    background-image: url("/img/gift-photo-desktop@1x.jpg");
+    background-image: url("img/gift-photo-desktop@1x.jpg");
     margin: 0;
+
+    @media (min-resolution: $width_retina-dpi), (min-resolution: $width_retina-dppx) {
+      background-image: url("/img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
