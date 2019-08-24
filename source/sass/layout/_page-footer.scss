@@ -54,7 +54,11 @@
   margin-left: 20px;
 }
 
-.page-footer__promo-img {
+.page-footer__promo-svg {
+  &:hover {
+    fill: $color_green;
+  }
+
   &:active {
     opacity: 0.3;
   }

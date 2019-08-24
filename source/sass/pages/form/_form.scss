@@ -184,6 +184,8 @@
   }
 
   &--email {
+    position: relative;
+
     @media (min-width: $width_desktop) {
       width: 46.72%;
       margin-right: 78px;
@@ -191,6 +193,8 @@
   }
 
   &--tel {
+    position: relative;
+
     @media (min-width: $width_desktop) {
       width: 46.72%;
     }
@@ -233,6 +237,13 @@
 .form__icon {
   display: block;
   position: absolute;
+  top: 18px;
+  right: 15px;
+
+  &--telephone {
+    top: 16px;
+    right: 8px;
+  }
 }
 
 .form__textarea {
