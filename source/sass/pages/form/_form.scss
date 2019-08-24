@@ -9,7 +9,9 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
 
+.fieldset-div {
   @media (min-width: $width_desktop) {
     width: 1220px;
     margin: 0 auto;
@@ -27,39 +29,55 @@
   }
 
   &--radio {
-    margin-bottom: 28px;
+    margin-bottom: 42px;
+
+    @media (min-width: $width_tablet) {
+      width: 100%;
+      margin: 0 0 97px 0;
+    }
 
     @media (min-width: $width_desktop) {
-      width: 88%;
-      margin: 0;
+      margin: 0 0 91px 0;
     }
   }
 
   &--user {
-    margin-bottom: 17px;
+    border-top: 3px solid $border_color_green;
+    margin: 0 -20px 29px;
 
     @media (min-width: $width_tablet) {
-      margin-bottom: 44px;
+      margin: 0 0 67px;
+      padding: 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin: 0 0 69px 0;
     }
   }
 
   &--textarea {
-    margin-bottom: 10px;
+    border-top: 3px solid $border_color_green;
+    margin: 0 -20px 23px;
 
     @media (min-width: $width_tablet) {
-      margin-bottom: 47px;
+      margin: 0 0 66px 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin: 0 0 68px 0;
     }
   }
 
   &--checkbox {
-    margin-bottom: 19px;
+    border-top: 3px solid $border_color_green;
+    margin: 0 -20px 19px;
 
     @media (min-width: $width_tablet) {
-      margin-bottom: 15px;
+      margin: 0 0 15px 0;
     }
 
     @media (min-width: $width_desktop) {
-      margin-bottom: 80px;
+      margin: 0 0 80px 0;
     }
   }
 
@@ -71,9 +89,22 @@
     }
 
     @media (min-width: $width_desktop) {
-      width: 88%;
-      margin-right: 80px;
+      width: 100%;
+      margin: 0 80px 49px 0;
     }
+  }
+}
+
+.form-fieldset-wrapper {
+  margin: -16px 20px 0;
+
+  @media (min-width: $width_tablet) {
+    margin: -25px 30px 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 1300px;
+    margin: -25px auto 0;
   }
 }
 
@@ -95,6 +126,10 @@
   }
 
   &--flexible {
+    @media (min-width: $width_tablet) {
+      margin: 0 40px;
+    }
+
     @media (min-width: $width_desktop) {
       display: flex;
       flex-wrap: wrap;
@@ -106,6 +141,11 @@
     @media (min-width: $width_tablet) {
       display: flex;
       flex-wrap: wrap;
+      margin: 0 40px;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin: 0 40px;
     }
   }
 }
@@ -160,12 +200,13 @@
     margin: 33px 0 0 0;
 
     @media (min-width: $width_tablet) {
-      margin-top: 15px;
+      margin-top: 16px;
       flex-grow: 1;
       margin-right: 31px;
     }
 
     @media (min-width: $width_desktop) {
+      margin-top: 13px;
       width: 50%;
       margin-right: 0;
     }
@@ -187,7 +228,7 @@
     position: relative;
 
     @media (min-width: $width_desktop) {
-      width: 46.72%;
+      width: 43.72%;
       margin-right: 78px;
     }
   }
@@ -196,7 +237,7 @@
     position: relative;
 
     @media (min-width: $width_desktop) {
-      width: 46.72%;
+      width: 44%;
     }
   }
 }
@@ -231,6 +272,14 @@
       outline: 2px solid $border_color_red;
       border: 0 none;
     }
+
+    &:invalid + .form__icon {
+      fill: $color_red-soft;
+    }
+  }
+
+  &:focus + .form__icon {
+    fill: $color_green;
   }
 }
 
@@ -242,7 +291,7 @@
 
   &--telephone {
     top: 16px;
-    right: 8px;
+    right: 12px;
   }
 }
 
@@ -252,13 +301,21 @@
   padding: 13px 0 0 14px;
   border: 1px solid $border_color_grey-solid;
 
-  @media (min-width: $width_tablet) {
-    min-height: 174px;
-  }
-
   &::placeholder {
     color: $color_grey;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $width_tablet) {
+    width: 89%;
+    padding: 13px 0 0 18px;
+    min-height: 174px;
+    margin: 0 40px;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 1220px;
+    margin: 0 40px;
   }
 }
 
@@ -395,15 +452,56 @@
 }
 
 .form__headline {
-  margin-bottom: 32px;
+  margin: 0 0 32px -20px;
+  padding: 0 10px 0 20px;
+  background-color: $bg_color_white;
 
   @media (min-width: $width_tablet) {
     margin: 0 0 76px 0;
+    padding: 0 10px 0 40px;
   }
 
   &--checkbox-intends {
     @media (min-width: $width_tablet) {
       margin-bottom: 62px;
+    }
+  }
+
+  &--user {
+    width: 221px;
+
+    @media (min-width: $width_tablet) {
+      width: 594px;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 0 10px 0 39px;
+    }
+  }
+
+  &--textarea {
+    width: 162px;
+
+    @media (min-width: $width_tablet) {
+      width: 258px;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 0 10px 0 39px;
+      width: 259px;
+    }
+  }
+
+  &--checkbox {
+    width: 185px;
+
+    @media (min-width: $width_tablet) {
+      width: 291px;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 0 10px 0 39px;
+      width: 293px;
     }
   }
 }

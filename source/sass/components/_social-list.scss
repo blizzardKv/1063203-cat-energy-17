@@ -23,6 +23,12 @@
   &:not(:last-child) {
     margin-right: 38px;
   }
+
+  @media (min-width: $width_tablet) {
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
 }
 
 .svg-icon {
