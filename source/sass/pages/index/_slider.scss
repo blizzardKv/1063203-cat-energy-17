@@ -12,8 +12,8 @@
   text-align: center;
 
   @media (min-width: $width_tablet) {
-    margin-bottom: 17px;
     display: flex;
+    margin-bottom: 17px;
   }
 
   @media (min-width: $width_desktop) {
@@ -24,8 +24,8 @@
 .slider__image-divider-before {
   @media (min-width: $width_tablet) {
     width: 50%;
-    overflow-x: hidden;
     margin-top: -170px;
+    overflow-x: hidden;
   }
 
   @media (min-width: $width_desktop) {
@@ -36,8 +36,8 @@
 .slider__image-divider-after {
   @media (min-width: $width_tablet) {
     width: 50%;
-    overflow-x: hidden;
     margin-top: -167px;
+    overflow-x: hidden;
   }
 
   @media (min-width: $width_desktop) {
@@ -61,11 +61,11 @@
 
   @media (min-width: $width_desktop) {
     position: relative;
-    left: -40px;
-    margin-left: 0;
-    margin-right: 0;
-    right: 0;
     top: -15px;
+    right: 0;
+    left: -40px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -87,9 +87,9 @@
 
   @media (min-width: $width_desktop) {
     position: relative;
-    margin-left: 0;
-    margin-right: 0;
     left: -363px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -113,9 +113,9 @@
   border: 0 none;
 
   @media (min-width: $width_tablet) {
+    padding-bottom: 6px;
     font-size: 20px;
     line-height: 20px;
-    padding-bottom: 6px;
     border-bottom: 1px dotted rgba(68, 68, 68, 0.23);
   }
 }
@@ -223,26 +223,26 @@
 
 .slider__range {
   @media (min-width: $width_tablet) {
-    position: absolute;
     content: "";
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background-color: $bg_color_white;
+    position: absolute;
     top: -9px;
     left: 44px;
+    width: 34px;
+    height: 34px;
+    background-color: $bg_color_white;
     border: 1px solid $border_color_grey-solid;
+    border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
     &::before {
-      position: absolute;
       content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: $bg_color_green;
+      position: absolute;
       top: 12px;
       left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: $bg_color_green;
+      border-radius: 50%;
     }
 
     &:hover {

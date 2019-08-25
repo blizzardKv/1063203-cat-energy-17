@@ -16,12 +16,12 @@
     position: relative;
 
     @media (min-width: $width_tablet) {
-      margin-top: 84px;
       min-height: 432px;
-      background-image: none;
-      background-color: $bg_color_white;
-      border: 1px solid $border_color_grey-solid-50;
+      margin-top: 84px;
       padding-bottom: 17px;
+      background-color: $bg_color_white;
+      background-image: none;
+      border: 1px solid $border_color_grey-solid-50;
     }
 
     @media (min-width: $width_desktop) {
@@ -39,9 +39,9 @@
   color: $color_black;
 
   @media (min-width: $width_tablet) {
-    margin: 0 auto;
     max-width: 57%;
     min-height: 40px;
+    margin: 0 auto;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
@@ -67,8 +67,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0 -40px;
     height: 210px;
+    margin: 0 -40px;
   }
 }
 
@@ -76,9 +76,9 @@
   display: block;
 
   @media (min-width: $width_tablet) {
-    margin: 0 auto;
     width: 324px;
     height: auto;
+    margin: 0 auto;
   }
 }
 
@@ -93,10 +93,10 @@
 .product-div__product-name {
   margin: 0 0 14px 0;
   padding-top: 21px;
-  font-size: 16px;
-  font-family: $font_secondary;
   font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
+  font-family: $font_secondary;
   color: $color_black;
   text-transform: uppercase;
 
@@ -110,8 +110,8 @@
     padding: 0;
 
     @media (min-width: $width_tablet) {
-      padding: 0;
       margin-bottom: 26px;
+      padding: 0;
     }
   }
 }
@@ -131,11 +131,11 @@
   color: $color_grey;
 
   @media (min-width: $width_tablet) {
-    font-size: 16px;
-    line-height: 19px;
     max-width: 76%;
     min-height: 37px;
     margin: 0 auto 85px;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   @media (min-width: $width_desktop) {
@@ -145,14 +145,14 @@
 }
 
 .product-div__add-goods {
+  display: block;
+  min-height: 76px;
   background-image: url("/img/svg/plus-mobile-svg.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  display: block;
-  min-height: 76px;
 
   @media (min-width: $width_tablet) {
-    background-image: url("/img/svg/plus-svg.svg");
     min-height: 163px;
+    background-image: url("/img/svg/plus-svg.svg");
   }
 }

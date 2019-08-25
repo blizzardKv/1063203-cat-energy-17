@@ -1,6 +1,6 @@
 .page-main {
-  margin: 0 20px;
   position: relative;
+  margin: 0 20px;
 
   @media (min-width: $width_tablet) {
     margin: 0 30px;
@@ -43,8 +43,8 @@
   margin: 0 0 40px 0;
   padding-right: 10px;
   font-size: 14px;
-  font-family: $font_secondary;
   line-height: 18px;
+  font-family: $font_secondary;
   color: $color_black;
   text-transform: uppercase;
 
@@ -123,17 +123,17 @@
   }
 
   &--form {
-    padding-top: 28px;
     margin-bottom: 36px;
+    padding-top: 28px;
 
     @media (min-width: $width_tablet) {
       margin-bottom: 54px;
     }
 
     @media (min-width: $width_desktop) {
+      width: 1220px;
       margin: 0 auto 56px;
       padding-top: 68px;
-      width: 1220px;
     }
   }
 }

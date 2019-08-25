@@ -8,14 +8,14 @@
 }
 
 .product-list__item {
-  border-left: 1px solid $border_color_grey-pure;
   border-right: 1px solid $border_color_grey-pure;
   border-bottom: 1px solid $border_color_grey-pure;
+  border-left: 1px solid $border_color_grey-pure;
 
   @media (min-width: $width_tablet) {
     width: 50%;
-    border: 0 none;
     margin-bottom: 55px;
+    border: 0 none;
   }
 
   @media (min-width: $width_desktop) {

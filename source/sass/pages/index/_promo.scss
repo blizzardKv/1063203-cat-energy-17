@@ -7,12 +7,12 @@
 }
 
 .promo__headline {
-  padding-top: 14px;
   margin-bottom: 24px;
+  padding-top: 14px;
 
   @media (min-width: $width_tablet) {
-    padding-top: 43px;
     margin-bottom: 63px;
+    padding-top: 43px;
   }
 
   @media (min-width: $width_desktop) {
@@ -24,16 +24,16 @@
 
 .promo__background {
   @media (min-width: $width_desktop) {
-    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 50%, rgba(234, 234, 234, 1) 100%);
     margin: 0;
     padding: 0;
+    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 50%, rgba(234, 234, 234, 1) 100%);
   }
 }
 
 .promo__box {
   @media (min-width: $width_desktop) {
-    width: 1220px;
     display: flex;
+    width: 1220px;
     margin: 0 auto;
   }
 }
@@ -46,8 +46,8 @@
   }
 
   @media (min-width: $width_desktop) {
-    margin: 0 auto;
     width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -57,19 +57,19 @@
   font-family: $font_main;
 
   @media (min-width: $width_tablet) {
+    max-width: 96%;
+    margin-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
-    max-width: 96%;
     word-wrap: break-word;
-    margin-bottom: 53px;
   }
 
   @media (min-width: $width_desktop) {
-    padding-top: 72px;
+    max-width: 71%;
     margin-bottom: 66px;
+    padding-top: 72px;
     font-size: 16px;
     line-height: 24px;
-    max-width: 71%;
   }
 }
 
@@ -107,8 +107,8 @@
     padding: 16px 42px 17px 42px;
 
     @media (min-width: $width_tablet) {
-      padding: 16px 56px 17px 56px;
       margin-right: 42px;
+      padding: 16px 56px 17px 56px;
     }
   }
 
@@ -132,10 +132,10 @@
 
 .promo__attention {
   font-size: 24px;
-  font-family: $font_secondary;
   line-height: 24px;
-  color: $color_black;
+  font-family: $font_secondary;
   text-align: center;
+  color: $color_black;
   text-transform: uppercase;
 
   @media (min-width: $width_tablet) {
@@ -146,22 +146,22 @@
 
 .promo__span {
   position: absolute;
+  top: 86%;
+  left: 16%;
   max-width: 67%;
   font-size: 12px;
   line-height: 12px;
-  top: 86%;
-  left: 16%;
   text-align: center;
   background-color: $bg_color_white-lighten;
 
   @media (min-width: $width_tablet) {
+    top: 92%;
+    left: 16%;
     max-width: 90%;
+    padding: 0 9px 0 6px;
     font-size: 14px;
     line-height: 14px;
     background-color: $bg_color_white;
-    top: 92%;
-    left: 16%;
-    padding: 0 9px 0 6px;
   }
 
   @media (min-width: $width_desktop) {
@@ -172,24 +172,24 @@
 .promo__important-text {
   margin: 0;
   font-size: 14px;
-  font-family: $font_secondary;
   line-height: 20px;
+  font-family: $font_secondary;
   text-align: center;
   color: $color_black;
   text-transform: uppercase;
 
   @media (min-width: $width_tablet) {
-    font-size: 20px;
-    line-height: 20px;
     max-width: 174px;
     padding-top: 12px;
+    font-size: 20px;
+    line-height: 20px;
     text-align: right;
   }
 
   @media (min-width: $width_desktop) {
-    text-align: left;
     max-width: 100%;
     padding-top: 14px;
+    text-align: left;
   }
 }
 
@@ -211,7 +211,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    margin: 0;
     width: 50%;
+    margin: 0;
   }
 }
