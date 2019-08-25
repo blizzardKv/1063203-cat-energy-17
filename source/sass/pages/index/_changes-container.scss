@@ -6,8 +6,8 @@
   }
 
   @media (min-width: $width_desktop) {
-    max-width: 1220px;
     display: flex;
+    max-width: 1220px;
     margin: 0 auto 70px;
   }
 }

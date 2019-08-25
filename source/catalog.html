@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог продукции Cat energy</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link as="font" href="fonts/oswaldregular.woff2" rel="preload" crossorigin="anonymous">
+  <link as="font" href="fonts/oswaldmedium.woff2" rel="preload" crossorigin="anonymous">
 </head>
 <body>
 <div style="display: none;">
   <include src="build/img/svg/sprite/sprite.svg"></include>
 </div>
-<!--Эта часть повторяется еще в form и index, копировать туда изменения -->
 <header class="page-header">
   <div class="page-header__div">
     <a class="cat-logo cat-logo--intends" href="index.html">
@@ -300,7 +301,7 @@
   </section>
   <section class="additional-product">
     <div class="additional-product__wrapper">
-    <h2 class="additional-product__headline thematic-headline">Дополнительные товары</h2>
+      <h2 class="additional-product__headline thematic-headline">Дополнительные товары</h2>
       <div class="additional-product__box">
         <ul class="additional-product__list additional-product-list">
           <li class="additional-product-list__item">
@@ -376,7 +377,6 @@
       </div>
     </div>
   </section>
-  <!--Эта часть повторяется еще в form и index, копировать туда изменения -->
   <section class="company-info page-main__side-intends page-main__side-intends--extra-intends">
     <h2 class="visually-hidden">Карта месторасположения офиса "Кэт Энерджи" и адрес для сотрудничества</h2>
     <div class="company-info__container">
@@ -394,7 +394,6 @@
     </div>
   </section>
 </main>
-<!--Эта часть повторяется еще в form и index, копировать туда изменения -->
 <footer class="page-footer">
   <div class="page-footer__container">
     <a class="logo-footer" href="#">
@@ -437,7 +436,7 @@
     </div>
   </div>
 </footer>
-<script src="js/pictureFill-min.js"></script>
-<script src="js/script-min.js"></script>
+<script rel="preload" src="js/pictureFill-min.js" as="script"></script>
+<script rel="preload" src="js/script-min.js" as="script"></script>
 </body>
 </html>

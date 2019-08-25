@@ -4,11 +4,11 @@
   right: 20px;
   z-index: 2;
   display: block;
+  width: 24px;
+  height: 24px;
   background-color: $bg_color_white;
   border: 0 none;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
 
 
   &--closed {
@@ -29,10 +29,10 @@
     &::after {
       content: "";
       position: absolute;
-      width: 22px;
-      height: 2px;
       top: 12px;
       right: 0;
+      width: 22px;
+      height: 2px;
       background-color: $bg_color_dark;
     }
 

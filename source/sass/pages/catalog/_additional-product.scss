@@ -1,6 +1,6 @@
 .additional-product {
-  border-top: 3px solid $border_color_green;
   margin: 0 -20px 34px;
+  border-top: 3px solid $border_color_green;
 
   @media (min-width: $width_tablet) {
     margin: 0 -30px 76px;
@@ -25,21 +25,21 @@
 }
 
 .additional-product__headline {
+  width: 267px;
   margin: -16px 0 33px -20px;
   padding: 0 10px 0 20px;
   background-color: $bg_color_white;
-  width: 267px;
 
   @media (min-width: $width_tablet) {
+    width: 413px;
     margin: -25px 0 80px 0;
     padding: 0 10px 0 41px;
-    width: 413px;
   }
 
   @media (min-width: $width_desktop) {
+    width: 413px;
     margin: -25px 0 80px -40px;
     padding: 0 10px 0 40px;
-    width: 413px;
   }
 }
 

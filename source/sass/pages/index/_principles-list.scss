@@ -1,15 +1,15 @@
 .principles-list {
-  list-style: none;
   position: relative;
   flex-direction: column;
+  list-style: none;
 
   @media (min-width: $width_tablet) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0;
+    justify-content: space-between;
     width: 100%;
+    margin: 0;
   }
 
   @media (min-width: $width_desktop) {
@@ -19,24 +19,24 @@
 }
 
 .principles-list__item {
-  display: flex;
   position: relative;
+  display: flex;
   align-items: center;
-  padding-left: 80px;
-  margin-bottom: 20px;
   min-height: 60px;
+  margin-bottom: 20px;
+  padding-left: 80px;
 
   &::before {
     content: "";
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
     background-color: $bg_color_green;
     background-repeat: no-repeat;
     background-position: 5px 5px;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    z-index: 2;
   }
 
   &:first-child {
@@ -93,11 +93,11 @@
 
   @media (min-width: $width_tablet) {
     max-width: 46%;
-    font-size: 16px;
-    line-height: 24px;
     margin-top: 59px;
     margin-bottom: 72px;
     padding: 0;
+    font-size: 16px;
+    line-height: 24px;
 
     &::before {
       width: 80px;
@@ -107,14 +107,14 @@
 
     &::after {
       position: absolute;
-      display: block;
-      font-size: 281px;
-      font-family: $font_secondary;
-      line-height: 281px;
-      color: $color_white-lighten;
       z-index: -1;
+      display: block;
       width: 107px;
       height: 264px;
+      font-size: 281px;
+      line-height: 281px;
+      font-family: $font_secondary;
+      color: $color_white-lighten;
     }
 
     &:first-child {
@@ -147,9 +147,9 @@
   }
 
   @media (min-width: $width_desktop) {
-    margin-bottom: 0;
-    margin-right: -35px;
     max-width: calc(100% / 4 - 2%);
+    margin-right: -35px;
+    margin-bottom: 0;
 
     &::after {
       top: -39px;

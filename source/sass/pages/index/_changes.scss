@@ -48,9 +48,9 @@
 
   @media (min-width: $width_tablet) {
     margin: 0 0 26px 0;
+    padding: 74px 0 0 0;
     font-size: 36px;
     line-height: 37px;
-    padding: 74px 0 0 0;
   }
 
   @media (min-width: $width_desktop) {
@@ -63,10 +63,10 @@
   margin-bottom: 24px;
 
   @media (min-width: $width_tablet) {
+    max-width: 55%;
     margin-bottom: 36px;
     font-size: 16px;
     line-height: 24px;
-    max-width: 55%;
   }
 
   @media (min-width: $width_desktop) {

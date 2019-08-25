@@ -1,24 +1,24 @@
 .button {
   display: block;
+  padding: 10px 0;
   font-size: 14px;
-  font-family: $font_secondary;
   line-height: 18px;
-  color: $color_white;
+  font-family: $font_secondary;
   text-align: center;
+  color: $color_white;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $color_green;
   border: 0 none;
-  padding: 10px 0;
 
   &--index {
     @media (min-width: $width_tablet) {
       position: absolute;
-      font-size: 20px;
-      line-height: 20px;
       top: 30%;
       left: 0;
       padding: 16px 26px;
+      font-size: 20px;
+      line-height: 20px;
     }
 
     @media (min-width: $width_desktop) {
@@ -79,9 +79,9 @@
   }
 
   &--show {
-    margin-bottom: 22px;
     position: relative;
     width: 100%;
+    margin-bottom: 22px;
     font-size: 16px;
     line-height: 20px;
     color: $color_grey;
