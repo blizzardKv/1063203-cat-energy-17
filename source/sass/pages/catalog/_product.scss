@@ -1,13 +1,13 @@
 .product {
-  margin: 0 -20px 29px -20px;
+  margin: 0 -20px 44px -20px;
 
   @media (min-width: $width_tablet) {
-    margin: 0 -30px 11px -30px;
+    margin: 0 -30px 33px -30px;
   }
 
   @media (min-width: $width_desktop) {
     max-width: 1220px;
-    margin: 0 auto 22px;
+    margin: 0 auto 39px;
   }
 }
 

@@ -12,14 +12,19 @@
     opacity: 0.6;
   }
 
+  @media (min-width: $width_desktop) {
+    display: block;
+  }
+}
+
+.logo__image {
   @media (min-width: $width_tablet) {
     width: 84px;
-    height: 17px;
+    height: 16px;
   }
 
   @media (min-width: $width_desktop) {
-    display: block;
     width: 121px;
-    height: 17px;
+    height: 21px;
   }
 }

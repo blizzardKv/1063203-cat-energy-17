@@ -54,7 +54,6 @@
   margin-left: -50vw;
 
   @media (min-width: $width_tablet) {
-    display: block;
     width: 690px;
     height: 517px;
     margin-left: 46px;
@@ -80,10 +79,10 @@
   margin-left: -50vw;
 
   @media (min-width: $width_tablet) {
-    display: block;
+    display: inherit;
     width: 690px;
     height: 517px;
-    margin-left: -337px;
+    margin-right: 0;
   }
 
   @media (min-width: $width_desktop) {
@@ -259,4 +258,12 @@
     top: -6px;
     left: 45px;
   }
+}
+
+.slider--displayed {
+  overflow-x: visible;
+}
+
+.slider--not-displayed {
+  display: none;
 }

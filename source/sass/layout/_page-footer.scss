@@ -17,13 +17,19 @@
   @media (min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
-    padding-top: 52px;
+    padding-top: 62px;
   }
 
   @media (min-width: $width_desktop) {
     max-width: 1220px;
     margin: 0 auto;
     padding-top: 58px;
+  }
+}
+
+.page-footer__div {
+  @media (min-width: $width_tablet) {
+    padding-top: 2px;
   }
 }
 
@@ -54,7 +60,11 @@
   margin-left: 20px;
 }
 
-.page-footer__promo-img {
+.page-footer__promo-svg {
+  &:hover {
+    fill: $color_green;
+  }
+
   &:active {
     opacity: 0.3;
   }

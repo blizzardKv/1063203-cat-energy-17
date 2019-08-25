@@ -2,19 +2,23 @@
   display: block;
   text-align: center;
   border-bottom: 1px solid $border_color_light-grey;
-  padding-top: 35px;
+  padding-top: 39px;
   padding-bottom: 28px;
 
+  @media (min-width: $width_tablet) {
+    border: 0 none;
+    padding-top: 5px;
+    width: 128px;
+    height: 24px;
+  }
+}
+
+.logo-footer__svg-logo {
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
-  }
-
-  @media (min-width: $width_tablet) {
-    border: 0 none;
-    padding-top: 7px;
   }
 }
