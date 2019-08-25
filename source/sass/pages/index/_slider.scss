@@ -259,3 +259,11 @@
     left: 45px;
   }
 }
+
+.slider--displayed {
+  overflow-x: visible;
+}
+
+.slider--not-displayed {
+  display: none;
+}
