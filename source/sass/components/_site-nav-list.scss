@@ -4,12 +4,14 @@
   list-style: none;
   font-size: 20px;
   line-height: 20px;
-  font-family: $font_optional;
+  font-family: $font_secondary;
+  font-weight: 500;
   color: $color_black;
 
   @media (min-width: $width_tablet) {
     display: flex;
     font-size: 18px;
+    font-weight: 400;
     line-height: 25px;
     font-family: $font_secondary;
     color: $color_dark;
@@ -33,6 +35,12 @@
   @media (min-width: $width_tablet) {
     border: 0 none;
 
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
     &:not(:last-child) {
       margin-right: 34px;
     }
