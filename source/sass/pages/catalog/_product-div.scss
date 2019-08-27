@@ -152,12 +152,12 @@
 .product-div__add-goods {
   display: block;
   min-height: 76px;
-  background-image: url("/img/svg/plus-mobile-svg.svg");
+  background-image: url("../img/svg/plus-mobile-svg.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
   @media (min-width: $width_tablet) {
     min-height: 163px;
-    background-image: url("/img/svg/plus-svg.svg");
+    background-image: url("../img/svg/plus-svg.svg");
   }
 }

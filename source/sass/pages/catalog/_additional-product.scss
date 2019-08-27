@@ -11,6 +11,39 @@
   }
 }
 
+.additional-product__container {
+  position: relative;
+  margin: 0 -20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/svg/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transform: translateX(-50%);
+
+    @media (min-width: $width_tablet) {
+      top: 32%;
+      left: 18%;
+    }
+
+    @media (min-width: $width_desktop) {
+      top: 23%;
+      left: 50%;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    max-width: 20%;
+    margin: 0;
+  }
+}
+
 .additional-product__wrapper {
   margin: 0 20px;
 
