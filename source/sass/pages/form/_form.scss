@@ -559,7 +559,7 @@
   }
 }
 //доступность
-[type="radio"]:focus + label,
-[type="checkbox"]:focus + label {
+[type="radio"]:focus + .form__label,
+[type="checkbox"]:focus + .form__label {
   box-shadow: 0 0 0 1px $color_green;
 }
