@@ -117,6 +117,15 @@
     font-size: 20px;
     line-height: 20px;
     border-bottom: 1px dotted rgba(68, 68, 68, 0.23);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(152, 152, 152, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -250,6 +259,7 @@
     }
 
     &:active {
+      border: 2px solid rgb(104, 183, 56);
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
