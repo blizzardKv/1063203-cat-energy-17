@@ -292,6 +292,11 @@
   &--telephone {
     top: 16px;
     right: 12px;
+
+    @media (min-width: $width_desktop) {
+      top: 16px;
+      right: 16px;
+    }
   }
 }
 

@@ -39,7 +39,7 @@
 }
 
 .promo__desktop-div {
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 
   @media (min-width: $width_tablet) {
     margin-bottom: 222px;
@@ -92,6 +92,7 @@
   @media (min-width: $width_desktop) {
     justify-content: left;
     margin-bottom: 28px;
+    width: 366px;
   }
 }
 

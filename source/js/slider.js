@@ -11,11 +11,16 @@ buttonBefore.addEventListener('click', function () {
     slideAfter.classList.add('slider--not-displayed');
     slideBefore.classList.remove('slider--not-displayed');
     slideBefore.classList.add('slider--displayed');
+    imageBefore.classList.add('slider--left');
+    imageBefore.classList.add('slider--displayed');
+    imageAfter.classList.remove('slider--left');
   }
   else {
     slideAfter.classList.add('slider--not-displayed');
     slideBefore.classList.remove('slider--not-displayed');
     slideBefore.classList.add('slider--displayed');
+    imageBefore.classList.add('slider--left');
+    imageAfter.classList.remove('slider--left');
   }
 });
 
@@ -25,10 +30,12 @@ buttonAfter.addEventListener('click', function () {
     slideBefore.classList.add('slider--not-displayed');
     slideAfter.classList.remove('slider--not-displayed');
     slideAfter.classList.add('slider--displayed');
+    imageBefore.classList.remove('slider--left');
   }
   else {
     slideBefore.classList.add('slider--not-displayed');
     slideAfter.classList.remove('slider--not-displayed');
     slideAfter.classList.add('slider--displayed');
+    imageBefore.classList.remove('slider--left');
   }
 });

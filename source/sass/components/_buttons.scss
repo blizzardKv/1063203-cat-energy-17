@@ -32,7 +32,8 @@
     }
 
     &:active {
-      opacity: 0.3;
+      background-color: $bg_color_green-solid;
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 
@@ -42,7 +43,8 @@
     }
 
     &:active {
-      opacity: 0.3;
+      background-color: $bg_color_grey-strong;
+      color: rgba(68, 68, 68, 0.3);
     }
   }
 
